@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Library</title>
+
+    <link rel="stylesheet" href="component_css.css">
+</head>
+
+<body>
+    <nav class="wireframe-nav">
+        <a href="index.html">Styleguide</a>
+        <a href="#desktop">Desktop Wireframes</a>
+        <a href="#mobile">Mobile Wireframes</a>
+        <a href="wireframes.html#sitemap">Sitemap</a>
+        <a href="https://github.com/knn69/IAT-339-Final-Project" target="_blank">Git Repo</a>
+    </nav>
+    
+    <section class="product_modular">
+        <h2>Product Page Sorting & Item Listing</h2>
+
+        <div class="modular_container">
+            
+            <div class="modular_item">
+                <label for="sort_select">Sort:</label>
+                <select name="sort_select" class="sort_dropdown">
+                    
+                    <option value="0">Select</option>
+                    <option value="1">Featured</option>
+                    <option value="2">Best Selling</option>
+                    <option value="3">Alphabetically, A-Z</option>
+                    <option value="4">Alphabetically, Z-A</option>
+                    <option value="5">Price, low to high</option>
+                    <option value="6">Price, high to low</option>
+
+                </select>
+                <div class="code">
+                    <code>
+                    
+                        &ltlabel for="sort_select">Sort:&lt/label><br>
+                        &ltselect name="sort_select" class="sort_dropdown"><br>
+                        &ltoption value="0">Select&lt/option><br>
+                        &ltoption value="1">Featured&lt/option><br>
+                        &ltoption value="2">Best Selling&lt/option><br>
+                        &ltoption value="3">Alphabetically, A-Z&lt/option><br>
+                        &ltoption value="4">Alphabetically, Z-A&lt/option><br>
+                        &ltoption value="5">Price, low to high&lt/option><br>
+                        &ltoption value="6">Price, high to low&lt/option><br>
+
+                        &lt/select><br>
+
+                    </code>
+                </div>
+                
+            </div>
+
+
+            <div class="modular_item">
+                <div class="product_container">
+                    <a href=""><img src="https://via.placeholder.com/200x300" alt="Placehold IMG"></a>
+
+                    <div class="product_info">
+                        <div class="product_info_item">
+                            <a href=""><h3>Product Name</h3></a>
+                        </div>
+                        <div class="product_info_item">
+                            <h3>$15</h3>
+                        </div>
+                    </div>
+                    <div class="product_brand">
+                        <h3>Brand</h3>
+                    </div>
+
+                    <div class="code">
+                        <code>
+                            &lta href="target link">&ltimg src="Target image" alt="Placehold IMG">&lt/a>
+
+                            &ltdiv class="product_info"><br>
+                            &ltdiv class="product_info_item"><br>
+                            &lta href="target link">&lth3>Product Name&lt/h3>&lt/a><br>
+                                    &lt/div><br>
+                                    &ltdiv class="product_info_item"><br>
+                                    &lth3>$15&lt/h3><br>
+                                    &lt/div><br>
+                                    &lt/div><br>
+                                    &ltdiv class="product_brand"><br>
+                                    &lth3>Brand&lt/h3><br>
+                                    &lt/div>
+                        </code>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div> <!--End of Modular Container-->
+
+    </section> <!--End of Product Modular Section-->
+
+    <section class="product_detail_modular">
+        <h2>Product Detail Page</h2>
+        <h3>Breadcrumbs</h3>
+
+        <div class="breadcrumb_container">
+            <div class="breadcrumb_item">
+                <ul class="breadcrumb">
+                    <li><a href="Homepage">Home</a></li>
+                    <li><a href="Product">Product</a></li>
+                    <li><a href="Category">Product Category</a></li>
+                    <li><a href="Product item">Product Name</a></li>
+                </ul>
+
+                <div class="code">
+                    <code>
+                        &ltul class="breadcrumb"> <br>
+                        &ltli>&lta href="Homepage">Home&lt/a>&lt/li><br>
+                        &ltli>&lta href="Product">Product&lt/a>&lt/li><br>
+                        &ltli>&lta href="Category">Product Category&lt/a>&lt/li><br>
+                        &ltli>&lta href="Product item">Product Name&lt/a>&lt/li><br>
+                        &lt/ul>
+                    </code>
+                </div>
+            </div>
+        </div>
+
+        <h3>Product Images</h3>
+        <div class="detail_image_container">
+            <div class="image_item">
+                <img src="https://via.placeholder.com/550x200" alt="Product Image 1" onload="productImage(this);" onclick="productImage(this);">
+                <img src="https://via.placeholder.com/500x200" alt="Product Image 2" onclick="productImage(this);">
+                <img src="https://via.placeholder.com/450x200" alt="Product Image 3" onclick="productImage(this);">
+
+            </div>
+
+            <div class="image_item">
+                <img id="mainImg" style="width:100%">
+                
+            </div>
+
+            <script>
+                function productImage(imgs){
+                    var mainImg=document.getElementById("mainImg");
+                    mainImg.src=imgs.src
+                    mainImg.parentElement.style.display="block";
+                }
+            </script>
+
+            <noscript>
+                <img id="noscript_img" style="width:100%" src="https://via.placeholder.com/550x200" alt="Product Image 1">
+            </noscript>
+
+            <div class="code">
+                <code>
+
+                    &ltdiv class="image_item"><br>
+                    &ltimg src="https://via.placeholder.com/150x200"><br>
+                    &ltimg src="https://via.placeholder.com/150x200"><br>
+                    &ltimg src="https://via.placeholder.com/150x200"><br>
+        
+                    &lt/div><br><br>
+        
+                    &ltdiv class="image_item"><br>
+                    &ltimg src="https://via.placeholder.com/400x630"><br>
+                    &lt/div>
+
+                </code>
+
+            </div>
+
+        </div>
+
+        <h3>Product Detail</h3>
+        <div class="detail_container">
+            <div class="detail_item">
+                <h1>Product Name</h1>
+                <h2>$15.99</h2>
+            </div>
+
+            <div class="detail_item">
+                <p id="detail_itemid"><b>Item ID:</b> #54981</p>
+                <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                     cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                      anim id est laborum.
+                </p>
+            </div>
+
+            <div class="detail_item">
+                <label for="quantity_select">Quantity:</label>
+                <input type="number" name="quantity_select" min="0" max="50" >
+                
+            </div>
+
+            <div class="detail_item">
+                <button id="detail_cartb" onclick="document.location='Cart'">Add to Cart</button>
+                <button id="detail_checkoutb" onclick="document.location='Checkout'">Checkout</button>
+            </div>
+            
+            <div class="code">
+                <code>
+
+                    &ltdiv class="detail_item"><br>
+                    &lth1>Product Name&lt/h1><br>
+                    &lth2>$15.99&lt/h2><br>
+                    &lt/div><br><br>
+        
+                    &ltdiv class="detail_item"><br>
+                    &ltp id="detail_itemid">&ltb>Item ID:&lt/b> #54981&lt/p><br>
+                    &ltp id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br>
+                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit<br>
+                            anim id est laborum.<br>
+                            &lt/p><br>
+                            &lt/div><br><br>
+        
+                            &ltdiv class="detail_item"><br>
+                            &ltlabel for="quantity_select">Quantity:&lt/label><br>
+                            &ltinput type="number" name="quantity_select" min="0" max="50"><br>
+                        
+                            &lt/div><br><br>
+        
+                            &ltdiv class="detail_item"><br>
+                            &ltbutton id="detail_cartb" onclick="document.location='Cart'">Add to Cart&lt/button><br>
+                            &ltbutton id="detail_checkoutb" onclick="document.location='Checkout'">Checkout&lt/button><br>
+                            &lt/div>
+
+                </code>
+            </div>
+
+        </div> <!--End of detail container-->
+
+
+        <h3>Reviews</h3>
+        <div class="review_container">
+            <div class="title_container">
+
+                <div class="title_item">
+                    <h2>Reviews</h2>
+                </div>
+
+                <div class="title_item">
+                    <label for="review_select">Filter by:</label>
+                    <select name="review_select" class="review_dropdown">
+                    
+                        <option value="0">Select</option>
+                        <option value="1">Most Recent</option>
+                        <option value="2">Top Reviews</option>
+                        <option value="3">Highest Rating</option>
+                        <option value="4">Lowest Rating</option>
+
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="user_rating_container">
+                <div class="user_rating_item">
+                    <h2>User A</h2>
+                    <div class="rating">
+                        <div class="rating_item">
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+
+                        <div class="rating_item">
+                            <h3>Reviewed 7 hours ago</h3>
+                        </div>
+                       
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                </div>
+
+                <div class="user_rating_item">
+                    <h2>User B</h2>
+                    <div class="rating">
+                        <div class="rating_item">
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+
+                        <div class="rating_item">
+                            <h3>Reviewed 2 days ago</h3>
+                        </div>
+                       
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                </div>
+
+                <div class="user_rating_item">
+                    <h2>User C</h2>
+                    <div class="rating">
+                        <div class="rating_item">
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot checked"></div>
+                            <div class="dot"></div>
+                        </div>
+
+                        <div class="rating_item">
+                            <h3>Reviewed 1 month ago</h3>
+                        </div>
+                       
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    
+                </div>
+
+                <div class="code">
+                    <code>
+                        &ltdiv class="title_container"><br>
+
+                        &ltdiv class="title_item"><br>
+                        &lth2>Reviews&lt/h2><br>
+                        &lt/div><br><br>
+            
+                        &ltdiv class="title_item"><br>
+                        &ltlabel for="review_select">Filter by:&lt/label><br>
+                        &ltselect name="review_select" class="review_dropdown"><br><br>
+                                
+                        &ltoption value="0">Select&lt/option><br>
+                        &ltoption value="1">Most Recent&lt/option><br>
+                        &ltoption value="2">Top Reviews&ltoption><br>
+                        &ltoption value="3">Highest Rating&lt/option><br>
+                        &ltoption value="4">Lowest Rating&lt/option><br><br>
+            
+                        &lt/select><br>
+                        &lt/div><br>
+            
+                        &lt/div><br><br>
+
+                        &ltdiv class="user_rating_item"><br>
+                        &lth2>User A&lt/h2><br>
+                        &ltdiv class="rating"><br>
+                        &ltdiv class="rating_item"><br>
+                        &ltdiv class="dot checked">&lt/div><br>
+                        &ltdiv class="dot checked">&lt/div><br>
+                        &ltdiv class="dot checked">&lt/div><br>
+                        &ltdiv class="dot">&lt/div><br>
+                        &ltdiv class="dot">&lt/div><br>
+                        &lt/div><br><br>
+        
+                        &ltdiv class="rating_item"><br>
+                        &lth3>Reviewed 7 hours ago&lt/h3><br>
+                        &lt/div><br>
+                               
+                        &lt/div><br>
+                        &ltp>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt/p><br>
+                            
+                                &lt/div>
+
+                    </code>
+
+                </div>
+
+            </div><!--End of user rating container-->
+
+        </div><!--End of review Container-->
+
+        <h3>Review Form</h3>
+        <div class="review_form_container">
+
+            <div class="review_form_item">
+                <h2>Leave a Review</h2>
+            </div>
+            
+            <div class="review_form_item">
+                <h3>Rating</h3>
+                <div class="form_rating">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="review_form_item">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text"name="name">
+
+                    <label for="mail">Email:</label>
+                    <input type="text"name="mail">
+
+                    <label for="review">Review:</label>
+
+                    <textarea form="ureview" cols="60" rows="10"></textarea>
+                    
+                    <input class="button" type="submit" value="Submit" name="Submit" id="review_submit">
+
+                </form>
+
+
+            </div>
+
+            <div class="code">
+                <code>
+
+                    &ltdiv class="review_form_item"><br>
+                    &lth2>Leave a Review&lt/h2><br>
+                    &lt/div><br><br>
+                    
+                    &ltdiv class="review_form_item"><br>
+                    &lth3>Rating&lt/h3><br>
+                    &ltdiv class="form_rating"><br>
+                    &ltdiv class="dot">&lt/div><br>
+                    &ltdiv class="dot">&lt/div><br>
+                    &ltdiv class="dot">&lt/div><br>
+                    &ltdiv class="dot">&lt/div><br>
+                    &ltdiv class="dot">&lt/div><br>
+                    &lt/div><br>
+                    &lt/div><br><br>
+
+                    &ltdiv class="review_form_item"><br>
+                    &ltform><br>
+                    &ltlabel for="name">Name:&lt/label><br>
+                    &ltinput type="text"name="name"><br><br>
+        
+                    &ltlabel for="mail">Email:&lt/label><br>
+                    &ltinput type="text"name="mail"><br>
+        
+                    &ltlabel for="review">Review:&lt/label><br>
+                            
+        
+        
+                    &lt/form><br><br>
+                    &lttextarea form="ureview" cols="60" rows="10">&lt/textarea><br>
+        
+                    &lt/div>
+
+                </code>
+
+
+            </div>
+
+        </div><!--End of Review form container-->
+
+
+
+
+    </section><!--End of Product detail modular section-->
+
+
+</body>
+
+</html>
