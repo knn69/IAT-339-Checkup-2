@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Product Detail Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="product_detail_css.css">
+</head>
+
+<body>
+    <div class="top_section">
+        
+        <div class="top_section_item">
+            <span>Navgation Bar</span>
+
+
+
+        </div>
+
+        <div class="top_section_item">
+            
+            <ul class="breadcrumb">
+                <li><a href="Homepage">Home</a></li>
+                <li><a href="Product">Product</a></li>
+                <li><a href="Category">Product Category</a></li>
+                <li><a href="Product item">Product Name</a></li>
+            </ul>
+            
+            
+        </div>
+
+    </div>
+
+
+    <div class="product_section">
+
+        <div class="product_section_item">
+            
+            <div class="image_item">
+                <img src="https://via.placeholder.com/550x200" alt="Product Image 1" onload="productImage(this);" onclick="productImage(this);">
+                <img src="https://via.placeholder.com/500x200" alt="Product Image 2" onclick="productImage(this);">
+                <img src="https://via.placeholder.com/450x200" alt="Product Image 3" onclick="productImage(this);">
+
+            </div>
+
+            <div class="image_item">
+                <img id="mainImg" style="width:100%">
+                
+            </div>
+
+            <script>
+                function productImage(imgs){
+                    var mainImg=document.getElementById("mainImg");
+                    mainImg.src=imgs.src
+                    mainImg.parentElement.style.display="block";
+                }
+            </script>
+
+
+
+        </div>
+
+        <div class="product_section_item">
+
+            <div class="detail_container">
+                
+                <div class="detail_item">
+                    <h1>Product Name</h1>
+                    <h2>$15.99</h2>
+                </div>
+    
+                <div class="detail_item">
+                    <p id="detail_itemid"><b>Item ID:</b> #54981</p>
+                    <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.
+                    </p>
+                </div>
+    
+                <div class="detail_item">
+                    <label for="quantity_select">Quantity:</label>
+                    <input type="number" name="quantity_select" min="0" max="50" >
+                    
+                </div>
+    
+                <div class="detail_item">
+                    <button id="detail_cartb" onclick="document.location='product_detail_template'">Add to Cart</button>
+                    <button id="detail_checkoutb" onclick="document.location='Checkout'">Checkout</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="similar_product_section">
+        <h2>Similar Products</h2>
+        
+        <div class="similar_product_section_item">
+            <span>Similar Product Listings</span>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="review_section">
+        <h2>Reviews</h2>
+
+        <div class="review_section_item">
+            <span>User A review</span>
+
+
+
+        </div>
+
+        <div class="review_section_item">
+            <span>User B review</span>
+
+
+
+        </div>
+
+        <div class="review_section_item">
+            <span>User C review</span>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="review_form_section">
+        
+        <div class="review_form_section_item">
+            <span>Review Form</span>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="footer_section">
+        
+        <div class="footer_section_item">
+            <span>Footer</span>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
