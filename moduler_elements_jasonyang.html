@@ -1,163 +1,171 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Moduler Elements for Cart and Checkout</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Moduler Elements for Cart and Checkout</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<link rel="stylesheet" type="text/css" href="css/moduler_elements_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/moduler_elements_styles.css">
 
 
-	<link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<h1>Moduler Elements for Cart, Checkout and Footer</h1>
+    <nav id="modular-elements-nav">
+        <a href="theo_modular-elements.html">Theo's Modular Elements</a>
+        <a href="Ken_Modular Components.html">Ken's Modular Elements</a>
+        <a href="moduler_elements_jasonyang.html">Jason's Modular Elements</a>
+    </nav>
 
-	<nav>
-		<a href="#">Cart &amp; Checkout</a>
-		<a href="footer_element.html">Footer</a>
-	</nav>
+    <h1>Moduler Elements for Cart, Checkout and Footer</h1>
 
-		<!-- cart list item -->
+    <nav>
+        <a href="#">Cart &amp; Checkout</a>
+        <a href="footer_element.html">Footer</a>
+    </nav>
 
-		<div class="element_container CartListItem">
-			<h2>Cart list item</h2>
-		<div class="moduler_element">
-		   <div class="col-2-3">
-          	<div class="form_body">
-          		<div class="shopping_cart grid grid-pad">
+    <!-- cart list item -->
 
-                <div class="cart_item">
+    <div class="element_container CartListItem">
+        <h2>Cart list item</h2>
+        <div class="moduler_element">
+            <div class="col-2-3">
+                <div class="form_body">
+                    <div class="shopping_cart grid grid-pad">
 
-                 <div class="image_container col-1-4">
-                  <img class="product_image" src="img/eggs.jpg">
-                 </div>
+                        <div class="cart_item">
 
-                 <div class="detail_container col-3-4">
-                   <div class="detail_container_left">
-                     <a class="product_title" href="#">Omega 3 White Eggs, Large</a>
+                            <div class="image_container col-1-4">
+                                <img class="product_image" src="img/eggs.jpg">
+                            </div>
 
-                     <div class="action_container">
-                       <div class="quantity_stepper">
-                        <span class="material-icons">remove_circle_outline</span>
-                        <input type="number" name="quantity" min="1" max="99" class="item_quantity" autocomplete="off" value="1">
-                        <span class="material-icons">add_circle</span>
-                       </div>
-                       <div class="item_remove">
-                         <span class="material-icons">delete_outline</span>
-                         <a href="#">Remove</a>
-                       </div>
-                     </div>
-                   </div>
-                   
+                            <div class="detail_container col-3-4">
+                                <div class="detail_container_left">
+                                    <a class="product_title" href="#">Omega 3 White Eggs, Large</a>
 
-                   <div class="detail_container_right">
-                     <div class="product_price">
-                       <strong>$1499.99</strong>
-                     </div>
-                   </div>
-
-                 </div>
+                                    <div class="action_container">
+                                        <div class="quantity_stepper">
+                                            <span class="material-icons">remove_circle_outline</span>
+                                            <input type="number" name="quantity" min="1" max="99" class="item_quantity" autocomplete="off" value="1">
+                                            <span class="material-icons">add_circle</span>
+                                        </div>
+                                        <div class="item_remove">
+                                            <span class="material-icons">delete_outline</span>
+                                            <a href="#">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
 
 
+                                <div class="detail_container_right">
+                                    <div class="product_price">
+                                        <strong>$1499.99</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
                 </div>
+            </div>
 
-          		</div>
-          	</div>
-          </div>
-
-          </div>
+        </div>
 
 
-          <div class="moduler_element_code">
+        <div class="moduler_element_code">
 
-          	<code>
+            <code>
           		&lt;div class=&quot;col-2-3&quot;&gt; &lt;div class=&quot;form_body&quot;&gt; &lt;div class=&quot;shopping_cart grid grid-pad&quot;&gt; &lt;div class=&quot;cart_item&quot;&gt; &lt;div class=&quot;image_container col-1-4&quot;&gt; &lt;img class=&quot;product_image&quot; src=&quot;img/eggs.jpg&quot;&gt; &lt;/div&gt; &lt;div class=&quot;detail_container col-3-4&quot;&gt; &lt;div class=&quot;detail_container_left&quot;&gt; &lt;a class=&quot;product_title&quot; href=&quot;#&quot;&gt;Omega 3 White Eggs, Large&lt;/a&gt; &lt;div class=&quot;action_container&quot;&gt; &lt;div class=&quot;quantity_stepper&quot;&gt; &lt;span class=&quot;material-icons&quot;&gt;remove_circle_outline&lt;/span&gt; &lt;input type=&quot;number&quot; name=&quot;quantity&quot; min=&quot;1&quot; max=&quot;99&quot; class=&quot;item_quantity&quot; autocomplete=&quot;off&quot; value=&quot;1&quot;&gt; &lt;span class=&quot;material-icons&quot;&gt;add_circle&lt;/span&gt; &lt;/div&gt; &lt;div class=&quot;item_remove&quot;&gt; &lt;span class=&quot;material-icons&quot;&gt;delete_outline&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Remove&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;detail_container_right&quot;&gt; &lt;div class=&quot;product_price&quot;&gt; &lt;strong&gt;$1499.99&lt;/strong&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
           	</code>
-          </div>
-     	 </div>
+        </div>
+    </div>
 
-          <!-- order summary -->
-          <div class="element_container OrderSummary">
-          	<h2>Order Summary</h2>
-          <div class="moduler_element">
+    <!-- order summary -->
+    <div class="element_container OrderSummary">
+        <h2>Order Summary</h2>
+        <div class="moduler_element">
 
-          	<div class="checkout_summary col-1-3">
-            <div class="summary_title">
-             <h3>Order Summary</h3>
-           </div>
+            <div class="checkout_summary col-1-3">
+                <div class="summary_title">
+                    <h3>Order Summary</h3>
+                </div>
 
-           <div class="summary_detail_container">
-            <div class="summary_detail_item">
-              <div class="item_label">Package Subtotal</div>
-              <div class="item_value">$1499.99</div>
+                <div class="summary_detail_container">
+                    <div class="summary_detail_item">
+                        <div class="item_label">Package Subtotal</div>
+                        <div class="item_value">$1499.99</div>
+                    </div>
+                    <div class="summary_detail_item">
+                        <div class="item_label">Estimated Taxes</div>
+                        <div class="item_value">$122.10</div>
+                    </div>
+                    <div class="summary_detail_item">
+                        <div class="item_label">Total</div>
+                        <div class="item_value">$1622.09</div>
+                    </div>
+                </div>
+
+
+                <button class="checkout_button">Checkout</button>
             </div>
-            <div class="summary_detail_item">
-              <div class="item_label">Estimated Taxes</div>
-              <div class="item_value">$122.10</div>
-            </div>
-            <div class="summary_detail_item">
-              <div class="item_label">Total</div>
-              <div class="item_value">$1622.09</div>
-            </div>
-          </div>
-            
 
-           <button class="checkout_button">Checkout</button>
-          </div>
-          	
-          </div>
+        </div>
 
-          <div class="moduler_element_code">
-          	
-          	<code>
+        <div class="moduler_element_code">
+
+            <code>
           		&lt;div class=&quot;checkout_summary col-1-3&quot;&gt; &lt;div class=&quot;summary_title&quot;&gt; &lt;h3&gt;Order Summary&lt;/h3&gt; &lt;/div&gt; &lt;div class=&quot;summary_detail_container&quot;&gt; &lt;div class=&quot;summary_detail_item&quot;&gt; &lt;div class=&quot;item_label&quot;&gt;Package Subtotal&lt;/div&gt; &lt;div class=&quot;item_value&quot;&gt;$1499.99&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;summary_detail_item&quot;&gt; &lt;div class=&quot;item_label&quot;&gt;Estimated Taxes&lt;/div&gt; &lt;div class=&quot;item_value&quot;&gt;$122.10&lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;summary_detail_item&quot;&gt; &lt;div class=&quot;item_label&quot;&gt;Total&lt;/div&gt; &lt;div class=&quot;item_value&quot;&gt;$1622.09&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;button class=&quot;checkout_button&quot;&gt;Checkout&lt;/button&gt; &lt;/div&gt;
 
           		
           	</code>
 
-          </div>
-      </div>
+        </div>
+    </div>
 
 
-      	<div class="element_container ShippingForm">
-          	<h2>Shipping Form</h2>
-          <div class="moduler_element">
+    <div class="element_container ShippingForm">
+        <h2>Shipping Form</h2>
+        <div class="moduler_element">
 
-          	<div class="checkout_form col-2-3">
-          	<div class="form_title">Shipping</div>
-          	<div class="form_body">
-          		<div class="container grid grid-pad">
+            <div class="checkout_form col-2-3">
+                <div class="form_title">Shipping</div>
+                <div class="form_body">
+                    <div class="container grid grid-pad">
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">First Name</label>
-          			<input class="input_field" name="input_field">
-          			</div>
+                        <div class="input_container col-1-2">
+                            <label class="input_label">First Name</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Last Name</label>
-          			<input class="input_field" name="input_field">
-          			</div>
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Last Name</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-1">
-          			<label class="input_label">Email</label>
-          			<input class="input_field" name="input_field">
-          			</div>
-          			
+                        <div class="input_container col-1-1">
+                            <label class="input_label">Email</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-1">
-          			<label class="input_label">Address</label>
-          			<input class="input_field" name="input_field">
-          			</div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">City</label>
-          			<input class="input_field" name="input_field">
-          			</div>
+                        <div class="input_container col-1-1">
+                            <label class="input_label">Address</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Province</label>
-          			<select class="province" name="province">
+                        <div class="input_container col-1-2">
+                            <label class="input_label">City</label>
+                            <input class="input_field" name="input_field">
+                        </div>
+
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Province</label>
+                            <select class="province" name="province">
           				  <option disabled selected value> -- select an option -- </option>
                   		  <option>Alberta</option>
 		                  <option>British Columbia</option>
@@ -173,58 +181,58 @@
 		                  <option>Saskatchawan</option>
 		                  <option>Yukon</option>
           			</select>
-          			</div>
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Postal Code</label>
-          			<input class="input_field" name="input_field">
-          			</div>
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Postal Code</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Country</label>
-          			<select class="country" name="country">
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Country</label>
+                            <select class="country" name="country">
           				<option>Canada</option>
           			</select>
-          			</div>
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Phone Number</label>
-          			<input class="input_field" name="input_field">
-          			</div>
-          		</div>
-          	</div>
-          </div>
-          	
-          </div>
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Phone Number</label>
+                            <input class="input_field" name="input_field">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <div class="moduler_element_code">
-          	
-          	<code>
+        </div>
+
+        <div class="moduler_element_code">
+
+            <code>
           		&lt;div class=&quot;checkout_form col-2-3&quot;&gt; &lt;div class=&quot;form_title&quot;&gt;Shipping&lt;/div&gt; &lt;div class=&quot;form_body&quot;&gt; &lt;div class=&quot;container grid grid-pad&quot;&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;First Name&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Last Name&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-1&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Email&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-1&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Address&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;City&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Province&lt;/label&gt; &lt;select class=&quot;province&quot; name=&quot;province&quot;&gt; &lt;option disabled selected value&gt; -- select an option -- &lt;/option&gt; &lt;option&gt;Alberta&lt;/option&gt; &lt;option&gt;British Columbia&lt;/option&gt; &lt;option&gt;Manitoba&lt;/option&gt; &lt;option&gt;New Brunswick&lt;/option&gt; &lt;option&gt;Newfoundland and Labrador&lt;/option&gt; &lt;option&gt;Nova Scotia&lt;/option&gt; &lt;option&gt;Northwest Territories&lt;/option&gt; &lt;option&gt;Nunavut&lt;/option&gt; &lt;option&gt;Ontario&lt;/option&gt; &lt;option&gt;Prince Edward Island&lt;/option&gt; &lt;option&gt;Quebec&lt;/option&gt; &lt;option&gt;Saskatchawan&lt;/option&gt; &lt;option&gt;Yukon&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Postal Code&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Country&lt;/label&gt; &lt;select class=&quot;country&quot; name=&quot;country&quot;&gt; &lt;option&gt;Canada&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Phone Number&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
 
           	</code>
 
-          </div>
-     	 </div>
+        </div>
+    </div>
 
-     	 <div class="element_container PaymentForm">
-          	<h2>Payment Form</h2>
+    <div class="element_container PaymentForm">
+        <h2>Payment Form</h2>
 
-          <div class="moduler_element">
+        <div class="moduler_element">
 
-          	<div class="checkout_form col-2-3">
-          	<div class="form_title">Payment</div>
-          	<div class="form_body">
-          		<div class="container grid grid-pad">
+            <div class="checkout_form col-2-3">
+                <div class="form_title">Payment</div>
+                <div class="form_body">
+                    <div class="container grid grid-pad">
 
-          			<div class="input_container col-1-1">
-          			<label class="input_label">Card Number</label>
-          			<input class="input_field" name="input_field">
-          			</div>
+                        <div class="input_container col-1-1">
+                            <label class="input_label">Card Number</label>
+                            <input class="input_field" name="input_field">
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Expiry Month</label>
-          			<select class="expiry_month" name="expiry_month">
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Expiry Month</label>
+                            <select class="expiry_month" name="expiry_month">
                   <option>01</option>
                   <option>02</option>
                   <option>03</option>
@@ -238,12 +246,12 @@
                   <option>11</option>
                   <option>12</option>
                 </select>
-          			</div>
-          			
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">Expiry Year</label>
-          			<select class="expiry_year" name="expiry_year">
+
+                        <div class="input_container col-1-2">
+                            <label class="input_label">Expiry Year</label>
+                            <select class="expiry_year" name="expiry_year">
                   <option>2020</option>
                   <option>2021</option>
                   <option>2022</option>
@@ -257,42 +265,43 @@
                   <option>2030</option>
                   <option>2031</option>
                 </select>
-          			</div>
+                        </div>
 
-          			<div class="input_container col-1-2">
-          			<label class="input_label">CVV</label>
-          			<input type="text" id="cvv" class="input_field" maxlength="3">
-          			</div>
+                        <div class="input_container col-1-2">
+                            <label class="input_label">CVV</label>
+                            <input type="text" id="cvv" class="input_field" maxlength="3">
+                        </div>
 
-          
 
-          		</div>
-          	</div>
-          </div>
-          	
-          </div>
 
-          <div class="moduler_element_code">
-          	
-          	<code>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="moduler_element_code">
+
+            <code>
           		&lt;div class=&quot;checkout_form col-2-3&quot;&gt; &lt;div class=&quot;form_title&quot;&gt;Payment&lt;/div&gt; &lt;div class=&quot;form_body&quot;&gt; &lt;div class=&quot;container grid grid-pad&quot;&gt; &lt;div class=&quot;input_container col-1-1&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Card Number&lt;/label&gt; &lt;input class=&quot;input_field&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Expiry Month&lt;/label&gt; &lt;select class=&quot;expiry_month&quot; name=&quot;expiry_month&quot;&gt; &lt;option&gt;01&lt;/option&gt; &lt;option&gt;02&lt;/option&gt; &lt;option&gt;03&lt;/option&gt; &lt;option&gt;04&lt;/option&gt; &lt;option&gt;05&lt;/option&gt; &lt;option&gt;06&lt;/option&gt; &lt;option&gt;07&lt;/option&gt; &lt;option&gt;08&lt;/option&gt; &lt;option&gt;09&lt;/option&gt; &lt;option&gt;10&lt;/option&gt; &lt;option&gt;11&lt;/option&gt; &lt;option&gt;12&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;Expiry Year&lt;/label&gt; &lt;select class=&quot;expiry_year&quot; name=&quot;expiry_year&quot;&gt; &lt;option&gt;2020&lt;/option&gt; &lt;option&gt;2021&lt;/option&gt; &lt;option&gt;2022&lt;/option&gt; &lt;option&gt;2023&lt;/option&gt; &lt;option&gt;2024&lt;/option&gt; &lt;option&gt;2025&lt;/option&gt; &lt;option&gt;2026&lt;/option&gt; &lt;option&gt;2027&lt;/option&gt; &lt;option&gt;2028&lt;/option&gt; &lt;option&gt;2029&lt;/option&gt; &lt;option&gt;2030&lt;/option&gt; &lt;option&gt;2031&lt;/option&gt; &lt;/select&gt; &lt;/div&gt; &lt;div class=&quot;input_container col-1-2&quot;&gt; &lt;label class=&quot;input_label&quot;&gt;CVV&lt;/label&gt; &lt;input type=&quot;text&quot; id=&quot;cvv&quot; class=&quot;input_field&quot; maxlength=&quot;3&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
 
           		
           	</code>
 
-          </div>
-      </div>
-
-      
+        </div>
+    </div>
 
 
 
 
 
 
-		
+
+
+
 
 
 
 </body>
+
 </html>
