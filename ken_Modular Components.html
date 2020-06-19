@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pattern Library</title>
 
-    <link rel="stylesheet" href="component_css.css">
+    <link rel="stylesheet" href="css/component_css.css">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
         <a href="wireframes.html#sitemap">Sitemap</a>
         <a href="https://github.com/knn69/IAT-339-Final-Project" target="_blank">Git Repo</a>
     </nav>
-    
+
     <section class="product_modular">
         <h2>Product Page Sorting & Item Listing</h2>
 
         <div class="modular_container">
-            
+
             <div class="modular_item">
                 <label for="sort_select">Sort:</label>
                 <select name="sort_select" class="sort_dropdown">
@@ -53,7 +53,7 @@
 
                     </code>
                 </div>
-                
+
             </div>
 
 
@@ -63,7 +63,9 @@
 
                     <div class="product_info">
                         <div class="product_info_item">
-                            <a href=""><h3>Product Name</h3></a>
+                            <a href="">
+                                <h3>Product Name</h3>
+                            </a>
                         </div>
                         <div class="product_info_item">
                             <h3>$15</h3>
@@ -90,14 +92,16 @@
                                     &lt/div>
                         </code>
                     </div>
-                    
+
                 </div>
 
             </div>
 
-        </div> <!--End of Modular Container-->
+        </div>
+        <!--End of Modular Container-->
 
-    </section> <!--End of Product Modular Section-->
+    </section>
+    <!--End of Product Modular Section-->
 
     <section class="product_detail_modular">
         <h2>Product Detail Page</h2>
@@ -136,14 +140,14 @@
 
             <div class="image_item">
                 <img id="mainImg" style="width:100%">
-                
+
             </div>
 
             <script>
-                function productImage(imgs){
-                    var mainImg=document.getElementById("mainImg");
-                    mainImg.src=imgs.src
-                    mainImg.parentElement.style.display="block";
+                function productImage(imgs) {
+                    var mainImg = document.getElementById("mainImg");
+                    mainImg.src = imgs.src
+                    mainImg.parentElement.style.display = "block";
                 }
             </script>
 
@@ -180,24 +184,21 @@
 
             <div class="detail_item">
                 <p id="detail_itemid"><b>Item ID:</b> #54981</p>
-                <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                     cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                      anim id est laborum.
+                <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
 
             <div class="detail_item">
                 <label for="quantity_select">Quantity:</label>
-                <input type="number" name="quantity_select" min="0" max="50" >
-                
+                <input type="number" name="quantity_select" min="0" max="50">
+
             </div>
 
             <div class="detail_item">
                 <button id="detail_cartb" onclick="document.location='Cart'">Add to Cart</button>
                 <button id="detail_checkoutb" onclick="document.location='Checkout'">Checkout</button>
             </div>
-            
+
             <div class="code">
                 <code>
 
@@ -229,7 +230,8 @@
                 </code>
             </div>
 
-        </div> <!--End of detail container-->
+        </div>
+        <!--End of detail container-->
 
 
         <h3>Reviews</h3>
@@ -270,12 +272,10 @@
                         <div class="rating_item">
                             <h3>Reviewed 7 hours ago</h3>
                         </div>
-                       
+
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
                 </div>
 
                 <div class="user_rating_item">
@@ -292,12 +292,10 @@
                         <div class="rating_item">
                             <h3>Reviewed 2 days ago</h3>
                         </div>
-                       
+
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
                 </div>
 
                 <div class="user_rating_item">
@@ -314,12 +312,10 @@
                         <div class="rating_item">
                             <h3>Reviewed 1 month ago</h3>
                         </div>
-                       
+
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
                 </div>
 
                 <div class="code">
@@ -371,9 +367,11 @@
 
                 </div>
 
-            </div><!--End of user rating container-->
+            </div>
+            <!--End of user rating container-->
 
-        </div><!--End of review Container-->
+        </div>
+        <!--End of review Container-->
 
         <h3>Review Form</h3>
         <div class="review_form_container">
@@ -381,7 +379,7 @@
             <div class="review_form_item">
                 <h2>Leave a Review</h2>
             </div>
-            
+
             <div class="review_form_item">
                 <h3>Rating</h3>
                 <div class="form_rating">
@@ -396,15 +394,15 @@
             <div class="review_form_item">
                 <form>
                     <label for="name">Name:</label>
-                    <input type="text"name="name">
+                    <input type="text" name="name">
 
                     <label for="mail">Email:</label>
-                    <input type="text"name="mail">
+                    <input type="text" name="mail">
 
                     <label for="review">Review:</label>
 
                     <textarea form="ureview" cols="60" rows="10"></textarea>
-                    
+
                     <input class="button" type="submit" value="Submit" name="Submit" id="review_submit">
 
                 </form>
@@ -452,12 +450,14 @@
 
             </div>
 
-        </div><!--End of Review form container-->
+        </div>
+        <!--End of Review form container-->
 
 
 
 
-    </section><!--End of Product detail modular section-->
+    </section>
+    <!--End of Product detail modular section-->
 
 
 </body>
