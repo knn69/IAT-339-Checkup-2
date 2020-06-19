@@ -401,6 +401,7 @@ h2 {
     }
     .grid-item-product-wrapper {
         padding-left: 0;
+        padding-right: 1em;
     }
     .grid-products-item {
         flex: 0 0 33.3%;
