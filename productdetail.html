@@ -5,29 +5,72 @@
     <meta charset="utf-8" />
     <title>Product Detail Page Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="product_detail_css.css">
+    <link rel="stylesheet" type="text/css" href="css/product_detail_css.css">
 </head>
 
 <body>
     <div class="top_section">
-        
+
         <div class="top_section_item">
-            <span>Navgation Bar</span>
+            <nav class="main-nav">
+                <div class="mobile-nav">
+                    <div class="icon-container">
+                        <div class="menu-icon placeholder-icon"></div>
+                        <a href="index.html">
+                            <div class="logo-icon placeholder-icon"></div>
+                        </a>
+                        <a href="#">
+                            <div class="checkout-icon placeholder-icon"></div>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="left-nav">
+                    <a href="index.html">
+                        <div class="placeholder-icon"></div>
+                    </a>
+                </div>
 
+                <div class="mid-nav">
+                    <div class="nav-item-wrapper">
+                        <a class="nav-item" href="index.html">HOME</a>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a href="products.html" class="nav-item nav-item_products">PRODUCTS</a>
+                        <div class="sub-main-nav">
+                            <a href="products.html" class="nav-item">All</a>
+                            <a href="products.html" class="nav-item">Beverages</a>
+                            <a href="products.html" class="nav-item">Dairy & Meat</a>
+                            <a href="products.html" class="nav-item">Dry Goods</a>
+                            <a href="products.html" class="nav-item">Produce</a>
+                        </div>
+                    </div>
+                    <div class="nav-item-wrapper">
+                        <a class="nav-item" href="about.html">ABOUT</a>
+                    </div>
+                </div>
 
+                <div class="right-nav">
+                    <a href="search.html">
+                        <div class="search-icon placeholder-icon"></div>
+                    </a>
+                    <a href="cart.html">
+                        <div class="checkout-icon placeholder-icon"></div>
+                    </a>
+                </div>
+            </nav>
         </div>
 
         <div class="top_section_item">
-            
+
             <ul class="breadcrumb">
                 <li><a href="Homepage">Home</a></li>
                 <li><a href="Product">Product</a></li>
                 <li><a href="Category">Product Category</a></li>
                 <li><a href="Product item">Product Name</a></li>
             </ul>
-            
-            
+
+
         </div>
 
     </div>
@@ -36,7 +79,7 @@
     <div class="product_section">
 
         <div class="product_section_item">
-            
+
             <div class="image_item">
                 <img src="https://via.placeholder.com/550x200" alt="Product Image 1" onload="productImage(this);" onclick="productImage(this);">
                 <img src="https://via.placeholder.com/500x200" alt="Product Image 2" onclick="productImage(this);">
@@ -46,14 +89,14 @@
 
             <div class="image_item">
                 <img id="mainImg" style="width:100%">
-                
+
             </div>
 
             <script>
-                function productImage(imgs){
-                    var mainImg=document.getElementById("mainImg");
-                    mainImg.src=imgs.src
-                    mainImg.parentElement.style.display="block";
+                function productImage(imgs) {
+                    var mainImg = document.getElementById("mainImg");
+                    mainImg.src = imgs.src
+                    mainImg.parentElement.style.display = "block";
                 }
             </script>
 
@@ -64,27 +107,24 @@
         <div class="product_section_item">
 
             <div class="detail_container">
-                
+
                 <div class="detail_item">
                     <h1>Product Name</h1>
                     <h2>$15.99</h2>
                 </div>
-    
+
                 <div class="detail_item">
                     <p id="detail_itemid"><b>Item ID:</b> #54981</p>
-                    <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                         dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                          anim id est laborum.
+                    <p id="detail_description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-    
+
                 <div class="detail_item">
                     <label for="quantity_select">Quantity:</label>
-                    <input type="number" name="quantity_select" min="0" max="50" >
-                    
+                    <input type="number" name="quantity_select" min="0" max="50">
+
                 </div>
-    
+
                 <div class="detail_item">
                     <button id="detail_cartb" onclick="document.location='product_detail_template'">Add to Cart</button>
                     <button id="detail_checkoutb" onclick="document.location='Checkout'">Checkout</button>
@@ -98,16 +138,39 @@
 
 
     <div class="similar_product_section">
-        <h2>Similar Products</h2>
-        
-        <div class="similar_product_section_item">
-            <span>Similar Product Listings</span>
-
-
-
-
+        <div class="grid-boxes">
+            <div class="grid-boxes-top">
+                <h2>Similar Products</h2>
+                <button class="cta_button" onclick="goToProducts()">View More</button>
+            </div>
+            <div class="grid-boxes-container">
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
 
 
@@ -139,7 +202,7 @@
 
 
     <div class="review_form_section">
-        
+
         <div class="review_form_section_item">
             <span>Review Form</span>
 
@@ -151,20 +214,42 @@
 
     </div>
 
-    <div class="footer_section">
-        
-        <div class="footer_section_item">
-            <span>Footer</span>
+    <footer>
+        <div class="container">
+            <div class="logo_container">
+                <img src="img/logo.png">
+            </div>
+            <div class="footer_item">
+                <h1>About</h1>
+                <a href="#">Our story</a>
+                <a href="#">Community</a>
+                <a href="#">Delivery service</a>
+            </div>
 
+            <div class="footer_item">
+                <h1>legal</h1>
+                <a href="#">Return Policy</a>
+                <a href="#">Terms &amp; Condition</a>
+                <a href="#">Shipping &amp; handling</a>
+            </div>
 
+            <div class="footer_item">
+                <h1>Follow Us</h1>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
 
-
-
+                <span>
+					(778)123-7300<br>
+					11148 102 Ave,<br>
+					Surrey, BC<br>
+					V3T 0A5 
+				</span>
+            </div>
         </div>
+    </footer>
 
-    </div>
-
-
+    <script src="js/script.js "></script>
 </body>
 
 </html>
