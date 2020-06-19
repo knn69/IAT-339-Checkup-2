@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrocerySkip</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="mobile-nav">
+            <div class="icon-container">
+                <div class="menu-icon placeholder-icon"></div>
+                <a href="index.html">
+                    <div class="logo-icon placeholder-icon"></div>
+                </a>
+                <a href="#">
+                    <div class="checkout-icon placeholder-icon"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="left-nav">
+            <a href="index.html">
+                <div class="placeholder-icon"></div>
+            </a>
+        </div>
+
+        <div class="mid-nav">
+            <div class="nav-item-wrapper">
+                <a class="nav-item" href="index.html">HOME</a>
+            </div>
+            <div class="nav-item-wrapper">
+                <a href="products.html" class="nav-item nav-item_products">PRODUCTS</a>
+                <div class="sub-main-nav">
+                    <a href="#" class="nav-item">All</a>
+                    <a href="#" class="nav-item">Beverages</a>
+                    <a href="#" class="nav-item">Dairy & Meat</a>
+                    <a href="#" class="nav-item">Dry Goods</a>
+                    <a href="#" class="nav-item">Produce</a>
+                </div>
+            </div>
+            <div class="nav-item-wrapper">
+                <a class="nav-item" href="about.html">ABOUT</a>
+            </div>
+        </div>
+
+        <div class="right-nav">
+            <a href="search.html">
+                <div class="search-icon placeholder-icon"></div>
+            </a>
+            <a href="#">
+                <div class="checkout-icon placeholder-icon"></div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="wide-view">
+        <!-- hero banner -->
+        <div class="modular-element_container">
+            <img class="hero-banner" src="https://via.placeholder.com/1920x500" alt="herobanner">
+        </div>
+
+        <!-- current sale -->
+        <div class="modular-element_container">
+            <div class="grid-boxes">
+                <div class="grid-boxes-top">
+                    <h2>Current Sale</h2>
+                    <button class="cta_button">View More</button>
+                </div>
+                <div class="grid-boxes-container">
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- popular items -->
+        <div class="modular-element_container">
+            <div class="grid-boxes">
+                <div class="grid-boxes-top">
+                    <h2>Popular Items</h2>
+                    <button class="cta_button">View More</button>
+                </div>
+                <div class="grid-boxes-container">
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                    <div class="grid-boxes-item">
+                        <div class="grid-boxes-item-wrapper">
+                            <img src="https://via.placeholder.com/400x400" alt="product image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- shop by categories -->
+        <div class="modular-element_container">
+            <div class="shop-by-category">
+                <h2>Shop By Category</h2>
+                <div class="shop-by-category-container">
+                    <div class="shop-by-category-item">
+                        <button onclick="goToProducts()" class="cta_button ">Beverages</button>
+                    </div>
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Dairy</button>
+                    </div>
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Dry Goods</button>
+                    </div>
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Deli</button>
+                    </div>
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Meats & Seafood</button>
+                    </div>
+
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Produce</button>
+                    </div>
+                    <div class="shop-by-category-item ">
+                        <button onclick="goToProducts()" class="cta_button ">Pharmacy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="modular-element_container ">
+
+        </div>
+    </section>
+
+    <script src="script.js "></script>
+</body>
+
+</html>

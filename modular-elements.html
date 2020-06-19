@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-navigation component-container">
+        <nav class="main-nav">
+            <div class="mobile-nav">
+                <div class="icon-container">
+                    <div class="menu-icon placeholder-icon">
+                    </div>
+                    <div class="logo-icon placeholder-icon"></div>
+                    <div class="checkout-icon placeholder-icon"></div>
+                </div>
+            </div>
+
+            <div class="left-nav">
+                <div class="placeholder-icon"></div>
+            </div>
+
+            <div class="mid-nav">
+                <div class="nav-item-wrapper">
+                    <a class="nav-item" href="#">HOME</a>
+                </div>
+                <div class="nav-item-wrapper">
+                    <a class="nav-item nav-item_products">PRODUCTS</a>
+                    <div class="sub-main-nav">
+                        <a href="#" class="nav-item">All</a>
+                        <a href="#" class="nav-item">Beverages</a>
+                        <a href="#" class="nav-item">Dairy & Meat</a>
+                        <a href="#" class="nav-item">Dry Goods</a>
+                        <a href="#" class="nav-item">Produce</a>
+                    </div>
+                </div>
+                <div class="nav-item-wrapper">
+                    <a class="nav-item" href="#">ABOUT</a>
+                </div>
+            </div>
+
+            <div class="right-nav">
+                <div class="search-icon placeholder-icon"></div>
+                <div class="checkout-icon placeholder-icon"></div>
+            </div>
+        </nav>
+
+        <div class="code-wrapper">
+            <code>
+                &ltnav class="main-nav"&gt <br>
+                    &ltdiv class="mobile-nav"&gt <br>
+                        &ltdiv class="icon-container"&gt <br>
+                            &ltdiv class="menu-icon placeholder-icon"&gt <br>
+                            &lt/div&gt <br>
+                            &ltdiv class="logo-icon placeholder-icon"&gt&lt/div&gt <br>
+                            &ltdiv class="checkout-icon placeholder-icon"&gt&lt/div&gt <br>
+                        &lt/div&gt <br>
+                    &lt/div&gt <br>
+         <br>
+                    &ltdiv class="left-nav"&gt <br>
+                        &ltdiv class="placeholder-icon"&gt&lt/div&gt <br>
+                    &lt/div&gt <br>
+         <br>
+                    &ltdiv class="mid-nav"&gt <br>
+                        &ltdiv class="nav-item-wrapper"&gt <br>
+                            &lta class="nav-item" href="#"&gtHOME&lt/a&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="nav-item-wrapper"&gt <br>
+                            &lta class="nav-item nav-item_products"&gtPRODUCTS&lt/a&gt <br>
+                            &ltdiv class="sub-main-nav"&gt <br>
+                                &lta href="#" class="nav-item"&gtAll&lt/a&gt <br>
+                                &lta href="#" class="nav-item"&gtBeverages&lt/a&gt <br>
+                                &lta href="#" class="nav-item"&gtDairy & Meat&lt/a&gt <br>
+                                &lta href="#" class="nav-item"&gtDry Goods&lt/a&gt <br>
+                                &lta href="#" class="nav-item"&gtProduce&lt/a&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="nav-item-wrapper"&gt <br>
+                            &lta class="nav-item" href="#"&gtABOUT&lt/a&gt <br>
+                        &lt/div&gt <br>
+                    &lt/div&gt <br>
+         <br>
+                    &ltdiv class="right-nav"&gt <br>
+                        &ltdiv class="search-icon placeholder-icon"&gt&lt/div&gt <br>
+                        &ltdiv class="checkout-icon placeholder-icon"&gt&lt/div&gt <br>
+                    &lt/div&gt <br>
+                &lt/nav&gt
+            </code>
+        </div>
+
+
+    </div>
+
+    <div class="hero-banner-component component-container">
+        <img class="hero-banner" src="https://via.placeholder.com/1920x500" alt="herobanner">
+
+        <div class="code-wrapper">
+            <code>
+                &ltimg class="hero-banner" src="https://via.placeholder.com/1920x400" alt="herobanner"&gt
+            </code>
+        </div>
+    </div>
+
+    <div class="grid-boxes component-container">
+        <div class="grid-boxes">
+            <div class="grid-boxes-top">
+                <h2>Current Sale</h2>
+                <button class="cta_button">View More</button>
+            </div>
+            <div class="grid-boxes-container">
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+                <div class="grid-boxes-item">
+                    <div class="grid-boxes-item-wrapper">
+                        <img src="https://via.placeholder.com/400x400" alt="product image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-wrapper">
+            <code>
+                &ltdiv class="grid-boxes"&gt <br>
+                    &ltdiv class="grid-boxes-top"&gt <br>
+                        &lth2&gtCurrent Sale&lt/h2&gt <br>
+                        &ltbutton class="cta_button"&gtView More&lt/button&gt <br>
+                    &lt/div&gt <br>
+                    &ltdiv class="grid-boxes-container"&gt <br>
+                        &ltdiv class="grid-boxes-item"&gt <br>
+                            &ltdiv class="grid-boxes-item-wrapper"&gt <br>
+                                &ltimg src="https://via.placeholder.com/400x400" alt="product image"&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="grid-boxes-item"&gt <br>
+                            &ltdiv class="grid-boxes-item-wrapper"&gt <br>
+                                &ltimg src="https://via.placeholder.com/400x400" alt="product image"&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="grid-boxes-item"&gt <br>
+                            &ltdiv class="grid-boxes-item-wrapper"&gt <br>
+                                &ltimg src="https://via.placeholder.com/400x400" alt="product image"&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="grid-boxes-item"&gt <br>
+                            &ltdiv class="grid-boxes-item-wrapper"&gt <br>
+                                &ltimg src="https://via.placeholder.com/400x400" alt="product image"&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="grid-boxes-item"&gt <br>
+                            &ltdiv class="grid-boxes-item-wrapper"&gt <br>
+                                &ltimg src="https://via.placeholder.com/400x400" alt="product image"&gt <br>
+                            &lt/div&gt <br>
+                        &lt/div&gt <br>
+                    &lt/div&gt <br>
+                &lt/div&gt
+            </code>
+        </div>
+
+    </div>
+
+    <div class="compontent-container">
+        <div class="shop-by-category">
+            <h2>Shop By Category</h2>
+            <div class="shop-by-category-container">
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Beverages</button>
+                </div>
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Dairy</button>
+                </div>
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Dry Goods</button>
+                </div>
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Deli</button>
+                </div>
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Meats & Seafood</button>
+                </div>
+
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Produce</button>
+                </div>
+                <div class="shop-by-category-item">
+                    <button class="cta_button">Pharmacy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="code-wrapper">
+            <code>
+                &ltdiv class="shop-by-category"&gt <br>
+                    &lth2&gtShop By Category&lt/h2&gt <br>
+                    &ltdiv class="shop-by-category-container"&gt <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtBeverages&lt/button&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtDairy&lt/button&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtDry Goods&lt/button&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtDeli&lt/button&gt <br>
+                        &lt/div&gt <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtMeats & Seafood&lt/button&gt <br>
+                        &lt/div&gt <br>
+         <br>
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtProduce&lt/button&gt <br>
+                        &lt/div&gt
+                        &ltdiv class="shop-by-category-item"&gt <br>
+                            &ltbutton class="cta_button"&gtPharmacy&lt/button&gt <br>
+                        &lt/div&gt <br>
+                    &lt/div&gt <br>
+                &lt/div&gt
+            </code>
+        </div>
+    </div>
+
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol -->
+    <div class="categories-sub-nav component-container">
+        <nav class="sub-nav">
+            <a class="sub-nav-category">All Products</a>
+            <a class="sub-nav-category">Beverages</a>
+            <div class="sub-sub-nav">
+                <a class="link_button" href="#">Juice</a>
+                <a class="link_button" href="#">Pop</a>
+                <a class="link_button" href="#">Water</a>
+            </div>
+            <a class="sub-nav-category">Dairy & Meat</a>
+            <div class="sub-sub-nav">
+                <a class="link_button" href="#">Milk & Dairy Alternatives</a>
+                <a class="link_button" href="#">Butter</a>
+                <a class="link_button" href="#">Eggs</a>
+                <a class="link_button" href="#">Beef</a>
+                <a class="link_button" href="#">Chicken</a>
+                <a class="link_button" href="#">Pork</a>
+            </div>
+            <a class="sub-nav-category">Dry Goods</a>
+            <div class="sub-sub-nav">
+                <a class="link_button" href="#">Flour & Starches</a>
+                <a class="link_button" href="#">Sugar</a>
+                <a class="link_button" href="#">Salt</a>
+                <a class="link_button" href="#">Seasonings</a>
+            </div>
+            <a class="sub-nav-category">Produce</a>
+            <div class="sub-sub-nav">
+                <a class="link_button" href="#">Vegetables</a>
+                <a class="link_button" href="#">Fruits</a>
+                <a class="link_button" href="#">Herbs</a>
+            </div>
+        </nav>
+
+        <div class="code-wrapper">
+            <code>
+                &ltnav class="sub-nav"&gt  <br>
+                    &lta class="sub-nav-category"&gtAll Products&lt/a&gt <br>
+                    &lta class="sub-nav-category"&gtBeverages&lt/a&gt <br>
+                    &ltdiv class="sub-sub-nav"&gt <br>
+                        &lta class="link_button" href="#"&gtJuice&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtPop&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtWater&lt/a&gt <br>
+                    &lt/div&gt <br>
+                    &lta class="sub-nav-category"&gtDairy & Meat&lt/a&gt <br>
+                    &ltdiv class="sub-sub-nav"&gt <br>
+                        &lta class="link_button" href="#"&gtMilk & Dairy Alternatives&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtButter&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtEggs&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtBeef&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtChicken&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtPork&lt/a&gt <br>
+                    &lt/div&gt <br>
+                    &lta class="sub-nav-category"&gtDry Goods&lt/a&gt <br>
+                    &ltdiv class="sub-sub-nav"&gt <br>
+                        &lta class="link_button" href="#"&gtFlour & Starches&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtSugar&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtSalt&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtSeasonings&lt/a&gt <br>
+                    &lt/div&gt <br>
+                    &lta class="sub-nav-category"&gtProduce&lt/a&gt <br>
+                    &ltdiv class="sub-sub-nav"&gt <br>
+                        &lta class="link_button" href="#"&gtVegetables&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtFruits&lt/a&gt <br>
+                        &lta class="link_button" href="#"&gtHerbs&lt/a&gt <br>
+                    &lt/div&gt <br>
+                &lt/nav&gt
+            </code>
+        </div>
+    </div>
+
+    <div class="about-blurb component-container">
+        <h2>Our Story</h2>
+        <p>
+            Suspendisse nisi sem, mattis vel odio at, pretium cursus neque. Fusce sapien odio, fringilla at consequat vitae, maximus eu est. Vivamus volutpat est at risus condimentum, in posuere dolor lobortis. Curabitur malesuada lectus sit amet ipsum accumsan malesuada.
+            Proin quis nunc aliquet, volutpat ex et, egestas purus. Nunc laoreet augue magna, id posuere erat malesuada sit amet. Aenean pretium ornare maximus. Duis nisi tellus, porttitor eu tincidunt eget, volutpat ut orci. Praesent sagittis efficitur
+            mi vitae euismod. Fusce rutrum tellus quis vulputate rhoncus. Integer aliquet a diam id lobortis. Curabitur urna justo, placerat et nisl a, facilisis ornare sem. Quisque eget placerat sem. Duis sit amet dapibus ipsum, a hendrerit ex.
+        </p>
+
+        <div class="code-wrapper">
+            <code>
+                &lth2&gtOur Story&lt/h2&gt <br>
+                &ltp&gt <br>
+                    Suspendisse nisi sem, mattis vel odio at, pretium cursus neque. Fusce sapien odio, fringilla at consequat vitae, maximus eu est. Vivamus volutpat est at risus condimentum, in posuere dolor lobortis. Curabitur malesuada lectus sit amet ipsum accumsan malesuada.
+                    Proin quis nunc aliquet, volutpat ex et, egestas purus. Nunc laoreet augue magna, id posuere erat malesuada sit amet. Aenean pretium ornare maximus. Duis nisi tellus, porttitor eu tincidunt eget, volutpat ut orci. Praesent sagittis efficitur
+                    mi vitae euismod. Fusce rutrum tellus quis vulputate rhoncus. Integer aliquet a diam id lobortis. Curabitur urna justo, placerat et nisl a, facilisis ornare sem. Quisque eget placerat sem. Duis sit amet dapibus ipsum, a hendrerit ex. <br>
+                &lt/p&gt
+            </code>
+        </div>
+    </div>
+
+    <div class="contact-us-info component-container">
+        <h2>Contact Us</h2>
+        <div class="address">
+            <p>13450 102 Ave.</p>
+            <p>(intersection of 102 & 106)</p>
+            <p>Surrey, BC, V3T 0A3</p>
+        </div>
+
+        <div class="contact-info">
+            <p>T: <a href="tel:778-782-7400" class="link_button">(778) 782-7400</a></p>
+            <p>E: <a href="mailto:onlineorder@fakeemail.com" class="link_button">onlineorder@fakeemail.com</a></p>
+        </div>
+
+        <div class="code-wrapper">
+            <code>
+                &lth2&gtContact Us&lt/h2&gt <br>
+                &ltdiv class="address"&gt <br>
+                    &ltp&gt13450 102 Ave.&lt/p&gt <br>
+                    &ltp&gt(intersection of 102 & 106)&lt/p&gt <br>
+                    &ltp&gtSurrey, BC, V3T 0A3&lt/p&gt <br>
+                &lt/div&gt <br>
+         <br>
+                &ltdiv class="contact-info"&gt <br>
+                    &ltp&gtT: &lta href="tel:778-782-7400" class="link_button"&gt(778) 782-7400&lt/a&gt&lt/p&gt <br>
+                    &ltp&gtE: &lta href="mailto:onlineorder@fakeemail.com" class="link_button"&gtonlineorder@fakeemail.com&lt/a&gt&lt/p&gt <br>
+                &lt/div&gt
+            </code>
+        </div>
+    </div>
+
+    <!-- <div class="contact-map component-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.6980120225758!2d-122.85132738408869!3d49.18731678544382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x84f83bb9670301de!2s13450%20102%20Ave%2C%20Surrey%2C%20BC%20V3T%205X4!5e0!3m2!1sen!2sca!4v1592349658083!5m2!1sen!2sca"
+            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        <div class="code-wrapper">
+            <code>
+                &ltiframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.6980120225758!2d-122.85132738408869!3d49.18731678544382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x84f83bb9670301de!2s13450%20102%20Ave%2C%20Surrey%2C%20BC%20V3T%205X4!5e0!3m2!1sen!2sca!4v1592349658083!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"&gt&lt/iframe&gt
+            </code>
+        </div>
+    </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
