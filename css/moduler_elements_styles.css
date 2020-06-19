@@ -1,0 +1,48 @@
+
+body{
+	padding:48px;
+}
+
+h2{
+	font-weight:400;
+}
+
+nav a{
+	
+	margin-right: 8px;
+}
+
+
+.element_container{
+	margin-bottom: 48px;
+}
+.moduler_element{
+	width:100%;
+	display: inline-block;
+	margin-bottom: 24px;
+}
+
+.moduler_element_code{
+	background-color: #f5f5f5;
+	padding:16px;
+	font-size: 12px;
+	width: 75%;
+	color:#333;
+
+	display: inline-block;
+	
+}
+
+
+
+
+@media (max-width: 768px){
+
+	body{
+		padding:24px;
+	}
+	.moduler_element_code{
+		width:100%;
+	}
+
+}
