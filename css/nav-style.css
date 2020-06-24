@@ -1,3 +1,6 @@
+/* toggle function used to be JS, but now all css
+https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-only-css */
+
 .placeholder-icon {
     background: #808080;
     margin-top: 0.8em;
@@ -121,4 +124,80 @@
     #sub-main-nav:target~.main-nav .mid-nav .sub-main-nav {
         display: block;
     }
+}
+
+.grid-item_submenu .clicker.hidden {
+    display: none;
+    background: #A60303;
+    color: white;
+}
+
+.grid-item_submenu .hiddendiv {
+    display: none;
+    transition: display 0.5s;
+}
+
+#showBeverages:target~.sub-nav .sub-nav-beverages[href="#showBeverages"],
+#showDairy-n-Meats:target~.sub-nav .sub-nav-dairynmeats[href="#showDairy-n-Meats"],
+#showDryGoods:target~.sub-nav .sub-nav-drygoods[href="#showDryGoods"],
+#showProduce:target~.sub-nav .sub-nav-produce[href="#showProduce"] {
+    display: none;
+}
+
+#showBeverages:target~.sub-nav .sub-nav-beverages[href="#hideBeverages"],
+#showDairy-n-Meats:target~.sub-nav .sub-nav-dairynmeats[href="#hideDairy-n-Meats"],
+#showDryGoods:target~.sub-nav .sub-nav-drygoods[href="#hideDryGoods"],
+#showProduce:target~.sub-nav .sub-nav-produce[href="#hideProduce"] {
+    display: block
+}
+
+#showBeverages:target~.sub-nav .hiddendiv.sub-sub-nav-beverages,
+#showDairy-n-Meats:target~.sub-nav .hiddendiv.sub-sub-nav-dairynmeats,
+#showDryGoods:target~.sub-nav .hiddendiv.sub-sub-nav-drygoods,
+#showProduce:target~.sub-nav .hiddendiv.sub-sub-nav-produce {
+    display: block;
+}
+
+.sub-nav a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.sub-sub-nav {
+    padding: 0.5em;
+    background-color: white;
+    /* max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; */
+}
+
+.sub-nav-category {
+    padding: 0.5em 0.25em;
+    border-top: 1px solid black;
+}
+
+.sub-nav-category:hover {
+    background-color: #A60303;
+    color: white;
+}
+
+.sub-sub-nav:last-child {
+    border-bottom: 1px solid black;
+}
+
+
+/* https://stackoverflow.com/questions/2855679/how-to-skip-first-child */
+
+.sub-nav-category:not(:first-child):after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:not(:first-child):after {
+    content: "\2212";
 }

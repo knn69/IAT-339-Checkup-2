@@ -83,16 +83,23 @@
 
             <div class="grid-container">
                 <div class="grid-item_submenu">
+                    <div id="showBeverages"></div>
+                    <div id="showDairy-n-Meats"></div>
+                    <div id="showDryGoods"></div>
+                    <div id="showProduce"></div>
+
                     <nav class="sub-nav">
                         <a class="sub-nav-category">All Products</a>
-                        <a class="sub-nav-category">Beverages</a>
-                        <div class="sub-sub-nav">
+                        <a href="#showBeverages" class="sub-nav-category sub-nav-beverages clicker">Beverages</a>
+                        <a href="#hideBeverages" class="sub-nav-category sub-nav-beverages clicker hidden">Beverages</a>
+                        <div class="sub-sub-nav hiddendiv sub-sub-nav-beverages">
                             <a class="link_button" href="#">Juice</a>
                             <a class="link_button" href="#">Pop</a>
                             <a class="link_button" href="#">Water</a>
                         </div>
-                        <a class="sub-nav-category">Dairy & Meat</a>
-                        <div class="sub-sub-nav">
+                        <a href="#showDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker">Dairy & Meat</a>
+                        <a href="#hideDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker hidden">Dairy & Meat</a>
+                        <div class="sub-sub-nav hiddendiv sub-sub-nav-dairynmeats">
                             <a class="link_button" href="#">Milk & Dairy Alternatives</a>
                             <a class="link_button" href="#">Butter</a>
                             <a class="link_button" href="#">Eggs</a>
@@ -100,15 +107,17 @@
                             <a class="link_button" href="#">Chicken</a>
                             <a class="link_button" href="#">Pork</a>
                         </div>
-                        <a class="sub-nav-category">Dry Goods</a>
-                        <div class="sub-sub-nav">
+                        <a href="#showDryGoods" class="sub-nav-category sub-nav-drygoods clicker">Dry Goods</a>
+                        <a href="#hideDryGoods" class="sub-nav-category sub-nav-drygoods clicker hidden">Dry Goods</a>
+                        <div class="sub-sub-nav hiddendiv sub-sub-nav-drygoods">
                             <a class="link_button" href="#">Flour & Starches</a>
                             <a class="link_button" href="#">Sugar</a>
                             <a class="link_button" href="#">Salt</a>
                             <a class="link_button" href="#">Seasonings</a>
                         </div>
-                        <a class="sub-nav-category">Produce</a>
-                        <div class="sub-sub-nav">
+                        <a href="#showProduce" class="sub-nav-category sub-nav-produce clicker">Produce</a>
+                        <a href="#hideProduce" class="sub-nav-category sub-nav-produce clicker hidden">Produce</a>
+                        <div class="sub-sub-nav hiddendiv sub-sub-nav-produce">
                             <a class="link_button" href="#">Vegetables</a>
                             <a class="link_button" href="#">Fruits</a>
                             <a class="link_button" href="#">Herbs</a>
