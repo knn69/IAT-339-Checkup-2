@@ -22,11 +22,12 @@ h2 {
 .cta_button,
 .submit_button {
     background-color: #BF3B3B;
-    border: none;
+    display: inline-block;
     color: white;
-    border-radius: 2px;
-    padding: 12px 24px 12px 24px;
     font-size: 16px;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .cta_button:hover,
@@ -114,7 +115,8 @@ h2 {
     flex: 0 0 20%;
 }
 
-.grid-boxes-item-wrapper {
+.grid-boxes-item-wrapper,
+.shop-by-category-item-container {
     min-width: 150px;
     padding-left: 0;
     padding-right: 1.5em;
@@ -123,6 +125,10 @@ h2 {
 .grid-boxes-item img {
     margin: 0 auto;
     max-width: 100%;
+}
+
+.button-wrapper {
+    padding-right: 1.5em;
 }
 
 @media screen and (max-width: 768px) {
@@ -442,4 +448,16 @@ footer {
         width: 100%;
         margin-bottom: 24px;
     }
+}
+
+.shop-by-category-item-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.shop-by-category-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
