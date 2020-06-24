@@ -13,25 +13,16 @@ for (i = 0; i < cat.length; i++) {
     });
 }
 
-var grid_item = document.getElementsByClassName("grid-products-item");
-var j;
-
-for (i = 0; i < cat.length; i++) {
-    grid_item[i].addEventListener("click", function() {
-        window.location.href = "productdetail.html";
-    });
-}
-
-var menu = document.getElementsByClassName("menu-icon")[0];
-var subnav = document.getElementsByClassName("mid-nav")[0];
-menu.addEventListener("click", function() {
-    if (subnav.style.display == "none") {
-        subnav.style.display = "block";
-    } else {
-        subnav.style.display = "none"
-        document.getElementsByClassName("sub-main-nav")[0].style.display = "none";
-    }
-});
+// var menu = document.getElementsByClassName("menu-icon")[0];
+// var subnav = document.getElementsByClassName("mid-nav")[0];
+// menu.addEventListener("click", function() {
+//     if (subnav.style.display == "none") {
+//         subnav.style.display = "block";
+//     } else {
+//         subnav.style.display = "none"
+//         document.getElementsByClassName("sub-main-nav")[0].style.display = "none";
+//     }
+// });
 
 var products = document.getElementsByClassName("nav-item_products")[0];
 var product_categories = document.getElementsByClassName("sub-main-nav")[0];
