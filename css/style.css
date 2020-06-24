@@ -24,8 +24,8 @@ h2 {
     background-color: #BF3B3B;
     display: inline-block;
     color: white;
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: 1em;
+    padding: 0.75em 1.25em;
     text-decoration: none;
     text-align: center;
 }
