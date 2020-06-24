@@ -1,0 +1,124 @@
+.placeholder-icon {
+    background: #808080;
+    margin-top: 0.8em;
+    height: 2em;
+    width: 2em;
+    display: inline-block;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    background: #BF3B3B;
+    height: 3.5em;
+    justify-content: space-around;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1.25em 2em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #BF3B3B;
+    height: 3.5em;
+}
+
+.nav-item_products {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: #A60303;
+}
+
+.sub-main-nav {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.left-nav {
+    flex: 0 0 5%;
+}
+
+.mid-nav {
+    flex: 0 0 75%;
+}
+
+.right-nav {
+    flex: 0 0 10%;
+}
+
+.nav-item-wrapper {
+    display: inline-block;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    margin-left: 1.5em;
+}
+
+.checkout-icon {
+    margin-right: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+    .left-nav,
+    .right-nav {
+        display: none;
+    }
+    .sub-main-nav {
+        display: block;
+    }
+    .mobile-nav {
+        flex: 0 0 100%;
+        display: block;
+        order: 1;
+    }
+    .mid-nav .nav-item-wrapper,
+    .nav-item {
+        display: block;
+    }
+    .mid-nav {
+        flex: 0 0 100%;
+        order: 2;
+        flex-direction: column;
+        display: none;
+        z-index: 999;
+    }
+    .nav-item-wrapper {
+        border-top: 1px solid white;
+    }
+    .nav-item-wrapper:last-child {
+        border-bottom: 1px solid white;
+    }
+    .nav-item:not(.nav-item_products):hover {
+        background: #A60303;
+    }
+    .clicker.hidden {
+        display: none;
+    }
+    .hiddendiv {
+        display: none;
+        transition: display 0.5s;
+    }
+    #menu-icon:target~.main-nav div div a[href="#menu-icon"],
+    #sub-main-nav:target~.main-nav .mid-nav .nav-item-wrapper a[href="#sub-main-nav"] {
+        display: none;
+    }
+    #menu-icon:target~.main-nav div div a[href="#mid-nav"],
+    #sub-main-nav:target~.main-nav .mid-nav .nav-item-wrapper a[href="#sub-main-nav-hidden"] {
+        display: inline-block;
+    }
+    #menu-icon:target~.main-nav .mid-nav,
+    #sub-main-nav:target~.main-nav .mid-nav .sub-main-nav {
+        display: block;
+    }
+}

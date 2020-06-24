@@ -13,109 +13,6 @@ body {
     height: 100%;
 }
 
-.placeholder-icon {
-    background: #808080;
-    margin-top: 0.5em;
-    height: 2em;
-    width: 2em;
-    display: inline-block;
-}
-
-.main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    background: #BF3B3B;
-    height: 3em;
-    justify-content: space-around;
-}
-
-.nav-item {
-    display: inline-block;
-    padding: 1em 2em;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    background: #BF3B3B;
-    height: 3em;
-}
-
-.nav-item_products {
-    cursor: pointer;
-}
-
-.nav-item:hover {
-    background: #A60303;
-}
-
-.sub-main-nav {
-    display: none;
-}
-
-.mobile-nav {
-    display: none;
-}
-
-.left-nav {
-    flex: 0 0 5%;
-}
-
-.mid-nav {
-    flex: 0 0 75%;
-}
-
-.right-nav {
-    flex: 0 0 10%;
-}
-
-.nav-item-wrapper {
-    display: inline-block;
-}
-
-.icon-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-icon {
-    margin-left: 1.5em;
-}
-
-.checkout-icon {
-    margin-right: 1.5em;
-}
-
-@media screen and (max-width: 768px) {
-    .left-nav,
-    .right-nav {
-        display: none;
-    }
-    .mobile-nav {
-        flex: 0 0 100%;
-        display: block;
-        order: 1;
-    }
-    .mid-nav .nav-item-wrapper,
-    .nav-item {
-        display: block;
-    }
-    .mid-nav {
-        flex: 0 0 100%;
-        order: 2;
-        flex-direction: column;
-        display: none;
-        z-index: 999;
-    }
-    .nav-item-wrapper {
-        border-top: 1px solid white;
-    }
-    .nav-item-wrapper:last-child {
-        border-bottom: 1px solid white;
-    }
-    .nav-item:not(.nav-item_products):hover {
-        background: #A60303;
-    }
-}
-
 .logo {
     font-size: 24px;
     color: #BF3B3B;
@@ -363,28 +260,22 @@ input::-webkit-inner-spin-button {
     top: 5px;
 }
 
-.order_confirmation{
+.order_confirmation {
     background-color: #F0F0F2;
     width: 100%;
     height: 100%;
-    padding:64px;
+    padding: 64px;
 }
 
-.confirmation_container{
+.confirmation_container {
     background-color: white;
-    padding:12px 32px 16px 32px;
+    padding: 12px 32px 16px 32px;
     border-radius: 4px;
- 
-
-
 }
 
-.arriving_date{
+.arriving_date {
     margin-bottom: 32px;
 }
-
-
-
 
 @media (max-width: 600px) {
     .col-2-3 {
@@ -399,9 +290,7 @@ input::-webkit-inner-spin-button {
     .checkout_summary {
         padding: 8px 24px 16px 24px;
     }
-
-    .order_confirmation{
-        padding:40px 24px;
+    .order_confirmation {
+        padding: 40px 24px;
     }
-
 }

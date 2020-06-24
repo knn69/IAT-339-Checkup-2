@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Order Confirmation</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
 <body>
-
-
-	 <nav class="main-nav">
+    <div id="menu-icon"></div>
+    <nav class="main-nav">
         <div class="mobile-nav">
             <div class="icon-container">
-                <div class="menu-icon placeholder-icon"></div>
+                <a href="#menu-icon" class="clicker menu-icon placeholder-icon" tabindex="1"></a>
+                <a href="#mid-nav" class="clicker hidden menu-icon placeholder-icon" tabindex="1"></a>
                 <a href="index.html">
                     <div class="logo-icon placeholder-icon"></div>
                 </a>
-                <a href="#">
+                <a href="checkout.html">
                     <div class="checkout-icon placeholder-icon"></div>
                 </a>
             </div>
@@ -29,7 +32,7 @@
             </a>
         </div>
 
-        <div class="mid-nav">
+        <div class="mid-nav hiddendiv">
             <div class="nav-item-wrapper">
                 <a class="nav-item" href="index.html">HOME</a>
             </div>
@@ -56,24 +59,25 @@
                 <div class="checkout-icon placeholder-icon"></div>
             </a>
         </div>
-    </nav> 
-    
-	<div class="order_confirmation">
-   <div class="confirmation_container">
-     <h1 class="confirmation_title">Thanks for shopping with us!</h2>
-     <p class="arriving_date">Your order will arrive by <strong>Fri, June 24.</strong></p>
-     <p class="confirmation_email">For all your order details, please checkout the confirmation email we are sending to <strong>johndoe@gmail.com.</strong></p>
+    </nav>
 
-     <p class="order_number">Order Number <strong>GC1328409302</strong></p>
+    <div class="order_confirmation">
+        <div class="confirmation_container">
+            <h1 class="confirmation_title">Thanks for shopping with us!</h2>
+                <p class="arriving_date">Your order will arrive by <strong>Fri, June 24.</strong></p>
+                <p class="confirmation_email">For all your order details, please checkout the confirmation email we are sending to <strong>johndoe@gmail.com.</strong></p>
 
-   </div>
+                <p class="order_number">Order Number <strong>GC1328409302</strong></p>
 
-  </div>
+        </div>
 
-   
-	
+    </div>
+
+
+
 
 
 
 </body>
+
 </html>

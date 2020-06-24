@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrocerySkip | Products</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-style.css">
 </head>
 
 <body>
+    <div id="menu-icon"></div>
     <nav class="main-nav">
         <div class="mobile-nav">
             <div class="icon-container">
-                <div class="menu-icon placeholder-icon"></div>
+                <a href="#menu-icon" class="clicker menu-icon placeholder-icon" tabindex="1"></a>
+                <a href="#mid-nav" class="clicker hidden menu-icon placeholder-icon" tabindex="1"></a>
                 <a href="index.html">
                     <div class="logo-icon placeholder-icon"></div>
                 </a>
@@ -28,7 +31,7 @@
             </a>
         </div>
 
-        <div class="mid-nav">
+        <div class="mid-nav hiddendiv">
             <div class="nav-item-wrapper">
                 <a class="nav-item" href="index.html">HOME</a>
             </div>
@@ -56,8 +59,6 @@
             </a>
         </div>
     </nav>
-
-    <img class="hero-banner" src="https://via.placeholder.com/1920x500" alt="herobanner">
 
     <section class="wide-view">
         <div class="modular-element_container">
