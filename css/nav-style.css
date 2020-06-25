@@ -154,11 +154,11 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         display: block;
     }
     .mid-nav {
-        position: relative;
-        margin-top: 1em;
-        /* position: absolute;
+        /* position: relative;
+        margin-top: 3em; */
+        position: absolute;
         top: 50%;
-        transform: translateY(-50%); */
+        transform: translateY(-50%);
         width: 100%;
         flex: 0 0 100%;
         order: 2;
