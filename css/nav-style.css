@@ -9,6 +9,52 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     display: inline-block;
 }
 
+.close-icon img,
+.search-icon img {
+    margin-top: 0.4em;
+    height: 3em;
+    width: 3em;
+}
+
+.close-icon img {
+    margin: 1em;
+}
+
+.close-icon img:hover {
+    transform: scale(1.1);
+}
+
+.right-nav img {
+    margin-top: 1em;
+    height: 1.6em;
+    width: 1.6em;
+}
+
+.close-icon img,
+.search-icon img,
+.checkout-icon img,
+.menu-icon img {
+    margin-top: 0.4em;
+    height: 3em;
+    width: 3em;
+}
+
+.close-icon img {
+    margin: 1em;
+}
+
+.close-icon img:hover {
+    transform: scale(1.1);
+}
+
+.right-nav img:hover {
+    transform: scale(1.1);
+}
+
+.right-nav img:first-child {
+    margin-right: 1.25em;
+}
+
 .main-nav {
     display: flex;
     flex-wrap: wrap;
@@ -64,12 +110,12 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     justify-content: space-between;
 }
 
-.menu-icon {
-    margin-left: 1.5em;
-}
-
 .checkout-icon {
     margin-right: 1.5em;
+}
+
+.menu-icon {
+    margin-left: 0.8em;
 }
 
 #overlay {
@@ -145,6 +191,14 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     #menu-icon:target~.main-nav #overlay,
     #sub-main-nav:target~.main-nav .mid-nav .sub-main-nav {
         display: block;
+    }
+    .close-icon img,
+    .search-icon img,
+    .checkout-icon img,
+    .menu-icon img {
+        margin-top: 0.8em;
+        height: 2em;
+        width: 2em;
     }
 }
 
