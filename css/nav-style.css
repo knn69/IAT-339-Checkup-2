@@ -120,7 +120,7 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 
 #overlay {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -128,7 +128,8 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     right: 0;
     bottom: 0;
     background: #BF3B3B;
-    z-index: 0;
+    z-index: 998;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,6 +146,8 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         order: 1;
         position: relative;
         z-index: 999;
+        padding-bottom: 0.5em;
+        /* border-bottom: 1px solid white; */
     }
     .mid-nav .nav-item-wrapper,
     .nav-item {
@@ -163,11 +166,17 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         display: none;
         z-index: 999;
     }
-    .nav-item-wrapper {
-        border-top: 1px solid white;
+    .mid-nav a {
+        text-align: left;
+        font-size: 1.3em;
+        font-weight: 500;
     }
-    .nav-item-wrapper:last-child {
-        border-bottom: 1px solid white;
+    .sub-main-nav a {
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+    .sub-main-nav .nav-item {
+        padding-left: 2.5em;
     }
     .nav-item:not(.nav-item_products):hover {
         background: #A60303;
