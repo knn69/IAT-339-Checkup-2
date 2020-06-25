@@ -72,6 +72,19 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     margin-right: 1.5em;
 }
 
+#overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #BF3B3B;
+    z-index: 0;
+}
+
 @media screen and (max-width: 768px) {
     .left-nav,
     .right-nav {
@@ -84,12 +97,20 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         flex: 0 0 100%;
         display: block;
         order: 1;
+        position: relative;
+        z-index: 999;
     }
     .mid-nav .nav-item-wrapper,
     .nav-item {
         display: block;
     }
     .mid-nav {
+        position: relative;
+        margin-top: 1em;
+        /* position: absolute;
+        top: 50%;
+        transform: translateY(-50%); */
+        width: 100%;
         flex: 0 0 100%;
         order: 2;
         flex-direction: column;
@@ -121,6 +142,7 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         display: inline-block;
     }
     #menu-icon:target~.main-nav .mid-nav,
+    #menu-icon:target~.main-nav #overlay,
     #sub-main-nav:target~.main-nav .mid-nav .sub-main-nav {
         display: block;
     }
