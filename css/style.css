@@ -444,9 +444,10 @@ footer {
     float: left;
     height: 100%;
 }
-.container .footer_item a{
+
+.container .footer_item a {
     text-decoration: none;
-    }
+}
 
 .container .footer_item:last-child {
     margin-right: 0;
