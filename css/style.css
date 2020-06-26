@@ -100,6 +100,20 @@ h2 {
     justify-content: space-between;
 }
 
+.grid-boxes-container a {
+    text-decoration: none;
+}
+
+.grid-boxes-container a p {
+    color: black;
+}
+
+.grid-boxes-container a p:nth-child(3) {
+    color: #BF3B3B;
+    font-weight: bold;
+    padding-top: 0.1em;
+}
+
 .grid-boxes-top {
     display: flex;
     justify-content: space-between;
