@@ -171,6 +171,10 @@ h2 {
     padding-bottom: 0.5em;
 }
 
+.contact-info {
+    display: block;
+}
+
 .contact-info a {
     text-decoration: none;
     color: black;
@@ -199,7 +203,7 @@ h2 {
 }
 
 .grid-item_about-us {
-    flex: 0 0 10%;
+    flex: 0 0 30%;
 }
 
 .grid-item_map {
