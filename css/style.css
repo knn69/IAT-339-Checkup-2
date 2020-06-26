@@ -491,6 +491,11 @@ footer {
     footer .container {
         width: 90%;
     }
+
+    .container .logo_container img {
+    margin-left:-0.3em;
+}
+
     .container .logo_container,
     .container .footer_item {
         width: 100%;
