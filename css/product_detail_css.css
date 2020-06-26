@@ -339,9 +339,7 @@ button:hover {
         margin: 0 2em;
         margin-bottom: -3em;
     }
-    .review_top_item:nth-of-type(1) {
-        margin-right: 25em;
-    }
+  
     .image_item {
         margin-top: 1em;
     }
