@@ -190,7 +190,7 @@ select {
     text-align: right;
 }
 
-.checkout_button {
+.checkout_button{
     background-color: #BF3B3B;
     display: block;
     width: 100%;
@@ -206,6 +206,8 @@ select {
 .checkout_button:hover {
     background-color: #A60303;
 }
+
+
 
 .shopping_cart {
     /*padding-right: 1.5em;*/
@@ -280,7 +282,7 @@ input::-webkit-inner-spin-button {
     order: 3;
 }
 
-.item_remove a {
+.item_remove a, #link_bt {
     color: #BF3B3B;
     text-decoration: none;
     margin: 0;

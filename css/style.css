@@ -388,6 +388,15 @@ footer {
     padding: 80px 0;
     box-sizing: border-box;
     background-color: #333;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: -webkit-flex;
+    flex-wrap: -ms-flex;
+    flex-wrap: wrap;
+    
+
 }
 
 .container {
@@ -456,11 +465,15 @@ footer {
 @media(max-width: 680px) {
     footer .container {
         width: 90%;
+
+
+
     }
     .container .logo_container,
     .container .footer_item {
         width: 100%;
         margin-bottom: 24px;
+
     }
 }
 
