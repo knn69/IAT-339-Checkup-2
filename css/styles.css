@@ -31,6 +31,8 @@ body {
 
 .checkout_content {
     height: 100%;
+    display: block;
+
 }
 
 .form_title {
@@ -45,6 +47,14 @@ body {
     margin-top: 16px;
     border: 1px solid #ddd;
     border-radius: 4px;
+
+
+}
+.form_body .section_title{
+    margin-bottom: 16px;
+}
+.form_body .section_title strong{
+    font-weight: 500;
 }
 
 .input_label {
@@ -65,9 +75,19 @@ select {
     width: 100%;
 }
 
-.container {
-    /*background-color: red;*/
+.delivery_method_item{
+   width: 100%;
+
+   display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: -webkit-flex;
+    flex-wrap: -ms-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 8px 0px 8px 0px;
 }
+
 
 .col-1-1 {
     width: 100%;
@@ -79,18 +99,25 @@ select {
 
 .col-2-3 {
     width: 66.66%;
-    padding: 24px;
+    padding: 24px 24px 64px 24px;
     background-color: #F0F0F2;
+    display: block;
+    border-right: 1px solid #ddd;
     height: 100%;
+    overflow:auto;
+
 }
 
 .col-1-3 {
     width: 33.33%;
     padding: 24px;
     background-color: white;
-    border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     height: 100%;
+    display: block;
+    overflow:hidden;
+
+
 }
 
 .col-1-4 {
@@ -123,6 +150,7 @@ select {
     float: left;
     padding-right: 24px;
 }
+
 
 .checkout_summary {
     padding: 8px 32px 16px 24px;
@@ -162,7 +190,7 @@ select {
     text-align: right;
 }
 
-.checkout_button {
+.checkout_button{
     background-color: #BF3B3B;
     display: block;
     width: 100%;
@@ -178,6 +206,8 @@ select {
 .checkout_button:hover {
     background-color: #A60303;
 }
+
+
 
 .shopping_cart {
     /*padding-right: 1.5em;*/
@@ -213,6 +243,13 @@ select {
 .quantity_stepper {
     margin-top: 16px;
 }
+.stepper_icon{
+   color: #BF3B3B;
+}
+.stepper_icon:hover{
+   color: #A60303;
+
+}
 
 .item_quantity {
     outline: none;
@@ -245,7 +282,7 @@ input::-webkit-inner-spin-button {
     order: 3;
 }
 
-.item_remove a {
+.item_remove a, #link_bt {
     color: #BF3B3B;
     text-decoration: none;
     margin: 0;
