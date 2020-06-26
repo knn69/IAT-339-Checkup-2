@@ -3,9 +3,10 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 
 .placeholder-icon {
     background: #808080;
-    margin-top: 0.8em;
-    height: 2em;
-    width: 2em;
+    margin-top: 0.30em;
+    height: 3em;
+    width: 8em;
+   
     display: inline-block;
 }
 
@@ -91,10 +92,12 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 
 .left-nav {
     flex: 0 0 5%;
+    margin-left:1.5em;
 }
 
 .mid-nav {
     flex: 0 0 75%;
+    margin-left:0.5em;
 }
 
 .right-nav {
