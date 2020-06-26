@@ -524,3 +524,17 @@ footer {
     color: white;
     font-weight: normal;
 }
+
+.about-blurb h2 {
+    margin-bottom: 0.5em;
+}
+
+.about-blurb p {
+    line-height: 1.5em;
+    color: #333;
+}
+
+.address,
+.contact-info {
+    color: #333;
+}
