@@ -241,21 +241,19 @@ h2 {
 .grid-item_product-grid {
     flex: 0 0 80%;
     padding-left: 3em;
-<<<<<<< Updated upstream
-=======
+
     padding-bottom: 2em;
     /* width: 80%; */
->>>>>>> Stashed changes
+
 }
 
 .grid-products-container {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< Updated upstream
-=======
+
     /* justify-content: space-between; */
     padding-bottom: 2.5em;
->>>>>>> Stashed changes
+
 }
 
 .grid-container-test {
