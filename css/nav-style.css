@@ -6,7 +6,6 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     margin-top: 0.30em;
     height: 3em;
     width: 8em;
-   
     display: inline-block;
 }
 
@@ -92,16 +91,21 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 
 .left-nav {
     flex: 0 0 5%;
-    margin-left:1.5em;
+    margin-left: 1.5em;
 }
 
 .mid-nav {
-    flex: 0 0 75%;
-    margin-left:0.5em;
+    flex: 0 0 60%;
+    margin-left: 0.5em;
 }
 
 .right-nav {
-    flex: 0 0 10%;
+    flex: 0 0 15%;
+}
+
+.right-nav-icon-wrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-item-wrapper {
