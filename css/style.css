@@ -6,7 +6,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -249,19 +248,15 @@ h2 {
 .grid-item_product-grid {
     flex: 0 0 80%;
     padding-left: 3em;
-
     padding-bottom: 2em;
     /* width: 80%; */
-
 }
 
 .grid-products-container {
     display: flex;
     flex-wrap: wrap;
-
     /* justify-content: space-between; */
     padding-bottom: 2.5em;
-
 }
 
 .grid-container-test {
@@ -295,43 +290,42 @@ h2 {
     padding-top: 0.1em;
 }
 
-.product-pagination{
+.product-pagination {
     text-align: center;
 }
 
-.pagination-container{
+.pagination-container {
     display: inline-block;
 }
 
-.pagination-container a{
-    color:#333;
+.pagination-container a {
+    color: #333;
     float: left;
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
     text-decoration: none;
 }
 
-.pagination-container a:hover{
-    background-color:#F0F0F2;
-
+.pagination-container a:hover {
+    background-color: #F0F0F2;
 }
-.pagination-container a:nth-of-type(1):hover, .pagination-container a:nth-of-type(8):hover{
 
+.pagination-container a:nth-of-type(1):hover,
+.pagination-container a:nth-of-type(8):hover {
     background-color: white;
-    color:#333;
-
+    color: #333;
 }
-.pagination-container a:nth-of-type(1), .pagination-container a:nth-of-type(8){
+
+.pagination-container a:nth-of-type(1),
+.pagination-container a:nth-of-type(8) {
     color: #999;
-    
 }
 
-
-.pagination-container .page-active{
+.pagination-container .page-active {
     background-color: #BF3B3B;
     color: white;
 }
 
-.pagination-container .page-active:hover{
+.pagination-container .page-active:hover {
     background-color: #A60303;
 }
 
@@ -363,6 +357,7 @@ h2 {
     }
     .grid-boxes-item-wrapper {
         min-width: 250px;
+        padding-right: 0;
     }
 }
 
