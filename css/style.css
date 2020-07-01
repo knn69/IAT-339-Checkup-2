@@ -1,7 +1,15 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body {
@@ -459,7 +467,7 @@ h2 {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 80px 0;

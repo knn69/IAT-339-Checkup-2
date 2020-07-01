@@ -5,6 +5,10 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 body {
@@ -505,7 +509,7 @@ button:hover {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     display: block;
     overflow: hidden;
     padding: 80px 0;
