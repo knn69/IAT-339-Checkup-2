@@ -125,12 +125,8 @@ h2 {
     font-weight: 400;
 }
 
-.grid-boxes-container a p:hover {
+.grid-boxes-container a p:nth-child(2):hover {
     text-decoration: underline;
-}
-
-.grid-boxes-container a p:nth-child(3):hover {
-    text-decoration: none;
 }
 
 .price-wrapper {
@@ -138,21 +134,54 @@ h2 {
     justify-content: flex-start;
 }
 
+.grid-boxes-container a .price {
+    font-weight: 1000;
+    font-size: 1.1em;
+    padding-top: 0.25em;
+}
+
 .grid-boxes-container a .price-wrapper p {
     color: #BF3B3B;
-    font-weight: bold;
-    padding-top: 0.1em;
 }
+
+
+/* sale tag */
 
 .grid-boxes-container a .price-wrapper span p {
     color: white;
     font-size: 0.9em;
     padding: 0.1em 0.3em;
     background-color: #BF3B3B;
+    letter-spacing: -0.75px;
 }
 
 .price-wrapper span {
     margin-left: 1em;
+    padding-top: 0.25em;
+}
+
+@media screen and (max-width: 1140px) {
+    .price-wrapper {
+        flex-direction: column;
+    }
+    .price-wrapper span {
+        margin-left: 0;
+    }
+    .grid-boxes-container a .price-wrapper span p {
+        max-width: 55%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .price-wrapper {
+        flex-direction: row;
+    }
+    .price-wrapper span {
+        margin-left: 1em;
+    }
+    .grid-boxes-container a .price-wrapper span p {
+        max-width: 100%;
+    }
 }
 
 .grid-boxes-top {
@@ -317,10 +346,13 @@ h2 {
     color: black;
 }
 
+.grid-products-item a p:nth-child(2):hover {
+    text-decoration: underline;
+}
+
 .grid-products-item a p:nth-child(3) {
-    color: #BF3B3B;
-    font-weight: bold;
-    padding-top: 0.1em;
+    font-weight: 1000;
+    padding-top: 0.25em;
 }
 
 .product-pagination {
