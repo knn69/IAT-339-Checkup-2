@@ -264,13 +264,15 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 }
 
 .sub-nav-category {
-    padding: 0.5em 0.25em;
-    border-top: 1px solid black;
+    padding: 1em 0.25em;
+    border-top: 1px solid #ddd;
 }
 
 .sub-nav-category:hover {
     background-color: #A60303;
     color: white;
+
+
 }
 
 .sub-sub-nav:last-child {
@@ -282,8 +284,8 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 
 .sub-nav-category:not(:first-child):after {
     content: '\002B';
-    color: #777;
-    font-weight: bold;
+    color: #333;
+    font-weight: 400;
     float: right;
     margin-left: 5px;
 }
