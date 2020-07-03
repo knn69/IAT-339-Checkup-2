@@ -255,14 +255,12 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     text-decoration: none;
     display: block;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .sub-sub-nav {
     padding: 0.5em;
     background-color: white;
-    /* max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out; */
 }
 
 .sub-nav-category {
