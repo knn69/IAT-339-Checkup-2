@@ -292,6 +292,17 @@ font-size: 18px;
     padding-right: 1.5em;
 }
 
+@media screen and (min-width: 1366px) {
+    .hero-banner-content{
+        width:75%;
+    }
+
+    .hero-banner-image{
+        width:25%;
+
+    }
+    }
+
 @media screen and (max-width: 768px) {
     .grid-boxes-container {
         overflow-x: auto;
