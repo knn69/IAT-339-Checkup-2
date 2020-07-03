@@ -235,6 +235,7 @@ h2 {
     .grid-products-item a .price-wrapper span p,
     .grid-boxes-container a .price-wrapper span p {
         max-width: 55%;
+        text-align: center;
     }
 }
 
