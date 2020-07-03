@@ -5,7 +5,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
-
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -16,7 +15,7 @@ body {
     width: 100%;
 }
 
-span {
+span:not(.quantity) {
     font-family: 'Roboto', sans-serif;
     padding: 16px;
 }
@@ -198,7 +197,7 @@ button:hover {
 .detail_container {
     display: flex;
     flex-direction: column;
-    flex:1 1 100%;
+    flex: 1 1 100%;
 }
 
 .similar_product_section {
@@ -308,49 +307,39 @@ button:hover {
     margin-top: 1em;
 }
 
-
-#form_dot{
+#form_dot {
     direction: ltr;
     position: relative;
     margin-bottom: 1.5em;
-    
 }
 
 .form_rating {
     margin-top: 1em;
-    
     direction: rtl;
     position: absolute;
-    
 }
 
-
-.dot:hover{
-    content:"\2022";
-    color:#bf3b3b;
-    width:20px;
-    height:20px;
+.dot:hover {
+    content: "\2022";
+    color: #bf3b3b;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color:#bf3b3b;
+    background-color: #bf3b3b;
 }
 
-
-
-.form_rating > .dot:hover::before,
-.form_rating > .dot:hover~.dot:before{
-    
-    content:"\2022";
-    color:#bf3b3b;
-    width:20px;
-    height:20px;
+.form_rating>.dot:hover::before,
+.form_rating>.dot:hover~.dot:before {
+    content: "\2022";
+    color: #bf3b3b;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color:#bf3b3b;
-    position:absolute;
+    background-color: #bf3b3b;
+    position: absolute;
 }
-*/
 
-
-.footer_section {
+*/ .footer_section {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -386,7 +375,6 @@ button:hover {
         margin: 0 2em;
         margin-bottom: -3em;
     }
-  
     .image_item {
         margin-top: 1em;
     }
@@ -516,12 +504,10 @@ button:hover {
     width: 100%;
 }
 
-.image_item:nth-of-type(2){
+.image_item:nth-of-type(2) {
     flex-direction: column;
     flex-basis: 80%;
 }
-
-
 
 .detail_item:nth-of-type(1),
 .detail_item:nth-of-type(2) {
@@ -629,15 +615,14 @@ footer {
     font-size: 16px;
     display: block;
     width: 100%;
-    padding:0;
+    padding: 0;
     /*padding-top: 20px;*/
 }
 
 @media(max-width: 388px) {
-    
-    .dot{
-        width:15px;
-        height:15px;
+    .dot {
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -645,13 +630,10 @@ footer {
     .review_section_top {
         flex-direction: column;
     }
-    .review_top_item:nth-of-type(2){
+    .review_top_item:nth-of-type(2) {
         margin-top: 2em;
     }
-
-
 }
-
 
 @media(max-width: 680px) {
     footer .container {
@@ -662,7 +644,6 @@ footer {
         width: 100%;
         margin-bottom: 24px;
     }
-
     .review_section_item p {
         margin-right: 2em;
     }

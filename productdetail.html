@@ -5,15 +5,17 @@
     <meta charset="utf-8" />
     <title>Product Detail Page Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/product_detail_css.css">
     <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" type="text/css" href="css/product_detail_css.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/data.js"></script>
     <noscript>
         <link rel="stylesheet" type="text/css" href="css/product_detail_noscript.css">
     </noscript>
 </head>
 
-<body>
+<body onload="loadJS()">
     <div class="top_section">
 
         <div class="top_section_item">
@@ -37,6 +39,7 @@
                         <a href="checkout.html">
                             <div class="checkout-icon">
                                 <img src="img/cart-icon.svg" alt="cart icon">
+                                <span class="quantity"></span>
                             </div>
                         </a>
                     </div>
@@ -59,7 +62,7 @@
                         <div class="sub-main-nav">
                             <a href="products.html" class="nav-item">All</a>
                             <a href="products.html" class="nav-item">Beverages</a>
-                            <a href="products.html" class="nav-item">Dairy & Meat</a>
+                            <a href="products.html" class="nav-item">Dairy &amp; Meat</a>
                             <a href="products.html" class="nav-item">Dry Goods</a>
                             <a href="products.html" class="nav-item">Produce</a>
                         </div>
@@ -77,9 +80,10 @@
                             <!-- </div> -->
                         </a>
                         <a href="cart.html">
-                            <!-- <div class="checkout-icon placeholder-icon"> -->
-                            <img src="img/cart-icon.svg" alt="cart icon">
-                            <!-- </div> -->
+                            <div class="cart-wrapper">
+                                <img src="img/cart-icon.svg" alt="cart icon">
+                                <span class="quantity">0</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -165,7 +169,7 @@
                 </div>
 
                 <div class="detail_item">
-                    <button id="detail_cartb">Add to Cart</button>
+                    <button id="detail_cartb" onclick="cart(1)">Add to Cart</button>
                     <button id="detail_checkoutb" onclick="document.location='checkout.html'">Checkout</button>
                 </div>
             </div>
