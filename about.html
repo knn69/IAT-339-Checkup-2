@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/data.js"></script>
 </head>
 
-<body>
+<body onload="loadJS()">
     <div id="menu-icon"></div>
     <nav class="main-nav">
         <div class="mobile-nav">
@@ -32,6 +34,7 @@
                 <a href="checkout.html">
                     <div class="checkout-icon">
                         <img src="img/cart-icon.svg" alt="cart icon">
+                        <span class="quantity"></span>
                     </div>
                 </a>
             </div>
@@ -54,7 +57,7 @@
                 <div class="sub-main-nav">
                     <a href="products.html" class="nav-item">All</a>
                     <a href="products.html" class="nav-item">Beverages</a>
-                    <a href="products.html" class="nav-item">Dairy & Meat</a>
+                    <a href="products.html" class="nav-item">Dairy &amp; Meat</a>
                     <a href="products.html" class="nav-item">Dry Goods</a>
                     <a href="products.html" class="nav-item">Produce</a>
                 </div>
@@ -72,9 +75,10 @@
                     <!-- </div> -->
                 </a>
                 <a href="cart.html">
-                    <!-- <div class="checkout-icon placeholder-icon"> -->
-                    <img src="img/cart-icon.svg" alt="cart icon">
-                    <!-- </div> -->
+                    <div class="cart-wrapper">
+                        <img src="img/cart-icon.svg" alt="cart icon">
+                        <span class="quantity">0</span>
+                    </div>
                 </a>
             </div>
         </div>
@@ -133,7 +137,9 @@
                 <img src="img/company_logo_dark.png">
             </div>
             <div class="footer_item">
-                <a href="about.html"><h1>About</h1></a>
+                <a href="about.html">
+                    <h1>About</h1>
+                </a>
                 <a href="about.html">Our Story</a>
                 <a href="# ">Community</a>
                 <a href="# ">Delivery Service</a>

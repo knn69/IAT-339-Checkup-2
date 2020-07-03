@@ -293,3 +293,27 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 .active:not(:first-child):after {
     content: "\2212";
 }
+
+.cart-wrapper {
+    position: relative;
+}
+
+.quantity {
+    position: absolute;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    right: 0px;
+    top: 7.5px;
+    background: #ccc;
+    color: white;
+    display: inline-block;
+    line-height: 1.6em;
+    text-align: center;
+    width: 1.6em;
+}
+
+.checkout-icon .quantity {
+    right: 7.5px;
+    top: 7.5px;
+}

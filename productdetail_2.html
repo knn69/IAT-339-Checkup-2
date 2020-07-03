@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="css/product_detail_css.css">
     <link rel="stylesheet" href="css/nav-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/data.js"></script>
     <noscript>
         <link rel="stylesheet" type="text/css" href="css/product_detail_noscript.css">
     </noscript>
 </head>
 
-<body>
+<body onload="loadJS()">
     <div class="top_section">
 
         <div class="top_section_item">
@@ -37,6 +38,7 @@
                         <a href="checkout.html">
                             <div class="checkout-icon">
                                 <img src="img/cart-icon.svg" alt="cart icon">
+                                <span class="quantity"></span>
                             </div>
                         </a>
                     </div>
@@ -59,7 +61,7 @@
                         <div class="sub-main-nav">
                             <a href="products.html" class="nav-item">All</a>
                             <a href="products.html" class="nav-item">Beverages</a>
-                            <a href="products.html" class="nav-item">Dairy & Meat</a>
+                            <a href="products.html" class="nav-item">Dairy &amp; Meat</a>
                             <a href="products.html" class="nav-item">Dry Goods</a>
                             <a href="products.html" class="nav-item">Produce</a>
                         </div>
@@ -77,9 +79,10 @@
                             <!-- </div> -->
                         </a>
                         <a href="cart.html">
-                            <!-- <div class="checkout-icon placeholder-icon"> -->
-                            <img src="img/cart-icon.svg" alt="cart icon">
-                            <!-- </div> -->
+                            <div class="cart-wrapper">
+                                <img src="img/cart-icon.svg" alt="cart icon">
+                                <span class="quantity">0</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -163,8 +166,8 @@
                 </div>
 
                 <div class="detail_item">
-                    <button id="detail_cartb">Add to Cart</button>
-                    <button id="detail_checkoutb" onclick="document.location='checkout.html'">Checkout</button>
+                    <button id="detail_cartb" onclick="cart(1)">Add to Cart</button>
+                    <button id=" detail_checkoutb " onclick="document.location='checkout.html' ">Checkout</button>
                 </div>
             </div>
 
@@ -174,44 +177,44 @@
     </div>
 
 
-    <div class="similar_product_section">
-        <div class="grid-boxes">
-            <div class="grid-boxes-top">
+    <div class="similar_product_section ">
+        <div class="grid-boxes ">
+            <div class="grid-boxes-top ">
                 <h2>Popular Items</h2>
             </div>
-            <div class="grid-boxes-container">
-                <a href="productdetail.html">
-                    <div class="grid-boxes-item">
-                        <div class="grid-boxes-item-wrapper">
-                            <img src="img/bev4_400.jpg" alt="Almond Milk">
+            <div class="grid-boxes-container ">
+                <a href="productdetail.html ">
+                    <div class="grid-boxes-item ">
+                        <div class="grid-boxes-item-wrapper ">
+                            <img src="img/bev4_400.jpg " alt="Almond Milk ">
                         </div>
                     </div>
                 </a>
-                <a href="productdetail.html">
-                    <div class="grid-boxes-item">
-                        <div class="grid-boxes-item-wrapper">
-                            <img src="img/bev5_400.jpg" alt="Orange Juice">
+                <a href="productdetail.html ">
+                    <div class="grid-boxes-item ">
+                        <div class="grid-boxes-item-wrapper ">
+                            <img src="img/bev5_400.jpg " alt="Orange Juice ">
                         </div>
                     </div>
                 </a>
-                <a href="productdetail.html">
-                    <div class="grid-boxes-item">
-                        <div class="grid-boxes-item-wrapper">
-                            <img src="img/deli2_400.jpg" alt="Bacon">
+                <a href="productdetail.html ">
+                    <div class="grid-boxes-item ">
+                        <div class="grid-boxes-item-wrapper ">
+                            <img src="img/deli2_400.jpg " alt="Bacon ">
                         </div>
                     </div>
                 </a>
-                <a href="productdetail.html">
-                    <div class="grid-boxes-item">
-                        <div class="grid-boxes-item-wrapper">
-                            <img src="img/meat1_400.jpg" alt="Prime Rib">
+                <a href="productdetail.html ">
+                    <div class="grid-boxes-item ">
+                        <div class="grid-boxes-item-wrapper ">
+                            <img src="img/meat1_400.jpg " alt="Prime Rib ">
                         </div>
                     </div>
                 </a>
-                <a href="productdetail.html">
-                    <div class="grid-boxes-item">
-                        <div class="grid-boxes-item-wrapper">
-                            <img src="img/dairy4_400.jpg" alt="2% Milk">
+                <a href="productdetail.html ">
+                    <div class="grid-boxes-item ">
+                        <div class="grid-boxes-item-wrapper ">
+                            <img src="img/dairy4_400.jpg " alt="2% Milk ">
                         </div>
                     </div>
                 </a>
@@ -220,20 +223,20 @@
     </div>
 
 
-    <div class="review_section_top">
+    <div class="review_section_top ">
 
-        <div class="review_top_item">
+        <div class="review_top_item ">
             <h2>Reviews</h2>
         </div>
 
-        <div class="review_top_item">
-            <label for="review_select">Filter by:</label>
-            <select name="review_select" class="review_dropdown">
+        <div class="review_top_item ">
+            <label for="review_select ">Filter by:</label>
+            <select name="review_select " class="review_dropdown ">
                 
-                    <option value="1">Most Recent</option>
-                    <option value="2">Top Reviews</option>
-                    <option value="3">Highest Rating</option>
-                    <option value="4">Lowest Rating</option>
+                    <option value="1 ">Most Recent</option>
+                    <option value="2 ">Top Reviews</option>
+                    <option value="3 ">Highest Rating</option>
+                    <option value="4 ">Lowest Rating</option>
 
                 </select>
         </div>
@@ -241,20 +244,20 @@
 
     </div>
 
-    <div class="review_section">
+    <div class="review_section ">
 
-        <div class="review_section_item">
+        <div class="review_section_item ">
             <h2>Janice Lin</h2>
-            <div class="rating">
-                <div class="rating_item">
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+            <div class="rating ">
+                <div class="rating_item ">
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
                 </div>
 
-                <div class="rating_item">
+                <div class="rating_item ">
                     <h3>Reviewed just now</h3>
                 </div>
 
@@ -264,18 +267,18 @@
 
         </div>
 
-        <div class="review_section_item">
+        <div class="review_section_item ">
             <h2>Bob Potato</h2>
-            <div class="rating">
-                <div class="rating_item">
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot"></div>
+            <div class="rating ">
+                <div class="rating_item ">
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot "></div>
                 </div>
 
-                <div class="rating_item">
+                <div class="rating_item ">
                     <h3>Reviewed 2 days ago</h3>
                 </div>
 
@@ -285,18 +288,18 @@
 
         </div>
 
-        <div class="review_section_item">
+        <div class="review_section_item ">
             <h2>Alice Wonderland</h2>
-            <div class="rating">
-                <div class="rating_item">
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot checked"></div>
-                    <div class="dot"></div>
+            <div class="rating ">
+                <div class="rating_item ">
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot checked "></div>
+                    <div class="dot "></div>
                 </div>
 
-                <div class="rating_item">
+                <div class="rating_item ">
                     <h3>Reviewed 3 weeks ago</h3>
                 </div>
 
@@ -309,38 +312,38 @@
     </div>
 
 
-    <div class="review_form_section">
+    <div class="review_form_section ">
 
-        <div class="review_form_section_item">
+        <div class="review_form_section_item ">
             <h2>Leave a Review</h2>
         </div>
 
-        <div class="review_form_section_item">
+        <div class="review_form_section_item ">
             <p>Rating</p>
-            <div id="form_dot">
-                <div class="form_rating">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+            <div id="form_dot ">
+                <div class="form_rating ">
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
+                    <div class="dot "></div>
                 </div>
             </div>
         </div>
 
-        <div class="review_form_section_item">
+        <div class="review_form_section_item ">
             <form>
-                <label for="name">Name:</label>
-                <input type="text" name="name">
+                <label for="name ">Name:</label>
+                <input type="text " name="name ">
 
-                <label for="mail">Email:</label>
-                <input type="text" name="mail">
+                <label for="mail ">Email:</label>
+                <input type="text " name="mail ">
 
-                <label for="review">Review:</label>
+                <label for="review ">Review:</label>
 
-                <textarea form="ureview" cols="60" rows="10"></textarea>
+                <textarea form="ureview " cols="60 " rows="10 "></textarea>
 
-                <input class="button" type="submit" value="Submit" name="Submit" id="review_submit">
+                <input class="button " type="submit " value="Submit " name="Submit " id="review_submit ">
 
             </form>
         </div>
@@ -350,25 +353,25 @@
     <footer>
         <div class="container ">
             <div class="logo_container ">
-                <img src="img/company_logo_dark.png">
+                <img src="img/company_logo_dark.png ">
             </div>
-            <div class="footer_item">
-                <a href="about.html">
+            <div class="footer_item ">
+                <a href="about.html ">
                     <h1>About</h1>
                 </a>
-                <a href="about.html">Our Story</a>
+                <a href="about.html ">Our Story</a>
                 <a href="# ">Community</a>
                 <a href="# ">Delivery Service</a>
             </div>
 
-            <div class="footer_item">
+            <div class="footer_item ">
                 <h1>Legal</h1>
                 <a href="# ">Return Policy</a>
                 <a href="# ">Terms &amp; Condition</a>
                 <a href="# ">Shipping &amp; Handling</a>
             </div>
 
-            <div class="footer_item">
+            <div class="footer_item ">
                 <h1>Follow Us</h1>
                 <li><a href="# "><i class="fa fa-facebook "></i></a></li>
                 <li><a href="# "><i class="fa fa-twitter "></i></a></li>
