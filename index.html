@@ -13,7 +13,7 @@
     <script src="js/data.js"></script>
 </head>
 
-<body onload="loadJS()">
+<body onload="loadJS(), quoteCarousel()">
     <div id="menu-icon"></div>
     <nav class="main-nav">
         <div class="mobile-nav">
@@ -310,13 +310,19 @@
                 </div>
             </div>
         </div>
-
-        <!-- footer -->
-        <div class="modular-element_container ">
-
-        </div>
-
     </section>
+
+    <!-- review quotes -->
+    <div class="quote-section">
+        <div class="quote-wrapper">
+            <p id="quote">
+                “They say their produce is fresh and damn right it is! I thought I was eating from my garden.”
+            </p>
+            <p id="quote-author">
+                - Karen Smith, Family of 5
+            </p>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -353,8 +359,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js "></script>
 </body>
 
 </html>

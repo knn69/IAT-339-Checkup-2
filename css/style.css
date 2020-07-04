@@ -71,6 +71,10 @@ h2 {
     margin-top: 4em;
 }
 
+.modular-element_container:last-child {
+    margin-bottom: 4em;
+}
+
 .component-container {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -775,8 +779,8 @@ footer {
     font-weight: normal;
 }
 
-.about-hero-banner{
-    background-image: url('../img/about_us_banner.jpg'); 
+.about-hero-banner {
+    background-image: url('../img/about_us_banner.jpg');
     background-size: cover;
     height: 28em;
     width: 100%;
@@ -788,27 +792,22 @@ footer {
 }
 
 @media(max-width: 768px) {
-
-    .about-hero-banner{
+    .about-hero-banner {
         height: 25em;
     }
-
-    .narrow-view{
-        width:80%;
+    .narrow-view {
+        width: 80%;
     }
-
 }
 
 @media(max-width: 520px) {
- .about-hero-banner{
+    .about-hero-banner {
         height: 16em;
     }
-
-     .narrow-view{
-        width:85%;
+    .narrow-view {
+        width: 85%;
     }
 }
-
 
 .about-blurb h2 {
     margin-bottom: 0.5em;
@@ -822,4 +821,33 @@ footer {
 .address,
 .contact-info {
     color: #333;
+}
+
+.quote-section {
+    padding: 4em 0;
+    background: #ccc;
+}
+
+.quote-wrapper {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: -webkit-flex;
+    flex-wrap: -ms-flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#quote,
+#quote-author {
+    text-align: center;
+}
+
+#quote {
+    font-style: italic;
+}
+
+#quote-author {
+    margin-top: 1.5em;
+    font-weight: 350;
 }
