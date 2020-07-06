@@ -172,9 +172,10 @@ h2 {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: -ms-flex;
+    flex-direction: row;
+    /* flex-wrap: -ms-flex;
     flex-wrap: -webkit-flex;
-    flex-wrap: row wrap;
+    flex-wrap: flex; */
     justify-content: space-between;
 }
 
@@ -214,8 +215,8 @@ h2 {
 
 /* sale tag */
 
-.grid-products-item a .price-wrapper span p,
-.grid-boxes-container a .price-wrapper span p {
+.grid-products-item a .price-wrapper div p,
+.grid-boxes-container a .price-wrapper div p {
     color: white;
     font-size: 0.9em;
     padding: 0.1em 0.3em;
@@ -223,7 +224,7 @@ h2 {
     letter-spacing: -0.75px;
 }
 
-.price-wrapper span {
+.price-wrapper div {
     margin-left: 1em;
     padding-top: 0.25em;
 }
@@ -232,11 +233,11 @@ h2 {
     .price-wrapper {
         flex-direction: column;
     }
-    .price-wrapper span {
+    .price-wrapper div {
         margin-left: 0;
     }
-    .grid-products-item a .price-wrapper span p,
-    .grid-boxes-container a .price-wrapper span p {
+    .grid-products-item a .price-wrapper div p,
+    .grid-boxes-container a .price-wrapper div p {
         max-width: 55%;
         text-align: center;
     }
@@ -246,11 +247,11 @@ h2 {
     .price-wrapper {
         flex-direction: row;
     }
-    .price-wrapper span {
+    .price-wrapper div {
         margin-left: 1em;
     }
-    .grid-products-item a .price-wrapper span p,
-    .grid-boxes-container a .price-wrapper span p {
+    .grid-products-item a .price-wrapper div p,
+    .grid-boxes-container a .price-wrapper div p {
         max-width: 100%;
     }
 }
@@ -334,9 +335,10 @@ h2 {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: -ms-flex;
+    flex-direction: row;
+    /* flex-wrap: -ms-flex;
     flex-wrap: -webkit-flex;
-    flex-wrap: row wrap;
+    flex-wrap: row wrap; */
     justify-content: flex-start;
 }
 
@@ -568,9 +570,10 @@ h2 {
     display: -ms-flex;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: -ms-flex;
+    flex-direction: row;
+    /* flex-wrap: -ms-flex;
     flex-wrap: -webkit-flex;
-    flex-wrap: row wrap;
+    flex-wrap: row wrap; */
     justify-content: space-between;
 }
 
@@ -733,7 +736,6 @@ footer {
     font-size: 16px;
     display: block;
     width: 100%;
-    /*padding-top: 20px;*/
 }
 
 @media(max-width: 680px) {
@@ -850,5 +852,5 @@ footer {
 
 #quote-author {
     margin-top: 1.5em;
-    font-weight: 350;
+    font-weight: 300;
 }
