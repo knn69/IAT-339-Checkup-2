@@ -825,7 +825,7 @@ footer {
 
 .quote-section {
     padding: 4em 0;
-    background: #ccc;
+    background: #F0F0F2;
 }
 
 .quote-wrapper {
@@ -845,6 +845,7 @@ footer {
 
 #quote {
     font-style: italic;
+    font-size: 1.2em;
 }
 
 #quote-author {
