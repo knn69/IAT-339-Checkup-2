@@ -319,7 +319,7 @@ button:hover {
     position: absolute;
 }
 
-.dot:hover {
+.form_rating .dot:hover {
     content: "\2022";
     color: #bf3b3b;
     width: 20px;
