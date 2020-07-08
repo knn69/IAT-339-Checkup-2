@@ -162,19 +162,17 @@ h2 {
 
 /*value section*/
 
-.values_container{
-
+.values_container {
     width: 100%;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -webkit-box-pack:center;
+    -webkit-box-pack: center;
     justify-content: center;
     border-bottom: 1px solid #ddd;
-
 }
 
-.values_grid{
+.values_grid {
     position: relative;
     max-width: 1600px;
     width: 100%;
@@ -183,77 +181,64 @@ h2 {
     column-gap: var(--gutter);
 }
 
-.blocks_within{
+.blocks_within {
     display: flex;
-    padding:4em 0em;
+    padding: 4em 0em;
     grid-column: 1 col-start / span 12;
 }
 
-.value_block{
+.value_block {
     display: flex;
     flex-direction: column;
-    -webkit-box-align:center;
+    -webkit-box-align: center;
     align-items: center;
     width: 33.33%;
     /*text-align: center;*/
-
 }
 
-.value_image{
+.value_image {
     height: 12.5em;
     margin-bottom: 1em;
-
 }
 
-.value_title{
+.value_title {
     margin-left: 1em;
     margin-right: 1em;
     font-weight: 500;
     font-size: 1.5em;
     text-align: center;
-
 }
 
-
-.value_text{
-    margin-top:0.5em;
+.value_text {
+    margin-top: 0.5em;
     display: block;
     text-align: center;
-    max-width:18em;
-    font-size:0.875em;
-
+    max-width: 18em;
+    font-size: 0.875em;
 }
 
-.value_text p{
-   margin:0em 0.75em;
-   color: #333;
-
-
+.value_text p {
+    margin: 0em 0.75em;
+    color: #333;
 }
-
-
 
 @media screen and (max-width:640px) {
-    .values_container{
-        width:calc(100% - var(--gutter-side) - var(--gutter-side));
-        padding:0em;
-        margin-top:4em;
-        padding-bottom:3em;
-
+    .values_container {
+        width: calc(100% - var(--gutter-side) - var(--gutter-side));
+        padding: 0em;
+        margin-top: 4em;
+        padding-bottom: 3em;
     }
-
-    .blocks_within{
-      padding:0em;
-      flex-direction: column;
+    .blocks_within {
+        padding: 0em;
+        flex-direction: column;
     }
-
-    .value_block{
+    .value_block {
         width: 100%;
         margin-bottom: 2em;
     }
-
-    .value_image{
-        height:10em;
+    .value_image {
+        height: 10em;
         margin-bottom: 1.5em;
     }
 }
@@ -952,4 +937,8 @@ footer {
 #quote-author {
     margin-top: 1.5em;
     font-weight: 300;
+}
+
+.contact-icons {
+    list-style-type: none;
 }
