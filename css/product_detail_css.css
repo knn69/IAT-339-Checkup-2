@@ -633,8 +633,8 @@ footer {
     flex-wrap: nowrap;
 }
 
-.grid-products-item a .price-wrapper span p,
-.grid-boxes-container a .price-wrapper span p {
+.grid-products-item a .price-wrapper div p,
+.grid-boxes-container a .price-wrapper div p {
     color: white;
     font-size: 0.9em;
     padding: 0.1em 0.3em;
@@ -642,7 +642,7 @@ footer {
     letter-spacing: -0.75px;
 }
 
-.price-wrapper span {
+.price-wrapper div {
     margin-left: 1em;
     padding-top: 0.25em;
 }
@@ -658,12 +658,12 @@ footer {
     .price-wrapper {
         flex-direction: column;
     }
-    .price-wrapper span {
-        margin-left: -1em;
+    .price-wrapper div {
+        margin-left: 0em;
     }
-    .grid-products-item a .price-wrapper span p,
-    .grid-boxes-container a .price-wrapper span p {
-        max-width: 60%;
+    .grid-products-item a .price-wrapper div p,
+    .grid-boxes-container a .price-wrapper div p {
+        max-width: 55%;
         text-align: center;
     }
 }
@@ -672,11 +672,11 @@ footer {
     .price-wrapper {
         flex-direction: row;
     }
-    .price-wrapper span {
-        margin-left: -.5em;
+    .price-wrapper div {
+        margin-left: 1em;
     }
-    .grid-products-item a .price-wrapper span p,
-    .grid-boxes-container a .price-wrapper span p {
+    .grid-products-item a .price-wrapper div p,
+    .grid-boxes-container a .price-wrapper div p {
         font-size: 0.8em;
         max-width: 100%;
     }
