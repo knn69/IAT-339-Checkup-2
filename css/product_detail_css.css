@@ -339,7 +339,7 @@ button:hover {
     position: absolute;
 }
 
-*/ .footer_section {
+.footer_section {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -601,7 +601,6 @@ footer {
     display: flex;
     flex-wrap: -ms-flex;
     flex-wrap: -webkit-flex;
-    flex-wrap: row wrap;
     justify-content: space-between;
 }
 
