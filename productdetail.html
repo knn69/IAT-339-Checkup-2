@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Product Detail Page Template</title>
+    <title>GrocerySkip | Brown Free Range Omega-3 Eggs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/nav-style.css">
     <link rel="stylesheet" type="text/css" href="css/product_detail_css.css">
@@ -133,7 +133,7 @@
             </div>
 
             <div class="image_item">
-                <img id="mainImg">
+                <img id="mainImg" src="JavaScript" alt="Expanded Image" >
 
                 <noscript>
                     <img id="noscript_img" src="img/egg1_400.jpg" alt="Top of Egg Carton">
@@ -164,7 +164,7 @@
 
                 <div class="detail_item">
                     <label for="quantity_select">Quantity:</label>
-                    <input type="number" name="quantity_select" min="0" max="50">
+                    <input type="number" name="quantity_select" id="quantity_select" min="0" max="50">
 
                 </div>
 
@@ -189,7 +189,10 @@
                 <a href="productdetail.html">
                     <div class="grid-boxes-item">
                         <div class="grid-boxes-item-wrapper">
-                            <img src="img/bev4_400.jpg" alt="Almond Milk">
+                            <img src="img/meat4_400.jpg" alt="Organic Chicken Breast">
+                            <p>Organic Chicken Breast</p>
+                            <p class="price">$5.99</p>
+                            
                         </div>
                     </div>
                 </a>
@@ -197,6 +200,8 @@
                     <div class="grid-boxes-item">
                         <div class="grid-boxes-item-wrapper">
                             <img src="img/bev5_400.jpg" alt="Orange Juice">
+                            <p>Organic Orange Juice 1.5L</p>
+                            <p class="price">$6.99</p>
                         </div>
                     </div>
                 </a>
@@ -204,13 +209,17 @@
                     <div class="grid-boxes-item">
                         <div class="grid-boxes-item-wrapper">
                             <img src="img/deli2_400.jpg" alt="Bacon">
+                            <p>Smoked Bacon</p>
+                            <p class="price">$3.99</p>
                         </div>
                     </div>
                 </a>
                 <a href="productdetail.html">
                     <div class="grid-boxes-item">
                         <div class="grid-boxes-item-wrapper">
-                            <img src="img/meat1_400.jpg" alt="Prime Rib">
+                            <img src="img/sea1_400.jpg" alt="Fresh Salmon Fillet">
+                            <p>Fresh Salmon Fillet</p>
+                            <p class="price">$9.69</p>
                         </div>
                     </div>
                 </a>
@@ -218,6 +227,8 @@
                     <div class="grid-boxes-item">
                         <div class="grid-boxes-item-wrapper">
                             <img src="img/dairy4_400.jpg" alt="2% Milk">
+                            <p>Organic 2% Milk 4L</p>
+                            <p class="price">$6.99</p>
                         </div>
                     </div>
                 </a>
@@ -234,7 +245,7 @@
 
         <div class="review_top_item">
             <label for="review_select">Filter by:</label>
-            <select name="review_select" class="review_dropdown">
+            <select name="review_select" id="review_select" class="review_dropdown">
                 
                     <option value="1">Most Recent</option>
                     <option value="2">Top Reviews</option>
@@ -337,14 +348,14 @@
         <div class="review_form_section_item">
             <form>
                 <label for="name">Name:</label>
-                <input type="text" name="name">
+                <input type="text" name="name" id="name">
 
                 <label for="mail">Email:</label>
-                <input type="text" name="mail">
+                <input type="text" name="mail" id="mail">
 
                 <label for="review">Review:</label>
 
-                <textarea form="ureview" cols="60" rows="10"></textarea>
+                <textarea cols="60" rows="10" id="review"></textarea>
 
                 <input class="button" type="submit" value="Submit" name="Submit" id="review_submit">
 
@@ -356,7 +367,7 @@
     <footer>
         <div class="container">
             <div class="logo_container ">
-                <img src="img/company_logo_dark.png ">
+                <img src="img/company_logo_dark.png" alt="company_logo_dark">
             </div>
             <div class="footer_item">
                 <a href="about.html">
@@ -376,9 +387,11 @@
 
             <div class="footer_item">
                 <h1>Contact</h1>
-                <li><a href="# "><i class="fa fa-facebook "></i></a></li>
-                <li><a href="# "><i class="fa fa-twitter "></i></a></li>
-                <li><a href="# "><i class="fa fa-instagram "></i></a></li>
+                <div class="footer-icon-container">
+                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
+                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
+                    <li><a href="# "><i class="fa fa-instagram "></i></a></li>
+                </div>
 
                 <span>(778)123-7300<br>
 					11148 102 Ave,<br>
