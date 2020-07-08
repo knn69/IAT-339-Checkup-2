@@ -52,21 +52,21 @@ textarea {
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .review_section_item h2 {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .rating_item h3 {
@@ -111,7 +111,7 @@ h3 {
 
 .breadcrumb a {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 p {
@@ -605,6 +605,85 @@ footer {
     justify-content: space-between;
 }
 
+/*Product Listing Price + Name*/
+.grid-boxes-container a {
+    text-decoration: none;
+}
+
+.grid-boxes-container a p {
+    color: black;
+    font-weight: 400;
+}
+
+.grid-boxes-container a p:nth-child(3) {
+    color: #BF3B3B;
+}
+
+.grid-boxes-container a p:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.grid-boxes-container a .price-wrapper p {
+    color: #BF3B3B;
+}
+
+/*Sale Tag*/
+.price-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.grid-products-item a .price-wrapper span p,
+.grid-boxes-container a .price-wrapper span p {
+    color: white;
+    font-size: 0.9em;
+    padding: 0.1em 0.3em;
+    background-color: #BF3B3B;
+    letter-spacing: -0.75px;
+}
+
+.price-wrapper span {
+    margin-left: 1em;
+    padding-top: 0.25em;
+}
+
+.grid-products-item a .price,
+.grid-boxes-container a .price {
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-top: 0.25em;
+}
+
+@media screen and (max-width: 1400px) {
+    .price-wrapper {
+        flex-direction: column;
+    }
+    .price-wrapper span {
+        margin-left: -1em;
+    }
+    .grid-products-item a .price-wrapper span p,
+    .grid-boxes-container a .price-wrapper span p {
+        max-width: 60%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .price-wrapper {
+        flex-direction: row;
+    }
+    .price-wrapper span {
+        margin-left: -.5em;
+    }
+    .grid-products-item a .price-wrapper span p,
+    .grid-boxes-container a .price-wrapper span p {
+        font-size: 0.8em;
+        max-width: 100%;
+    }
+}
+/*End Sale Tag + Price Listing*/
+
 .grid-boxes-top {
     display: flex;
     justify-content: space-between;
@@ -630,6 +709,11 @@ footer {
 .grid-boxes-item img {
     margin: 0 auto;
     max-width: 100%;
+}
+
+.price-wrapper {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .button-wrapper {
