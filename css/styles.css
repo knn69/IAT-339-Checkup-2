@@ -5,10 +5,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    -webkit-appearance: none;
+  /*  -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+*/
+    /*-ms-overflow-style: none;*/  /* IE and Edge */
+    /*scrollbar-width: none;*/  /* Firefox */
 }
+
 
 html,
 body {
@@ -17,20 +21,28 @@ body {
     height: 100%;
 }
 
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
 .logo {
-    font-size: 24px;
+    font-size: 1.5em;
     color: #BF3B3B;
 }
 
 .checkout_header {
-    padding: 16px 24px;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    padding: 1em 1.5em;
+    border-bottom: 0.0625em solid #ddd;
+    border-top: 0.0625em solid #ddd;
+    border-right: 0.0625em solid #ddd;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 .checkout_content {
@@ -40,22 +52,22 @@ body {
 }
 
 .form_title {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
 }
 
 .form_body {
-    padding: 24px 0px 24px 24px;
+    padding: 1.5em 0em 1.5em 1.5em;
     background-color: white;
-    margin-top: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin-top: 1em;
+    border: 0.0625em solid #ddd;
+    border-radius: 0.25em;
 
 
 }
 .form_body .section_title{
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 .form_body .section_title strong{
     font-weight: 500;
@@ -64,18 +76,18 @@ body {
 .input_label {
     color: #333;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875em;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .input_field,
 select {
     display: block;
-    padding: 12px 16px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    margin-top: 4px;
-    margin-bottom: 20px;
+    padding: 0.75em 1em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.125em;
+    margin-top: 0.25em;
+    margin-bottom: 1.25em;
     width: 100%;
 }
 
@@ -89,7 +101,7 @@ select {
     flex-wrap: -ms-flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 8px 0px 8px 0px;
+    margin: 0.5em 0px 0.5em 0px;
 }
 
 
@@ -103,7 +115,7 @@ select {
 
 .col-2-3 {
     width: 66.66%;
-    padding: 24px 24px 64px 24px;
+    padding: 1.5em 1.5em 4em 1.5em;
     background-color: #F0F0F2;
     display: block;
     border-right: 1px solid #ddd;
@@ -114,9 +126,9 @@ select {
 
 .col-1-3 {
     width: 33.33%;
-    padding: 24px;
+    padding: 1.5em;
     background-color: white;
-    border-right: 1px solid #ddd;
+    border-right: 0.0625em solid #ddd;
     height: 100%;
     display: block;
     overflow:hidden;
@@ -152,22 +164,22 @@ select {
 
 [class*='col-'] {
     float: left;
-    padding-right: 24px;
+    padding-right: 1.5em;
 }
 
 
 .checkout_summary {
-    padding: 8px 32px 16px 24px;
+    padding: 0.5em 2em 1em 1.5em;
 }
 
-.checkout_summary .summary_title {
-    margin-bottom: 32px;
-    font-size: 18px;
+.checkout_summary .summary_title h2{
+    margin-bottom: 2em;
+    font-size: 1.25em;
 }
 
 .summary_detail_container {
-    margin-bottom: 24px;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 1.5em;
+    border-bottom: 0.0625em solid #ddd;
 }
 
 .summary_detail_item {
@@ -178,18 +190,18 @@ select {
     flex-wrap: -ms-flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 8px 0px 8px 0px;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 .item_label {
     width: 75%;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #333;
 }
 
 .item_value {
     width: 25%;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #333;
     text-align: right;
 }
@@ -200,9 +212,9 @@ select {
     width: 100%;
     border: none;
     color: white;
-    border-radius: 2px;
-    padding: 12px 24px 12px 24px;
-    font-size: 16px;
+    border-radius: 0.125em;
+    padding: 0.75em 1.5em 0.75em 1.5em;
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
 }
@@ -218,8 +230,8 @@ select {
 }
 
 .product_image {
-    height: 80px;
-    width: 80px;
+    height: 5em;
+    width: 5em;
     display: block;
 }
 
@@ -245,7 +257,7 @@ select {
 }
 
 .quantity_stepper {
-    margin-top: 16px;
+    margin-top: 1em;
 }
 .stepper_icon{
    color: #BF3B3B;
@@ -257,16 +269,16 @@ select {
 
 .item_quantity {
     outline: none;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
-    padding: 0 16px;
-    height: 24px;
+    padding: 0 1em;
+    height: 1.5em;
     box-sizing: border-box;
     text-overflow: ellipsis;
     border: none;
     text-align: center;
     position: relative;
-    bottom: 5px;
+    bottom: 0.3125em;
 }
 
 input::-webkit-outer-spin-button,
@@ -290,38 +302,37 @@ input::-webkit-inner-spin-button {
     color: #BF3B3B;
     text-decoration: none;
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 500;
 }
 
 .item_remove span {
     color: #BF3B3B;
-    /*font-size: 24px;*/
     position: relative;
-    top: 5px;
+    top: 0.3125em;
 }
 
 .order_confirmation {
     background-color: #F0F0F2;
     width: 100%;
     height: 100%;
-    padding: 64px;
+    padding: 4em;
 }
 
 .confirmation_container {
     background-color: white;
-    padding: 12px 32px 16px 32px;
-    border-radius: 4px;
+    padding: 0.75em 2em 1em 2em;
+    border-radius: 0.25em;
 }
 
 .arriving_date {
-    margin-bottom: 32px;
+    margin-bottom: 2em;
 }
 
 @media (max-width: 600px) {
     .col-2-3 {
         width: 100%;
-        padding: 24px 16px 24px 16px;
+        padding: 1.5em 1em 1.5em 1em;
         height: auto;
     }
     .col-1-3 {
@@ -329,9 +340,9 @@ input::-webkit-inner-spin-button {
         height: 50%;
     }
     .checkout_summary {
-        padding: 8px 24px 16px 24px;
+        padding: 0.5em 1.5em 1em 1.5em;
     }
     .order_confirmation {
-        padding: 40px 24px;
+        padding: 2.5em 1.5em;
     }
 }

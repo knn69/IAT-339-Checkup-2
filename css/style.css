@@ -26,7 +26,7 @@ body {
 
 h1 {
     color: #BF3B53;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 h2 {
@@ -135,8 +135,8 @@ h2 {
     border: none;
     color: white;
     border-radius: 2px;
-    padding: 12px 24px 12px 24px;
-    font-size: 16px;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
     float: left;
@@ -156,7 +156,7 @@ h2 {
 
 .hero-banner-content>p {
     margin-bottom: 2em;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 
@@ -305,7 +305,7 @@ h2 {
     font-size: 0.9em;
     padding: 0.1em 0.3em;
     background-color: #BF3B3B;
-    letter-spacing: -0.75px;
+    letter-spacing: -0.05em;
 }
 
 .price-wrapper div {
@@ -445,7 +445,6 @@ h2 {
 }
 
 .link_button {
-    /*padding:10px 24px 10px 24px;*/
     text-decoration: none;
     color: #BF3B3B;
     font-family: 'Roboto Condensed', sans-serif;
@@ -667,11 +666,11 @@ h2 {
 
 .sort_dropdown {
     display: inline-block;
-    padding: 12px 16px;
+    padding: 0.75em 1em;
     border: 1px solid #ccc;
     border-radius: 2px;
-    margin-top: 4px;
-    margin-bottom: 20px;
+    margin-top: 0.25em;
+    margin-bottom: 1.25em;
     width: 100%;
 }
 
@@ -722,10 +721,10 @@ h2 {
 
 .input_field {
     display: block;
-    padding: 10px 16px;
+    padding: 0.625em 1em;
     border: 1px solid #ccc;
     border-radius: 2px;
-    margin-top: 4px;
+    margin-top: 0.25em;
     width: 30em;
     font-size: 1.5em;
 }
@@ -745,7 +744,7 @@ footer {
     width: 100%;
     display: block;
     overflow: hidden;
-    padding: 80px 0;
+    padding: 5em 0;
     box-sizing: border-box;
     background-color: #333;
     display: -webkit-flex;
@@ -777,7 +776,7 @@ footer {
 
 .container .footer_item {
     width: calc(21.6666666667% - 20px);
-    margin-right: 10px;
+    margin-right: 0.625em;
     float: left;
     height: 100%;
 }
@@ -791,15 +790,15 @@ footer {
 }
 
 .container .footer_item h1 {
-    font-size: 20px;
+    font-size: 1.25em;
     color: white;
     display: block;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 
 .container .footer_item a {
-    font-size: 16px;
+    font-size: 1.25em;
     color: white;
     display: block;
     width: 100%;
@@ -809,7 +808,7 @@ footer {
 
 .container .footer_item li {
     display: inline-block;
-    padding: 0 4px;
+    padding: 0 0.25em;
     font-size: 24px;
 }
 
@@ -817,7 +816,7 @@ footer {
     color: white;
     display: inline-block;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1.5em;
     display: block;
     width: 100%;
 }
@@ -832,7 +831,7 @@ footer {
     .container .logo_container,
     .container .footer_item {
         width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 1.5em;
     }
 }
 
@@ -840,14 +839,6 @@ footer {
     position: relative;
     text-align: center;
 }
-
-
-/* .shop-by-category-text-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-} */
 
 .shop-by-category-text-wrapper .cta_button {
     width: 90%;

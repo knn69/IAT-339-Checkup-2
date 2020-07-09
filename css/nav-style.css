@@ -271,8 +271,6 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 .sub-nav-category:hover {
     background-color: #A60303;
     color: white;
-
-
 }
 
 .sub-sub-nav:last-child {
@@ -287,7 +285,7 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     color: #333;
     font-weight: 400;
     float: right;
-    margin-left: 5px;
+    margin-left: 0.3em;
 }
 
 .active:not(:first-child):after {
@@ -303,8 +301,8 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
     border-radius: 0.8em;
     -moz-border-radius: 0.8em;
     -webkit-border-radius: 0.8em;
-    right: 0px;
-    top: 7.5px;
+    right: 0em;
+    top: 0.47em;
     background: #ccc;
     color: #333;
     display: inline-block;
@@ -314,6 +312,6 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 }
 
 .checkout-icon .quantity {
-    right: 7.5px;
-    top: 7.5px;
+    right: 0.47em;
+    top: 0.47em;
 }
