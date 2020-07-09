@@ -207,6 +207,7 @@ h2 {
     font-weight: 500;
     font-size: 1.5em;
     text-align: center;
+    color: black;
 }
 
 .value_text {
@@ -886,7 +887,11 @@ footer {
     }
 }
 
-.about-blurb h2 {
+.about-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
     margin-bottom: 0.5em;
 }
 
