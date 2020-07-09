@@ -94,13 +94,13 @@
                 <div class="container grid grid-pad">
 
                     <div class="input_container col-1-1">
-                        <label class="input_label">Card Number</label>
-                        <input class="input_field" name="input_field">
+                        <label class="input_label" for="card_number">Card Number</label>
+                        <input class="input_field" id="card_number" name="input_field">
                     </div>
 
                     <div class="input_container col-1-2">
-                        <label class="input_label">Expiry Month</label>
-                        <select class="expiry_month" name="expiry_month">
+                        <label class="input_label" for="expiry_month">Expiry Month</label>
+                        <select class="expiry_month" id="expiry_month" name="expiry_month">
                   <option>01</option>
                   <option>02</option>
                   <option>03</option>
@@ -118,8 +118,8 @@
 
 
                     <div class="input_container col-1-2">
-                        <label class="input_label">Expiry Year</label>
-                        <select class="expiry_year" name="expiry_year">
+                        <label class="input_label" for="expiry_year">Expiry Year</label>
+                        <select class="expiry_year" id="expiry_year" name="expiry_year">
                   <option>2020</option>
                   <option>2021</option>
                   <option>2022</option>
@@ -136,7 +136,7 @@
                     </div>
 
                     <div class="input_container col-1-2">
-                        <label class="input_label">CVV</label>
+                        <label class="input_label" for="cvv">CVV</label>
                         <input type="text" id="cvv" class="input_field" maxlength="3">
                     </div>
 
@@ -149,7 +149,7 @@
         <!-- To show other related information -->
         <div class="checkout_summary col-1-3">
             <div class="summary_title">
-                <h3>Order Summary</h3>
+                <h1>Order Summary</h1>
             </div>
 
             <div class="summary_detail_container">
