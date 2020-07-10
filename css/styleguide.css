@@ -318,7 +318,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.input_field {
+.input_field, select {
     
     width: 25%;
 }
