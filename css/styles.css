@@ -242,7 +242,6 @@ select {
 
 .detail_container_right {
     float: right;
-    width: 25%;
 }
 
 .detail_container_left {
@@ -261,6 +260,7 @@ select {
 }
 .stepper_icon{
    color: #BF3B3B;
+cursor: pointer;
 }
 .stepper_icon:hover{
    color: #A60303;
@@ -307,6 +307,7 @@ input::-webkit-inner-spin-button {
 }
 
 .item_remove span {
+
     color: #BF3B3B;
     position: relative;
     top: 0.3125em;

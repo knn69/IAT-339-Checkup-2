@@ -1,8 +1,7 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
+    
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -22,13 +21,16 @@ select{
 }*/
 
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
 
-h1 {
+
+.products-header{
     color: #BF3B53;
-    font-size: 3em;
+    font-size: 2em;
+
 }
 
 h2 {
@@ -130,6 +132,7 @@ h2 {
 }
 
 .hero-banner-content>h1 {
+    font-size: 3em;
     color: #333;
     width: 80%;
     margin-bottom: 0.45em;
@@ -250,6 +253,7 @@ h2 {
 .grid-boxes-container a p {
     color: black;
     font-weight: 400;
+    margin: 0;
 }
 
 .grid-boxes-container a p:nth-child(3) {
@@ -274,6 +278,7 @@ h2 {
 
 .grid-boxes-container a .price-wrapper p {
     color: #BF3B3B;
+
 }
 
 
@@ -516,6 +521,7 @@ h2 {
 
 .grid-products-item a p {
     color: black;
+    margin: 0;
 }
 
 .grid-products-item a p:nth-child(3),

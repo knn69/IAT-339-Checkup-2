@@ -11,16 +11,30 @@ body {
     padding: 1.5em;
     background-color: #fff;
     color: black;
+    margin:0;
 }
 
-#styleguide h1,
+.page_title{
+	font-size: 1.875em;
+	margin-top: 0.5em;
+}
+
+.section_title{
+	font-weight: 500;
+    margin-top: 0.25em;
+    color: black;
+    font-size: 1.5em;
+
+}
+
+/*#styleguide h1,
 #citations h1 {
     font-weight: 500;
     margin-top: 0.25em;
     color: black;
     font-size: 1.5em;
 }
-
+*/
 #citations h2 {
     font-size: 1.25em;
     font-weight: 500;
@@ -69,11 +83,15 @@ body {
 .left-view {
     flex: 0 0 25%;
     padding: 0em 1em;
+
+  
+
 }
 
 .right-view {
     flex: 0 0 75%;
     padding: 0em 1em;
+
 }
 
 @media (max-width: 1080px) {
@@ -102,15 +120,7 @@ body {
     margin-top: 3em;
 }
 
-.color_section>h1,
-.typography>h1,
-.interactive_elements>h1,
-.pattern_elements>h1 {
-    font-size: 1.5em;
-    margin-top: 0;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+
 
 .color_container {
     width: 100%;
@@ -168,6 +178,8 @@ body {
 
 /*typography*/
 
+
+
 .type_item:nth-of-type(1) .type {
     font-size: 64px;
     font-weight: 300;
@@ -191,6 +203,38 @@ body {
 
 /*assign type value to every type item */
 
+@media (min-width: 768px){
+
+
+
+ .type_container, .type_detail{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+
+	justify-content: space-around;
+	}
+
+
+	.type_item{
+		flex-grow: 0;
+   		flex-shrink: 0;
+   		flex-basis: 100%;
+	}
+
+	.type_detail_item{
+		flex:1;
+	}
+
+
+
+
+}
+
 .type_container {
     padding: 8px 8px 32px 0px;
 }
@@ -204,7 +248,7 @@ body {
     margin-bottom: 8px;
 }
 
-.detail_item {
+.type_detail_item {
     font-size: 14px;
     margin-bottom: 4px;
     color: #6c6c6c;
@@ -227,12 +271,18 @@ body {
 /*Basic Interactive Elements*/
 
 .element_container .element_title {
-    font-size: 1.25em;
+    font-size: 1em;
+    margin-bottom: 2em;
     font-weight: 500;
 }
 
 .element_container {
-    margin-top: 2em;
+    margin-top: 4em;
+
+}
+
+.element_container .example{
+	margin-bottom: 1em;
 }
 
 .code_block {
