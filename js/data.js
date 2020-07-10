@@ -42,6 +42,7 @@ function loadJS() {
     }
 }
 
+// concept and segments of code are sourced from Theo's personal portfolio
 function quoteCarousel() {
     var quote = document.getElementById("quote");
     var author = document.getElementById("quote-author");
@@ -66,8 +67,6 @@ function quoteCarousel() {
                 break;
 
             case 2:
-                // element.classList.add('flip');
-                // element.classList.add('dip');
                 quote.innerHTML = quotes[quoteIndex];
                 author.innerHTML = authors[quoteIndex];
                 quoteIndex = 0;

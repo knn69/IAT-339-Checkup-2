@@ -154,7 +154,6 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
         position: relative;
         z-index: 999;
         padding-bottom: 0.5em;
-        /* border-bottom: 1px solid white; */
     }
     .mid-nav .nav-item-wrapper,
     .nav-item {
@@ -240,7 +239,7 @@ https://stackoverflow.com/questions/42267467/how-to-toggle-effect-in-div-using-o
 #showDairy-n-Meats:target~.sub-nav .sub-nav-dairynmeats[href="#hideDairy-n-Meats"],
 #showDryGoods:target~.sub-nav .sub-nav-drygoods[href="#hideDryGoods"],
 #showProduce:target~.sub-nav .sub-nav-produce[href="#hideProduce"] {
-    display: block
+    display: block;
 }
 
 #showBeverages:target~.sub-nav .hiddendiv.sub-sub-nav-beverages,

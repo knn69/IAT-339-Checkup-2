@@ -75,26 +75,6 @@ h2 {
     margin-bottom: 4em;
 }
 
-.component-container {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border-bottom: 3px dotted black;
-}
-
-.component-container:first-child {
-    padding-top: 0;
-    padding-bottom: 2em;
-    border-bottom: 3px dotted black;
-}
-
-.component-container:last-child {
-    border-bottom: none;
-}
-
-.code-wrapper {
-    padding: 1.5em;
-}
-
 .hero-banner {
     background-color: #F0F0F2;
     background-size: cover;
@@ -258,9 +238,6 @@ h2 {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: -ms-flex;
-    flex-wrap: -webkit-flex;
-    flex-wrap: flex; */
     justify-content: space-between;
 }
 
@@ -506,13 +483,11 @@ h2 {
     flex: 0 0 80%;
     padding-left: 3em;
     padding-bottom: 2em;
-    /* width: 80%; */
 }
 
 .grid-products-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     padding-bottom: 2.5em;
 }
 
