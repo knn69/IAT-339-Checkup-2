@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="css/nav-style.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ken_modular.css">
 
     <link rel="stylesheet" type="text/css" href="css/styleguide.css">
 
@@ -1983,6 +1984,551 @@
 									}, 5000) <br>
 								}
 							</code>
+                        </div>
+					</div>
+					
+					<!--BreadCrumb-->
+					<div class="element_container">
+                        <h2 class="element_title">Product Dropdown</h2>
+                        <div class="example">
+
+                            <div class="example-item">
+								<ul class="breadcrumb">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="products.html">Products</a></li>
+									<li><a href="products.html">Product Category</a></li>
+									<li><a href="productdetail.html">Product Name</a></li>
+								</ul>
+							</div>
+							
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+								<h3>HTML</h3>
+								
+                                <code>
+									&lt;ul class="breadcrumb"><br>
+									&lt;li>&lt;a href="index.html">Home&lt;/a>&lt;/li><br>
+									&lt;li>&lt;a href="products.html">Products&lt;/a>&lt;/li><br>
+									&lt;li>&lt;a href="products.html">Product Category&lt;/a>&lt;/li><br>
+									&lt;li>&lt;a href="productdetail.html">Product Name&lt;/a>&lt;/li><br>
+									&lt;/ul>
+								</code>
+
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.breadcrumb {<br>
+										list-style: none;<br>
+										margin-left: -2em;<br>
+									}<br><br>
+									
+									.breadcrumb li {<br>
+										display: inline;<br>
+									}<br><br>
+									
+									.breadcrumb a {<br>
+										text-decoration: none;<br>
+										font-family: 'Roboto', sans-serif;<br>
+										font-size: 1em;<br>
+										color: #BF3B3B<br>
+									}<br><br>
+									
+									.breadcrumb a:hover {<br>
+										text-decoration: underline;<br>
+									}<br><br>
+									
+									.breadcrumb li+li:before {<br>
+										content: ">";<br>
+										padding: 0.5em;<br>
+									}<br><br>
+								</code>
+                            </div>
+                        </div>
+					</div>
+					
+					<!--Product Image-->
+					<div class="element_container">
+                        <h2 class="element_title">Product Image</h2>
+                        <div class="example">
+
+                            <div class="image-container">
+								<script>
+									function productImage(imgs) {
+										var mainImg = document.getElementById("mainImg");
+										mainImg.src = imgs.src
+										mainImg.parentElement.style.display = "block";
+									}
+								</script>
+		
+								<div class="image_item">
+									<div class="sub_image">
+										<img src="https://via.placeholder.com/400x400" alt="Product Image 1" onload="productImage(this);" onclick="productImage(this);">
+									</div>
+					
+									<div class="sub_image">
+										<img src="https://via.placeholder.com/400x400" alt="Product Image 2" onclick="productImage(this);">
+									</div>
+					
+									<div class="sub_image">
+										<img src="https://via.placeholder.com/400x400" alt="Product Image 3" onclick="productImage(this);">
+									</div>
+					
+								</div>
+					
+								<div class="image_item">
+									<img id="mainImg" style="display:block">
+					
+									<noscript>
+										<img id="noscript_img" style="display: block;" src="img/egg1_400.jpg" alt="Product Image 1">
+									</noscript>
+					
+								</div>
+							</div>
+							
+						</div>
+						
+                        <div class="code_block">
+                            <div class="html_code">
+								<h3>HTML</h3>
+								
+                                <code>
+									&lt;div class="image_item"><br>
+									&lt;div class="sub_image"><br>
+									&lt;img src="https://via.placeholder.com/400x400" alt="Product Image 1" onload="productImage(this);" onclick="productImage(this);"><br>
+									&lt;/div><br><br>
+						
+									&lt;div class="sub_image"><br>
+									&lt;img src="https://via.placeholder.com/400x400" alt="Product Image 2" onclick="productImage(this);"><br>
+									&lt;/div><br><br>
+						
+									&lt;div class="sub_image"><br>
+									&lt;img src="https://via.placeholder.com/400x400" alt="Product Image 3" onclick="productImage(this);"><br>
+									&lt;/div><br><br>
+						
+									&lt;/div><br><br>
+						
+									&lt;div class="image_item"><br>
+									&lt;img id="mainImg"><br><br>
+						
+									&lt;noscript><br>
+									&lt;img id="noscript_img" src="img/egg1_400.jpg" alt="Product Image 1"><br>
+									&lt;/noscript><br><br>
+						
+									&lt;/div>
+								</code>
+
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.image_item:nth-of-type(1) {<br>
+										display: flex;<br>
+										flex-flow: column;<br>
+										flex: 1 1 10%<br>
+									}<br><br>
+									
+									.image_item:nth-of-type(1) img {<br>
+										margin-bottom: 1em;<br>
+										border: 1px solid #ccc;<br>
+										cursor: pointer;<br>
+										width: 100%<br>
+									}<br><br>
+									
+									.image_item:nth-of-type(2) img {<br>
+										margin-left: 1em;<br>
+										border: 1px solid #ccc;<br>
+										width: 100%;<br>
+									}<br><br>
+									
+									.image_item:nth-of-type(2) {<br>
+										flex-direction: column;<br>
+										flex-basis: 80%;<br>
+									}<br><br>
+									
+									#mainImg{<br>
+										display: block;<br>
+									}<br><br>
+									
+									#noscript_img{<br>
+										display: block;<br>
+									}<br><br>
+								</code>
+                            </div>
+						</div>
+						
+						<div class="js_code">
+                            <h3>JS</h3>
+                            <code>
+								&lt;script><br>
+                                function productImage(imgs) {<br>
+                                    var mainImg = document.getElementById("mainImg");<br>
+                                    mainImg.src = imgs.src<br>
+                                    mainImg.parentElement.style.display = "block";<br>
+                                }<br>
+                            	&lt;/script>
+							</code>
+						</div>
+						
+					</div>
+					
+					<!--Product Detail-->
+					<div class="element_container">
+                        <h2 class="element_title">Product Detail</h2>
+                        <div class="example">
+
+                            <div class="detail_container">
+
+								<div class="detail_item">
+									<h1>Product Name</h1>
+									<h2>$6.99</h2>
+								</div>
+				
+								<div class="detail_item">
+									<p id="detail_itemid"><b>Item ID:</b> #54981</p>
+									<p id="detail_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore hic distinctio odio veniam repudiandae reiciendis.
+									</p>
+								</div>
+				
+								<div class="detail_item">
+									<label for="quantity_select">Quantity:</label>
+									<input type="number" name="quantity_select" id="quantity_select" min="0" max="50">
+				
+								</div>
+				
+								<div class="detail_item">
+									<button id="detail_cartb" onclick="cart(1)">Add to Cart</button>
+									<button id="detail_checkoutb" onclick="document.location='checkout.html'">Checkout</button>
+								</div>
+							</div>
+							
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+								<h3>HTML</h3>
+								
+                                <code>
+									&lt;div class="detail_item"><br>
+									&lt;h1>Product Name&lt;/h1><br>
+									&lt;h2>$7.99&lt;/h2><br>
+									&lt;/div><br><br>
+					
+									&lt;div class="detail_item"><br>
+									&lt;p id="detail_itemid">&lt;b>Item ID:&lt;/b> #54981&lt;/p><br>
+									&lt;p id="detail_description">Pasture raised Grade A large eggs with high content of Omega-3 to boost daily essentials.<br>
+									&lt;/p><br>
+									&lt;/div><br><br>
+					
+									&lt;div class="detail_item"><br>
+									&lt;label for="quantity_select">Quantity:&lt;/label><br>
+									&lt;input type="number" name="quantity_select" id="quantity_select" min="0" max="50"><br>
+					
+									&lt;/div><br><br>
+					
+									&lt;div class="detail_item"><br>
+									&lt;button id="detail_cartb" onclick="cart(1)">Add to Cart&lt;/button><br>
+									&lt;button id="detail_checkoutb" onclick="document.location='checkout.html'"><br>Checkout&lt;/button><br>
+									&lt;/div>
+								</code>
+
+							</div>
+							
+                            <div class="css_code">
+								<h3>CSS</h3>
+								
+                                <code>
+									.detail_item:nth-of-type(1),<br>
+									.detail_item:nth-of-type(2) {<br>
+										display: flex;<br>
+										flex-direction: column;<br>
+									}<br><br>
+			
+									.detail_item:nth-of-type(3),<br>
+									.detail_item:nth-of-type(4) {<br>
+										display: flex;<br>
+										flex-direction: column;<br>
+										max-width: 20em;<br>
+										padding-bottom: 0.5em;<br>
+									}<br><br>
+			
+									.detail_item:nth-of-type(2) {<br>
+										margin: 4em 0;<br>
+									}<br><br>
+			
+									.detail_item h2 {<br>
+										margin-top: 0.5em;<br>
+										font-weight: 200;<br>
+									}
+								</code>
+
+                            </div>
+                        </div>
+					</div>
+					
+					<!--User Review-->
+					<div class="element_container">
+                        <h2 class="element_title">User Review</h2>
+                        <div class="example">
+
+                            <div class="user_rating_item">
+								<h2>User A</h2>
+								<div class="rating">
+									<div class="rating_item">
+										<div class="dot checked"></div>
+										<div class="dot checked"></div>
+										<div class="dot checked"></div>
+										<div class="dot"></div>
+										<div class="dot"></div>
+									</div>
+			
+									<div class="rating_item">
+										<h3>Reviewed 7 hours ago</h3>
+									</div>
+			
+								</div>
+								<p>Lorem ipsum dolor sit amet, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			
+							</div>
+							
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+								<h3>HTML</h3>
+								
+                                <code>
+									&lt;div class="user_rating_item"><br>
+									&lt;h2>User A&lt;/h2><br>
+									&lt;div class="rating"><br><br>
+									&lt;div class="rating_item"><br>
+									&lt;div class="dot checked">&lt;/div><br>
+									&lt;div class="dot checked">&lt;/div><br>
+									&lt;div class="dot checked">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;/div><br><br>
+					
+									&lt;div class="rating_item"><br>
+									&lt;h3>Reviewed 7 hours ago&lt;/h3><br>
+									&lt;/div><br><br>
+					
+									&lt;/div><br><br>
+									&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempore magna aliqua. Ut enim ad mio consequat.&lt;/p><br>
+					
+									&lt;/div>
+								</code>
+
+                            </div>
+                            <div class="css_code">
+								<h3>CSS</h3>
+								
+                                <code>
+									.user_rating_item h2 {<br>
+										margin-bottom: 0.5em;<br>
+									}<br><br>
+									
+									.review_section_item {<br>
+										margin-bottom: 2em;<br>
+									}<br><br>
+									
+									.review_section_item p {<br>
+										margin-right: 15em;<br>
+									}<br><br>
+			
+									.dot {<br>
+										height: 20px;<br>
+										width: 20px;<br>
+										background-color: #cecece;<br>
+										border-radius: 50%;<br>
+										display: inline-block;<br>
+										margin-right: 5px;<br>
+									}<br><br>
+			
+									.checked {<br>
+										background-color: #bf3b3b;<br>
+									}<br><br>
+									
+									.rating {<br>
+										display: flex;<br>
+										margin-bottom: 1em;<br>
+									}<br><br>
+									
+									.rating h3 {<br>
+										margin-top: 0.05em;<br>
+										margin-left: 1em;<br>
+									}
+								</code>
+
+                            </div>
+                        </div>
+					</div>
+					
+					<!--Review Form-->
+					<div class="element_container">
+                        <h2 class="element_title">Review Form</h2>
+                        <div class="example">
+
+                            <div class="review_form_section">
+
+								<div class="review_form_section_item" id="review-title">
+									<h2>Leave a Review</h2>
+								</div>
+						
+								<div class="review_form_section_item">
+									<p>Rating</p>
+									<div id="form_dot">
+										<div class="form_rating">
+											<div class="dot"></div>
+											<div class="dot"></div>
+											<div class="dot"></div>
+											<div class="dot"></div>
+											<div class="dot"></div>
+										</div>
+									</div>
+								</div>
+						
+								<div class="review_form_section_item">
+									<form>
+										<label for="name">Name:</label>
+										<input type="text" name="name" id="name">
+						
+										<label for="mail">Email:</label>
+										<input type="text" name="mail" id="mail">
+						
+										<label for="review">Review:</label>
+						
+										<textarea cols="60" rows="10" id="review"></textarea>
+						
+										<input class="button" type="submit" value="Submit" name="Submit" id="review_submit">
+						
+									</form>
+								</div>
+						
+							</div>
+							
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+								<h3>HTML</h3>
+								
+                                <code>
+									&lt;div class="review_form_section_item"><br>
+									&lt;h2>Leave a Review&lt;/h2><br>
+									&lt;/div><br><br>
+							
+									&lt;div class="review_form_section_item"><br>
+									&lt;p>Rating&lt;/p><br><br>
+									&lt;div id="form_dot"><br><br>
+									&lt;div class="form_rating"><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;div class="dot">&lt;/div><br>
+									&lt;/div><br><br>
+									&lt;/div><br><br>
+									&lt;/div><br><br>
+							
+									&lt;div class="review_form_section_item"><br>
+									&lt;form><br>
+									&lt;label for="name">Name:&lt;/label><br>
+									&lt;input type="text" name="name" id="name"><br>
+							
+									&lt;label for="mail">Email:&lt;/label><br>
+									&lt;input type="text" name="mail" id="mail"><br>
+							
+									&lt;label for="review">Review:&lt;/label><br>
+							
+									&lt;textarea cols="60" rows="10" id="review">&lt;/textarea><br>
+							
+									&lt;input class="button" type="submit" value="Submit" name="Submit" id="review_submit"><br>
+							
+									&lt;/form><br>
+									&lt;/div>
+								</code>
+
+                            </div>
+                            <div class="css_code">
+								<h3>CSS</h3>
+								
+                                <code>
+									.review_form_section {<br>
+										display: -webkit-flex;<br>
+										display: -ms-flex;<br>
+										display: flex;<br>
+										flex-direction: column;<br>
+										flex-wrap: -webkit-flex;<br>
+										flex-wrap: -ms-flex;<br>
+										flex-wrap: nowrap;<br>
+										margin: 2em 10em;<br>
+										margin-bottom: 4em;<br>
+									}<br><br>
+									
+									.review_form_section_item {<br>
+										margin-bottom: 1em;<br>
+									}<br><br>
+									
+									.review_form_section_item form {<br>
+										display: flex;<br>
+										flex-direction: column;<br>
+										margin-top: 1em;<br>
+									}<br><br>
+									
+									.review_form_section_item form input,<br>
+									.review_form_section_item form textarea {<br>
+										max-width: 50em;<br>
+									}<br><br>
+									
+									.review_form_section_item form input,<br>
+									.review_form_section_item form label {<br>
+										margin-bottom: 1em;<br>
+									}<br><br>
+									
+									#review_submit {<br>
+										max-width: 25em;<br>
+										margin-top: 1em;<br>
+									}<br><br>
+									
+									#form_dot {<br>
+										direction: ltr;<br>
+										position: relative;<br>
+										margin-bottom: 1.5em;<br>
+									}<br><br>
+									
+									.form_rating {<br>
+										margin-top: 1em;<br>
+										direction: rtl;<br>
+										position: absolute;<br>
+									}<br><br>
+									
+									.form_rating .dot:hover {<br>
+										content: "\2022";<br>
+										color: #bf3b3b;<br>
+										width: 20px;<br>
+										height: 20px;<br>
+										border-radius: 50%;<br>
+										background-color: #bf3b3b;<br>
+									}<br><br>
+									
+									.form_rating>.dot:hover::before,<br>
+									.form_rating>.dot:hover~.dot:before {<br>
+										content: "\2022";<br>
+										color: #bf3b3b;<br>
+										width: 20px;<br>
+										height: 20px;<br>
+										border-radius: 50%;<br>
+										background-color: #bf3b3b;<br>
+										position: absolute;<br>
+									}<br><br>
+									.review_form_section_item p {<br>
+										color: #333;<br>
+										font-weight: 500;<br>
+										font-size: 0.875em;<br>
+										font-family: 'Roboto Condensed', sans-serif;<br>
+									}<br>
+								</code>
+
+                            </div>
                         </div>
                     </div>
 

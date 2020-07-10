@@ -1,3 +1,4 @@
+/*
 *,
 *::before,
 *::after {
@@ -63,13 +64,13 @@
     border-bottom: 2px dotted #657566;;
 }
 /*End of Page layout*/
-
+/*
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
 }
 
-h2 {
+.review_form_section_item h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
 }
@@ -90,6 +91,27 @@ body {
 }
 
 /*End of Font*/
+.detail_item p {
+    color:black;
+    font-size: 1em;
+}
+
+#review-title h2, .detail_item h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color:black;
+}
+
+.detail_item label {
+    color:black;
+}
+
+.detail_item input {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
 
 button {
     background-color: #BF3B3B;
@@ -119,14 +141,14 @@ button:hover {
 
 /*End of Button*/
 
-label {
+.review_form_section_item label {
     color: #333;
     font-weight: 500;
     font-size: 0.875em;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-input,
+.review_form_section_item input,
 select {
     display: block;
     padding: 12px 16px;
@@ -134,6 +156,7 @@ select {
     border-radius: 2px;
 }
 
+/*
 #sort_select, #review_select {
     display: inline;
 }
