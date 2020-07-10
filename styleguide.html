@@ -1,364 +1,1883 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Style Guide</title>
+    <title>Style Guide</title>
 
-	<link rel="stylesheet" type="text/css" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/nav-style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css">
+
+    <script src="js/data.js"></script>
 
 </head>
-<body>
 
-	<nav class="main_nav">
-		<a href="index.html">GrocerySkip</a>
-		<a href="styleguide.html">Style Guide</a>
-		<a href="citations.html">Citations</a>
-	</nav>
+<body onload="quoteCarousel()">
+    <section id="styleguide">
 
-	<h1>GrocerySkip Style Guide</h1>
+        <nav class="main_nav">
+            <a href="index.html">GrocerySkip</a>
+            <a href="styleguide.html">Style Guide</a>
+            <a href="citations.html">Citations</a>
+        </nav>
 
-	<div class="view-container">
-	<div class="left-view">
-	<nav class="styleguide_nav">
-		<a href="#color_section">Color</a>
-		<a href="#typography">Typography</a>
-		<a href="#interactive_elements">Basic Interactive Elements</a>
-		<a href="#pattern_elements">Modular Pattern Elements</a>
-	</nav>
-	</div>
+        <h1>GrocerySkip Style Guide</h1>
 
-	<div class="right-view">
-
-	<!-- color -->
-
-	<div id="color_section" class="color_section">
-
-		<h1>Color</h1>
-
-		<div class="color_container">
-          <div class="bc_item">
-            <div class="color"></div>
-            <div class="color_value">#F03A47</div>
-          </div>
-
-          <div class="bc_item">
-            <div class="color"></div>
-            <div class="color_value">#AF5B5B</div>
-          </div>
-
-          <div class="bc_item">
-            <div class="color"></div>
-            <div class="color_value">#F6F4F3</div>
-          </div>
-
-          <div class="bc_item">
-            <div class="color"></div>
-            <div class="color_value">#276FBF</div>
-          </div>
-
-          <div class="bc_item">
-            <div class="color"></div>
-            <div class="color_value">#183059</div>
-          </div>
-        </div>
-		
-
-
-	</div>
-
-	<!-- typography -->
-
-	<div id="typography" class="typography">
-        <h1>Typography</h1>
-
-        <div class="type_container">
-
-          <div class="type_item">
-            <div class="type">Headline 1</div>
-
-            <div class="type_detail">
-
-              <div class="detail_item">
-                <div class="font">Roboto</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_weight">Light</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_size">64px</div>
-              </div>  
-              
-            </div>   
-          </div>
-
-          <div class="type_item">
-            <div class="type">Headline 2</div>
-
-            <div class="type_detail">
-
-              <div class="detail_item">
-                <div class="font">Roboto</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_weight">Normal</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_size">24px</div>
-              </div>  
-              
-            </div>  
-          </div>
-
-          <div class="type_item">
-            <div class="type">Headline 3</div>
-
-            <div class="type_detail">
-
-              <div class="detail_item">
-                <div class="font">Roboto</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_weight">Light</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_size">24px</div>
-              </div>  
-              
-            </div> 
-
-          </div>
-
-          <div class="type_item">
-            <div class="type">Paragraph</div>
-
-            <div class="type_detail">
-
-              <div class="detail_item">
-                <div class="font">Roboto</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_weight">Normal</div>
-              </div>
-              <div class="detail_item">
-                <div class="font_size">16px</div>
-              </div>  
-              
+        <div class="view-container">
+            <div class="left-view">
+                <nav class="styleguide_nav">
+                    <a href="#color_section">Color</a>
+                    <a href="#typography">Typography</a>
+                    <a href="#interactive_elements">Basic Interactive Elements</a>
+                    <a href="#pattern_elements">Modular Pattern Elements</a>
+                </nav>
             </div>
 
-          </div>
+            <div class="right-view">
 
-        </div>
+                <!-- color -->
 
-        <div class="bullet_list">Bullet List
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </div>
+                <div id="color_section" class="color_section">
 
-        <div class="number_list">Number List
-          <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ol>
-        </div>
-  
-      </div>
+                    <h1>Color</h1>
+
+                    <div class="color_container">
+                        <div class="bc_item">
+                            <div class="color"></div>
+                            <div class="color_value">#F03A47</div>
+                        </div>
+
+                        <div class="bc_item">
+                            <div class="color"></div>
+                            <div class="color_value">#AF5B5B</div>
+                        </div>
+
+                        <div class="bc_item">
+                            <div class="color"></div>
+                            <div class="color_value">#F6F4F3</div>
+                        </div>
+
+                        <div class="bc_item">
+                            <div class="color"></div>
+                            <div class="color_value">#276FBF</div>
+                        </div>
+
+                        <div class="bc_item">
+                            <div class="color"></div>
+                            <div class="color_value">#183059</div>
+                        </div>
+                    </div>
 
 
-      <!-- Basic Interactive Elements -->
 
-      <div id="interactive_elements" class="interactive_elements">
+                </div>
 
-      	<h1>Basic Interactive Elements</h1>
+                <!-- typography -->
 
-      	<div class="element_container">
-      		<h2 class="element_title">Primary Button</h2>
-      		<div class="example">
-      			<a class="cta_button" href="#">Button</a>
-      		</div>
-      		<div class="code_block">
-      			<div class="html_code">
-      				<h3>HTML</h3>
-      				<code>&lt;a class=&quot;cta_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
-					</code>
-      			</div>
-      			<div class="css_code">
-      				<h3>CSS</h3>
-      				<code>.cta_button{
-						background-color: #BF3B3B;
-					    display: block;
-					    width:7em;
-					    border: none;
-					    color: white;
-					    border-radius: 0.125em;
-					    padding: 0.75em 1.5em 0.75em 1.5em;
-					    font-size: 1em;
-					    text-decoration: none;
-					    text-align: center;
+                <div id="typography" class="typography">
+                    <h1>Typography</h1>
 
-					}
-					.cta_button:hover {
-					    background-color: #A60303;}
-					</code>
-      			</div>
-      		</div>
-      	</div>
+                    <div class="type_container">
 
-      	<div class="element_container">
-      		<h2 class="element_title">Secondary Button</h2>
-      		<div class="example">
-      			<a class="secondary_button" href="#">Button</a>
-      		</div>
-      		<div class="code_block">
-      			<div class="html_code">
-      				<h3>HTML</h3>
-      				<code>&lt;a class=&quot;secondary_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
-					</code>
-      			</div>
-      			<div class="css_code">
-      				<h3>CSS</h3>
-      				<code>.secondary_button{
-							border:1px solid #BF3B3B;
-						    display: block;
-						    width:7em;
-						    color: #BF3B3B;
-						    border-radius: 0.125em;
-						    padding: 0.75em 1.5em 0.75em 1.5em;
-						    font-size: 1em;
-						    font-weight: 500;
-						    text-decoration: none;
-						    text-align: center;
-						}
+                        <div class="type_item">
+                            <div class="type">Headline 1</div>
 
-						.secondary_button:hover{
+                            <div class="type_detail">
+
+                                <div class="detail_item">
+                                    <div class="font">Roboto</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_weight">Light</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_size">64px</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="type_item">
+                            <div class="type">Headline 2</div>
+
+                            <div class="type_detail">
+
+                                <div class="detail_item">
+                                    <div class="font">Roboto</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_weight">Normal</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_size">24px</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="type_item">
+                            <div class="type">Headline 3</div>
+
+                            <div class="type_detail">
+
+                                <div class="detail_item">
+                                    <div class="font">Roboto</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_weight">Light</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_size">24px</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="type_item">
+                            <div class="type">Paragraph</div>
+
+                            <div class="type_detail">
+
+                                <div class="detail_item">
+                                    <div class="font">Roboto</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_weight">Normal</div>
+                                </div>
+                                <div class="detail_item">
+                                    <div class="font_size">16px</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bullet_list">Bullet List
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+
+                    <div class="number_list">Number List
+                        <ol>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+
+                <!-- Basic Interactive Elements -->
+
+                <div id="interactive_elements" class="interactive_elements">
+
+                    <h1>Basic Interactive Elements</h1>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Primary Button</h2>
+                        <div class="example">
+                            <a class="cta_button" href="#">Button</a>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>&lt;a class=&quot;cta_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
+						</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>.cta_button{
 							background-color: #BF3B3B;
-							color:#fff;
-						}
-					</code>
-      			</div>
-      		</div>
-      	</div>
-
-      	<div class="element_container">
-      		<h2 class="element_title">Link Button</h2>
-      		<div class="example">
-      			<a class="link_button" href="#">Button</a>
-      		</div>
-      		<div class="code_block">
-      			<div class="html_code">
-      				<h3>HTML</h3>
-      				<code>&lt;a class=&quot;link_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
-					</code>
-      			</div>
-      			<div class="css_code">
-      				<h3>CSS</h3>
-      				<code>.link_button{
+							display: block;
+							width:7em;
+							border: none;
+							color: white;
+							border-radius: 0.125em;
+							padding: 0.75em 1.5em 0.75em 1.5em;
+							font-size: 1em;
 							text-decoration: none;
-						    color: #BF3B3B;
-						    font-family: 'Roboto Condensed', sans-serif;
-						    font-size: 1em;
-						    font-weight: bold;
-						    margin-top: 0.5em;
+							text-align: center;
+	
 						}
+						.cta_button:hover {
+							background-color: #A60303;}
+						</code>
+                            </div>
+                        </div>
+                    </div>
 
-						.link_button:hover{
-							text-decoration: underline;
-						}
-					</code>
-      			</div>
-      		</div>
-      	</div>
+                    <div class="element_container">
+                        <h2 class="element_title">Secondary Button</h2>
+                        <div class="example">
+                            <a class="secondary_button" href="#">Button</a>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>&lt;a class=&quot;secondary_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
+						</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>.secondary_button{
+								border:1px solid #BF3B3B;
+								display: block;
+								width:7em;
+								color: #BF3B3B;
+								border-radius: 0.125em;
+								padding: 0.75em 1.5em 0.75em 1.5em;
+								font-size: 1em;
+								font-weight: 500;
+								text-decoration: none;
+								text-align: center;
+							}
+	
+							.secondary_button:hover{
+								background-color: #BF3B3B;
+								color:#fff;
+							}
+						</code>
+                            </div>
+                        </div>
+                    </div>
 
-      	<div class="element_container">
-      		<h2 class="element_title">Input Field</h2>
-      		<div class="example">
+                    <div class="element_container">
+                        <h2 class="element_title">Link Button</h2>
+                        <div class="example">
+                            <a class="link_button" href="#">Button</a>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>&lt;a class=&quot;link_button&quot; href=&quot;index.html&quot;&gt;Button&lt;/a&gt;
+						</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>.link_button{
+								text-decoration: none;
+								color: #BF3B3B;
+								font-family: 'Roboto Condensed', sans-serif;
+								font-size: 1em;
+								font-weight: bold;
+								margin-top: 0.5em;
+							}
+	
+							.link_button:hover{
+								text-decoration: underline;
+							}
+						</code>
+                            </div>
+                        </div>
+                    </div>
 
-      			<div class="input_container">
-                    <label class="input_label" for="label">Label</label>
-                    <input class="input_field" id="label" name="input_field">
+                    <div class="element_container">
+                        <h2 class="element_title">Input Field</h2>
+                        <div class="example">
+
+                            <div class="input_container">
+                                <label class="input_label" for="label">Label</label>
+                                <input class="input_field" id="label" name="input_field">
+                            </div>
+
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+							  &lt;div class=&quot;input_container&quot;&gt; &lt;label class=&quot;input_label&quot; for=&quot;label&quot;&gt;Label&lt;/label&gt; &lt;input class=&quot;input_field&quot; id=&quot;label&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt;
+						</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+							  .input_label {
+								color: #333;
+								font-weight: 500;
+								font-size: 0.875em;
+								font-family: 'Roboto Condensed', sans-serif;
+							}
+	
+							.input_field{
+								display: block;
+								padding: 0.75em 1em;
+								border: 0.0625em solid #ccc;
+								border-radius: 0.125em;
+								margin-top: 0.25em;
+								margin-bottom: 1.25em;
+								width: 25%;
+							}
+						</code>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-      			
-      		</div>
-      		<div class="code_block">
-      			<div class="html_code">
-      				<h3>HTML</h3>
-      				<code>
-      					&lt;div class=&quot;input_container&quot;&gt;<br>&lt;label class=&quot;input_label&quot; for=&quot;label&quot;&gt;Label&lt;/label&gt;<br>&lt;input class=&quot;input_field&quot; id=&quot;label&quot; name=&quot;input_field&quot;&gt;<br>&lt;/div&gt;
-					</code>
-      			</div>
-      			<div class="css_code">
-      				<h3>CSS</h3>
-      				<code>
-      					.input_label {<br>
-						    color: #333;<br>
-						    font-weight: 500;<br>
-						    font-size: 0.875em;<br>
-						    font-family: 'Roboto Condensed', sans-serif;<br>
-						}<br>
 
-						.input_field{<br>
-						    display: block;<br>
-						    padding: 0.75em 1em;<br>
-						    border: 0.0625em solid #ccc;<br>
-						    border-radius: 0.125em;<br>
-						    margin-top: 0.25em;<br>
-						    margin-bottom: 1.25em;<br>
-						    width: 25%;<br>
-						}
-					</code>
-      			</div>
-      		</div>
-      	</div>
+                <!-- Modular Elements -->
 
-      	<div class="element_container">
-      		<h2 class="element_title">Select</h2>
-      		<div class="example">
+                <div id="pattern_elements" class="modular-element_container">
+                    <h1>Modular Elements</h1>
 
-      			<div class="input_container">
-                        <label class="input_label" for="select">Select an item</label>
-                        <select class="select_item" id="select" name="select">
-          				  <option>Select</option>
-                  		  <option>Item 2</option>
-		                  <option>Item 3</option>
-          			</select>
+                    <div class="element_container">
+                        <h2 class="element_title">Main Navigation</h2>
+                        <div class="example">
+                            <div id="menu-icon"></div>
+                            <nav class="main-nav">
+                                <div class="mobile-nav">
+                                    <div class="icon-container">
+                                        <a href="#menu-icon" class="clicker menu-icon" tabindex="1">
+                                            <div class="menu-icon">
+                                                <img src="img/menu-icon.svg" alt="menu icon">
+                                            </div>
+                                        </a>
+                                        <a href="#mid-nav" class="clicker hidden menu-icon" tabindex="1">
+                                            <div class="menu-icon">
+                                                <img src="img/menu-icon.svg" alt="menu icon">
+                                            </div>
+                                        </a>
+                                        <a href="index.html">
+                                            <div><img class="placeholder-icon" src="img/company_logo.png" alt="company logo"></div>
+                                        </a>
+                                        <a href="checkout.html">
+                                            <div class="checkout-icon">
+                                                <img src="img/cart-icon.svg" alt="cart icon">
+                                                <span class="quantity"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="overlay"></div>
+
+                                <div class="left-nav">
+                                    <a href="index.html">
+                                        <div><img class="placeholder-icon" src="img/company_logo.png" alt="company logo"></div>
+                                    </a>
+                                </div>
+
+                                <div class="mid-nav hiddendiv">
+                                    <div class="nav-item-wrapper">
+                                        <a class="nav-item" href="index.html">HOME</a>
+                                    </div>
+                                    <div class="nav-item-wrapper">
+                                        <a href="products.html" class="nav-item nav-item_products">PRODUCTS</a>
+                                        <div class="sub-main-nav">
+                                            <a href="products.html" class="nav-item">All</a>
+                                            <a href="products.html" class="nav-item">Beverages</a>
+                                            <a href="products.html" class="nav-item">Dairy &amp; Meat</a>
+                                            <a href="products.html" class="nav-item">Dry Goods</a>
+                                            <a href="products.html" class="nav-item">Produce</a>
+                                        </div>
+                                    </div>
+                                    <div class="nav-item-wrapper">
+                                        <a class="nav-item" href="about.html">ABOUT</a>
+                                    </div>
+                                </div>
+
+                                <div class="right-nav">
+                                    <div class="right-nav-icon-wrapper">
+                                        <a href="search.html">
+                                            <img src="img/search-icon.svg" alt="search icon">
+                                        </a>
+                                        <a href="cart.html">
+                                            <div class="cart-wrapper">
+                                                <img src="img/cart-icon.svg" alt="cart icon">
+                                                <span class="quantity">0</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv id="menu-icon"&gt&lt/div&gt <br>
+									&ltnav class="main-nav"&gt <br>
+										&ltdiv class="mobile-nav"&gt <br>
+											&ltdiv class="icon-container"&gt <br>
+												&lta href="#menu-icon" class="clicker menu-icon" tabindex="1"&gt <br>
+													&ltdiv class="menu-icon"&gt <br>
+														&ltimg src="img/menu-icon.svg" alt="menu icon"&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="#mid-nav" class="clicker hidden menu-icon" tabindex="1"&gt <br>
+													&ltdiv class="menu-icon"&gt <br>
+														&ltimg src="img/menu-icon.svg" alt="menu icon"&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="index.html"&gt <br>
+													&ltdiv&gt&ltimg class="placeholder-icon" src="img/company_logo.png" alt="company logo"&gt&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="checkout.html"&gt <br>
+													&ltdiv class="checkout-icon"&gt <br>
+														&ltimg src="img/cart-icon.svg" alt="cart icon"&gt <br>
+														&ltspan class="quantity"&gt&lt/span&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+						
+										&ltdiv id="overlay"&gt&lt/div&gt <br>
+						
+										&ltdiv class="left-nav"&gt <br>
+											&lta href="index.html"&gt <br>
+												&ltdiv&gt&ltimg class="placeholder-icon" src="img/company_logo.png" alt="company logo"&gt&lt/div&gt <br>
+											&lt/a&gt <br>
+										&lt/div&gt <br>
+						 <br>
+										&ltdiv class="mid-nav hiddendiv"&gt <br>
+											&ltdiv class="nav-item-wrapper"&gt <br>
+												&lta class="nav-item" href="index.html"&gtHOME&lt/a&gt <br>
+											&lt/div&gt <br>
+											&ltdiv class="nav-item-wrapper"&gt <br>
+												&lta href="products.html" class="nav-item nav-item_products"&gtPRODUCTS&lt/a&gt <br>
+												&ltdiv class="sub-main-nav"&gt <br>
+													&lta href="products.html" class="nav-item"&gtAll&lt/a&gt <br>
+													&lta href="products.html" class="nav-item"&gtBeverages&lt/a&gt <br>
+													&lta href="products.html" class="nav-item"&gtDairy &amp; Meat&lt/a&gt <br>
+													&lta href="products.html" class="nav-item"&gtDry Goods&lt/a&gt <br>
+													&lta href="products.html" class="nav-item"&gtProduce&lt/a&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+											&ltdiv class="nav-item-wrapper"&gt <br>
+												&lta class="nav-item" href="about.html"&gtABOUT&lt/a&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+						 <br>
+										&ltdiv class="right-nav"&gt <br>
+											&ltdiv class="right-nav-icon-wrapper"&gt <br>
+												&lta href="search.html"&gt <br>
+												&lt/a&gt <br>
+												&lta href="cart.html"&gt <br>
+													&ltdiv class="cart-wrapper"&gt <br>
+														&ltimg src="img/cart-icon.svg" alt="cart icon"&gt <br>
+														&ltspan class="quantity"&gt0&lt/span&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+									&lt/nav&gt <br>
+								</code>
+                                </code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.placeholder-icon { <br>
+										background: #808080; <br>
+										margin-top: 0.30em; <br>
+										height: 3em; <br>
+										width: 8em; <br>
+										display: inline-block; <br>
+									} <br>
+									 <br>
+									.close-icon img, <br>
+									.search-icon img { <br>
+										margin-top: 0.4em; <br>
+										height: 3em; <br>
+										width: 3em; <br>
+									} <br>
+									
+									.close-icon img { <br>
+										margin: 1em; <br>
+									} <br>
+									 <br>
+									.close-icon img:hover { <br>
+										transform: scale(1.1); <br>
+									} <br>
+									 <br>
+									.right-nav img { <br>
+										margin-top: 1em; <br>
+										height: 1.6em; <br>
+										width: 1.6em; <br>
+									} <br>
+									 <br>
+									.close-icon img, <br>
+									.search-icon img, <br>
+									.checkout-icon img, <br>
+									.menu-icon img { <br>
+										margin-top: 0.4em; <br>
+										height: 3em; <br>
+										width: 3em; <br>
+									} <br>
+									 <br>
+									.close-icon img { <br>
+										margin: 1em; <br>
+									} <br>
+									 <br>
+									.close-icon img:hover { <br>
+										transform: scale(1.1); <br>
+									} <br>
+									 <br>
+									.right-nav img:hover { <br>
+										transform: scale(1.1); <br>
+									} <br>
+									 <br>
+									.right-nav img:first-child { <br>
+										margin-right: 1.25em; <br>
+									} <br>
+									 <br>
+									.main-nav { <br>
+										display: flex; <br>
+										flex-wrap: wrap; <br>
+										background: #BF3B3B; <br>
+										height: 3.5em; <br>
+										justify-content: space-around; <br>
+									} <br>
+									 <br>
+									.nav-item { <br>
+										display: inline-block; <br>
+										padding: 1.25em 2em; <br>
+										text-align: center; <br>
+										text-decoration: none; <br>
+										color: white; <br>
+										background: #BF3B3B; <br>
+										height: 3.5em; <br>
+									} <br>
+									 <br>
+									.nav-item_products { <br>
+										cursor: pointer; <br>
+									} <br>
+									 <br>
+									.nav-item:hover { <br>
+										background: #A60303; <br>
+									} <br>
+									 <br>
+									.sub-main-nav { <br>
+										display: none; <br>
+									} <br>
+									 <br>
+									.mobile-nav { <br>
+										display: none; <br>
+									} <br>
+									 <br>
+									.left-nav { <br>
+										flex: 0 0 5%; <br>
+										margin-left: 1.5em; <br>
+									} <br>
+									 <br>
+									.mid-nav { <br>
+										flex: 0 0 60%; <br>
+										margin-left: 0.5em; <br>
+									} <br>
+									 <br>
+									.right-nav { <br>
+										flex: 0 0 15%; <br>
+									} <br>
+									 <br>
+									.right-nav-icon-wrapper { <br>
+										display: flex; <br>
+										justify-content: flex-end; <br>
+									} <br>
+									 <br>
+									.nav-item-wrapper { <br>
+										display: inline-block; <br>
+									} <br>
+									 <br>
+									.icon-container { <br>
+										display: flex; <br>
+										justify-content: space-between; <br>
+									} <br>
+									 <br>
+									.checkout-icon { <br>
+										margin-right: 1.5em; <br>
+									} <br>
+									 <br>
+									.menu-icon { <br>
+										margin-left: 0.8em; <br>
+									} <br>
+									 <br>
+									#overlay { <br>
+										display: none; <br>
+										position: fixed; <br>
+										width: 100%; <br>
+										height: 100vh; <br>
+										top: 0; <br>
+										left: 0; <br>
+										right: 0; <br>
+										bottom: 0; <br>
+										background: #BF3B3B; <br>
+										z-index: 998; <br>
+										overflow: hidden; <br>
+									} <br>
+									 <br>
+									@media screen and (max-width: 768px) { <br>
+										.left-nav, <br>
+										.right-nav { <br>
+											display: none; <br>
+										} <br>
+										.sub-main-nav { <br>
+											display: block; <br>
+										} <br>
+										.mobile-nav { <br>
+											flex: 0 0 100%; <br>
+											display: block; <br>
+											order: 1; <br>
+											position: relative; <br>
+											z-index: 999; <br>
+											padding-bottom: 0.5em; <br>
+										} <br>
+										.mid-nav .nav-item-wrapper, <br>
+										.nav-item { <br>
+											display: block; <br>
+										} <br>
+										.mid-nav { <br>
+											position: absolute; <br>
+											top: 50%; <br>
+											transform: translateY(-50%); <br>
+											width: 100%; <br>
+											flex: 0 0 100%; <br>
+											order: 2; <br>
+											flex-direction: column; <br>
+											display: none; <br>
+											z-index: 999; <br>
+										} <br>
+										.mid-nav a { <br>
+											text-align: left; <br>
+											font-size: 1.3em; <br>
+											font-weight: 500; <br>
+										} <br>
+										.sub-main-nav a { <br>
+											font-weight: 300; <br>
+											font-size: 1.1em; <br>
+										} <br>
+										.sub-main-nav .nav-item { <br>
+											padding-left: 2.5em; <br>
+										} <br>
+										.nav-item:not(.nav-item_products):hover { <br>
+											background: #A60303; <br>
+										} <br>
+										.clicker.hidden { <br>
+											display: none; <br>
+										} <br>
+										.hiddendiv { <br>
+											display: none; <br>
+											transition: display 0.5s; <br>
+										} <br>
+										#menu-icon:target~.main-nav div div a[href="#menu-icon"], <br>
+										#sub-main-nav:target~.main-nav .mid-nav .nav-item-wrapper a[href="#sub-main-nav"] { <br>
+											display: none; <br>
+										} <br>
+										#menu-icon:target~.main-nav div div a[href="#mid-nav"], <br>
+										#sub-main-nav:target~.main-nav .mid-nav .nav-item-wrapper a[href="#sub-main-nav-hidden"] { <br>
+											display: inline-block; <br>
+										} <br>
+										#menu-icon:target~.main-nav .mid-nav, <br>
+										#menu-icon:target~.main-nav #overlay, <br>
+										#sub-main-nav:target~.main-nav .mid-nav .sub-main-nav { <br>
+											display: block; <br>
+										} <br>
+										.close-icon img, <br>
+										.search-icon img, <br>
+										.checkout-icon img, <br>
+										.menu-icon img { <br>
+											margin-top: 0.8em; <br>
+											height: 2em; <br>
+											width: 2em; <br>
+										} <br>
+									}
+								</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Sub Navigation</h2>
+                        <div class="example">
+                            <div class="grid-item_submenu submenu-container">
+                                <div id="showBeverages"></div>
+                                <div id="showDairy-n-Meats"></div>
+                                <div id="showDryGoods"></div>
+                                <div id="showProduce"></div>
+
+                                <nav class="sub-nav" aria-label="sub navigation menu">
+                                    <a class="sub-nav-category">All Products</a>
+                                    <a href="#showBeverages" class="sub-nav-category sub-nav-beverages clicker">Beverages</a>
+                                    <a href="#hideBeverages" class="sub-nav-category sub-nav-beverages clicker hidden">Beverages</a>
+                                    <div class="sub-sub-nav hiddendiv sub-sub-nav-beverages">
+                                        <a class="link_button" href="#">Juice</a>
+                                        <a class="link_button" href="#">Pop</a>
+                                        <a class="link_button" href="#">Water</a>
+                                    </div>
+                                    <a href="#showDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker">Dairy &amp; Meat</a>
+                                    <a href="#hideDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker hidden">Dairy &amp; Meat</a>
+                                    <div class="sub-sub-nav hiddendiv sub-sub-nav-dairynmeats">
+                                        <a class="link_button" href="#">Milk &amp; Dairy Alternatives</a>
+                                        <a class="link_button" href="#">Butter</a>
+                                        <a class="link_button" href="#">Eggs</a>
+                                        <a class="link_button" href="#">Beef</a>
+                                        <a class="link_button" href="#">Chicken</a>
+                                        <a class="link_button" href="#">Pork</a>
+                                    </div>
+                                    <a href="#showDryGoods" class="sub-nav-category sub-nav-drygoods clicker">Dry Goods</a>
+                                    <a href="#hideDryGoods" class="sub-nav-category sub-nav-drygoods clicker hidden">Dry Goods</a>
+                                    <div class="sub-sub-nav hiddendiv sub-sub-nav-drygoods">
+                                        <a class="link_button" href="#">Flour &amp; Starches</a>
+                                        <a class="link_button" href="#">Sugar</a>
+                                        <a class="link_button" href="#">Salt</a>
+                                        <a class="link_button" href="#">Seasonings</a>
+                                    </div>
+                                    <a href="#showProduce" class="sub-nav-category sub-nav-produce clicker">Produce</a>
+                                    <a href="#hideProduce" class="sub-nav-category sub-nav-produce clicker hidden">Produce</a>
+                                    <div class="sub-sub-nav hiddendiv sub-sub-nav-produce">
+                                        <a class="link_button" href="#">Vegetables</a>
+                                        <a class="link_button" href="#">Fruits</a>
+                                        <a class="link_button" href="#">Herbs</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv id="showBeverages"&gt&lt/div&gt <br>
+									&ltdiv id="showDairy-n-Meats"&gt&lt/div&gt <br>
+									&ltdiv id="showDryGoods"&gt&lt/div&gt <br>
+									&ltdiv id="showProduce"&gt&lt/div&gt <br>
+					 <br>
+									&ltnav class="sub-nav" aria-label="sub navigation menu"&gt <br>
+										&lta class="sub-nav-category"&gtAll Products&lt/a&gt <br>
+										&lta href="#showBeverages" class="sub-nav-category sub-nav-beverages clicker"&gtBeverages&lt/a&gt <br>
+										&lta href="#hideBeverages" class="sub-nav-category sub-nav-beverages clicker hidden"&gtBeverages&lt/a&gt <br>
+										&ltdiv class="sub-sub-nav hiddendiv sub-sub-nav-beverages"&gt <br>
+											&lta class="link_button" href="#"&gtJuice&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtPop&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtWater&lt/a&gt <br>
+										&lt/div&gt <br>
+										&lta href="#showDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker"&gtDairy &amp; Meat&lt/a&gt <br>
+										&lta href="#hideDairy-n-Meats" class="sub-nav-category sub-nav-dairynmeats clicker hidden"&gtDairy &amp; Meat&lt/a&gt <br>
+										&ltdiv class="sub-sub-nav hiddendiv sub-sub-nav-dairynmeats"&gt <br>
+											&lta class="link_button" href="#"&gtMilk &amp; Dairy Alternatives&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtButter&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtEggs&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtBeef&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtChicken&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtPork&lt/a&gt <br>
+										&lt/div&gt <br>
+										&lta href="#showDryGoods" class="sub-nav-category sub-nav-drygoods clicker"&gtDry Goods&lt/a&gt <br>
+										&lta href="#hideDryGoods" class="sub-nav-category sub-nav-drygoods clicker hidden"&gtDry Goods&lt/a&gt <br>
+										&ltdiv class="sub-sub-nav hiddendiv sub-sub-nav-drygoods"&gt <br>
+											&lta class="link_button" href="#"&gtFlour &amp; Starches&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtSugar&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtSalt&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtSeasonings&lt/a&gt <br>
+										&lt/div&gt <br>
+										&lta href="#showProduce" class="sub-nav-category sub-nav-produce clicker"&gtProduce&lt/a&gt <br>
+										&lta href="#hideProduce" class="sub-nav-category sub-nav-produce clicker hidden"&gtProduce&lt/a&gt <br>
+										&ltdiv class="sub-sub-nav hiddendiv sub-sub-nav-produce"&gt <br>
+											&lta class="link_button" href="#"&gtVegetables&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtFruits&lt/a&gt <br>
+											&lta class="link_button" href="#"&gtHerbs&lt/a&gt <br>
+										&lt/div&gt <br>
+									&lt/nav&gt
+								</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.grid-item_submenu .clicker.hidden { <br>
+										display: none; <br>
+										background: #A60303; <br>
+										color: white; <br>
+									} <br>
+									 <br>
+									.grid-item_submenu .hiddendiv { <br>
+										display: none; <br>
+										transition: display 0.5s; <br>
+									} <br>
+									 <br>
+									#showBeverages:target~.sub-nav .sub-nav-beverages[href="#showBeverages"], <br>
+									#showDairy-n-Meats:target~.sub-nav .sub-nav-dairynmeats[href="#showDairy-n-Meats"], <br>
+									#showDryGoods:target~.sub-nav .sub-nav-drygoods[href="#showDryGoods"], <br>
+									#showProduce:target~.sub-nav .sub-nav-produce[href="#showProduce"] { <br>
+										display: none; <br>
+									} <br>
+									 <br>
+									#showBeverages:target~.sub-nav .sub-nav-beverages[href="#hideBeverages"], <br>
+									#showDairy-n-Meats:target~.sub-nav .sub-nav-dairynmeats[href="#hideDairy-n-Meats"], <br>
+									#showDryGoods:target~.sub-nav .sub-nav-drygoods[href="#hideDryGoods"], <br>
+									#showProduce:target~.sub-nav .sub-nav-produce[href="#hideProduce"] { <br>
+										display: block; <br>
+									} <br>
+									 <br>
+									#showBeverages:target~.sub-nav .hiddendiv.sub-sub-nav-beverages, <br>
+									#showDairy-n-Meats:target~.sub-nav .hiddendiv.sub-sub-nav-dairynmeats, <br>
+									#showDryGoods:target~.sub-nav .hiddendiv.sub-sub-nav-drygoods, <br>
+									#showProduce:target~.sub-nav .hiddendiv.sub-sub-nav-produce { <br>
+										display: block; <br>
+									} <br>
+									 <br>
+									.sub-nav a { <br>
+										color: black; <br>
+										text-decoration: none; <br>
+										display: block; <br>
+										cursor: pointer; <br>
+										font-weight: 400; <br>
+									} <br>
+									 <br>
+									.sub-sub-nav { <br>
+										padding: 0.5em; <br>
+										background-color: white; <br>
+									} <br>
+									 <br>
+									.sub-nav-category { <br>
+										padding: 1em 0.25em; <br>
+										border-top: 1px solid #ddd; <br>
+									} <br>
+									 <br>
+									.sub-nav-category:hover { <br>
+										background-color: #A60303; <br>
+										color: white; <br>
+									} <br>
+									 <br>
+									.sub-sub-nav:last-child { <br>
+										border-bottom: 1px solid black; <br>
+									} <br>
+									 <br>
+									.sub-nav-category:not(:first-child):after { <br>
+										content: '\002B'; <br>
+										color: #333; <br>
+										font-weight: 400; <br>
+										float: right; <br>
+										margin-left: 0.3em; <br>
+									} <br>
+									 <br>
+									.active:not(:first-child):after { <br>
+										content: "\2212"; <br>
+									}
+								</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Shop By Category</h2>
+                        <div class="example">
+                            <div class="shop-by-category">
+                                <div class="grid-boxes">
+                                    <div class="grid-boxes-container">
+                                        <a href="products.html">
+                                            <div class="grid-boxes-item">
+                                                <div class="shop-by-category-item-container">
+                                                    <div class="shop-by-category-item-wrapper">
+                                                        <img src="img/bev2_400.jpg" alt="Beverages category; smart water">
+                                                        <div class="shop-by-category-text-wrapper">
+                                                            <div class="cta_button">Beverages</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="products.html">
+                                            <div class="grid-boxes-item">
+                                                <div class="shop-by-category-item-container">
+                                                    <div class="shop-by-category-item-wrapper">
+                                                        <img src="img/dairy4_400.jpg" alt="Dairy category; milk">
+                                                        <div class="shop-by-category-text-wrapper">
+                                                            <div class="cta_button">Dairy</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="products.html">
+                                            <div class="grid-boxes-item">
+                                                <div class="shop-by-category-item-container">
+                                                    <div class="shop-by-category-item-wrapper">
+                                                        <img src="img/deli2_400.jpg" alt="Deli category; Bacon">
+                                                        <div class="shop-by-category-text-wrapper">
+                                                            <div class="cta_button">Deli</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="products.html">
+                                            <div class="grid-boxes-item">
+                                                <div class="shop-by-category-item-container">
+                                                    <div class="shop-by-category-item-wrapper">
+                                                        <img src="img/meat1_400.jpg" alt="Meat category; Prime Rib">
+                                                        <div class="shop-by-category-text-wrapper">
+                                                            <div class="cta_button">Meats</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="products.html">
+                                            <div class="grid-boxes-item">
+                                                <div class="shop-by-category-item-container">
+                                                    <div class="shop-by-category-item-wrapper">
+                                                        <img src="img/produce2_400.jpg" alt="Produce category; bananas">
+                                                        <div class="shop-by-category-text-wrapper">
+                                                            <div class="cta_button">Produce</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv class="shop-by-category"&gt <br>
+										&ltdiv class="grid-boxes"&gt <br>
+											&ltdiv class="grid-boxes-top"&gt <br>
+												&lth2&gtShop by Category&lt/h2&gt <br>
+											&lt/div&gt <br>
+											&ltdiv class="grid-boxes-container"&gt <br>
+												&lta href="products.html"&gt <br>
+													&ltdiv class="grid-boxes-item"&gt <br>
+														&ltdiv class="shop-by-category-item-container"&gt <br>
+															&ltdiv class="shop-by-category-item-wrapper"&gt <br>
+																&ltimg src="img/bev2_400.jpg" alt="Beverages category; smart water"&gt <br>
+																&ltdiv class="shop-by-category-text-wrapper"&gt <br>
+																	&ltdiv class="cta_button"&gtBeverages&lt/div&gt <br>
+																&lt/div&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="products.html"&gt <br>
+													&ltdiv class="grid-boxes-item"&gt <br>
+														&ltdiv class="shop-by-category-item-container"&gt <br>
+															&ltdiv class="shop-by-category-item-wrapper"&gt <br>
+																&ltimg src="img/dairy4_400.jpg" alt="Dairy category; milk"&gt <br>
+																&ltdiv class="shop-by-category-text-wrapper"&gt <br>
+																	&ltdiv class="cta_button"&gtDairy&lt/div&gt <br>
+																&lt/div&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="products.html"&gt <br>
+													&ltdiv class="grid-boxes-item"&gt <br>
+														&ltdiv class="shop-by-category-item-container"&gt <br>
+															&ltdiv class="shop-by-category-item-wrapper"&gt <br>
+																&ltimg src="img/deli2_400.jpg" alt="Deli category; Bacon"&gt <br>
+																&ltdiv class="shop-by-category-text-wrapper"&gt <br>
+																	&ltdiv class="cta_button"&gtDeli&lt/div&gt <br>
+																&lt/div&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="products.html"&gt <br>
+													&ltdiv class="grid-boxes-item"&gt <br>
+														&ltdiv class="shop-by-category-item-container"&gt <br>
+															&ltdiv class="shop-by-category-item-wrapper"&gt <br>
+																&ltimg src="img/meat1_400.jpg" alt="Meat category; Prime Rib"&gt <br>
+																&ltdiv class="shop-by-category-text-wrapper"&gt <br>
+																	&ltdiv class="cta_button"&gtMeats&lt/div&gt <br>
+																&lt/div&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+												&lta href="products.html"&gt <br>
+													&ltdiv class="grid-boxes-item"&gt <br>
+														&ltdiv class="shop-by-category-item-container"&gt <br>
+															&ltdiv class="shop-by-category-item-wrapper"&gt <br>
+																&ltimg src="img/produce2_400.jpg" alt="Produce category; bananas"&gt <br>
+																&ltdiv class="shop-by-category-text-wrapper"&gt <br>
+																	&ltdiv class="cta_button"&gtProduce&lt/div&gt <br>
+																&lt/div&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/a&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt
+								</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.grid-boxes-top, <br>
+									.shop-by-category h2 { <br>
+										margin-bottom: 1em; <br>
+									} <br>
+									 <br>
+									.grid-boxes-top button { <br>
+										margin-right: 1.5em; <br>
+									} <br>
+									<br>
+									.grid-boxes-container { <br>
+										display: -ms-flex; <br>
+										display: -webkit-flex; <br>
+										display: flex; <br>
+										flex-direction: row; <br>
+										justify-content: space-between; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a { <br>
+										text-decoration: none; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p { <br>
+										color: black; <br>
+										font-weight: 400; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p:nth-child(3) { <br>
+										color: #BF3B3B; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p:nth-child(2):hover { <br>
+										text-decoration: underline; <br>
+									} <br>
+									<br>
+									.price-wrapper { <br>
+										display: flex; <br>
+										justify-content: flex-start; <br>
+									} <br>
+									<br>
+									.grid-products-item a .price, <br>
+									.grid-boxes-container a .price { <br>
+										font-weight: 700; <br>
+										font-size: 1.2em; <br>
+										padding-top: 0.25em; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a .price-wrapper p { <br>
+										color: #BF3B3B; <br>
+									} <br>
+									<br>
+									.grid-products-item a .price-wrapper div p, <br>
+									.grid-boxes-container a .price-wrapper div p { <br>
+										color: white; <br>
+										font-size: 0.9em; <br>
+										padding: 0.1em 0.3em; <br>
+										background-color: #BF3B3B; <br>
+										letter-spacing: -0.05em; <br>
+									} <br>
+									<br>
+									.price-wrapper div { <br>
+										margin-left: 1em; <br>
+										padding-top: 0.25em; <br>
+									} <br>
+									<br>
+									@media screen and (max-width: 1140px) { <br>
+										.price-wrapper { <br>
+											flex-direction: column; <br>
+										} <br>
+										.price-wrapper div { <br>
+											margin-left: 0; <br>
+										} <br>
+										.grid-products-item a .price-wrapper div p, <br>
+										.grid-boxes-container a .price-wrapper div p { <br>
+											max-width: 55%; <br>
+											text-align: center; <br>
+										} <br>
+									} <br>
+									<br>
+									@media screen and (max-width: 425px) { <br>
+										.price-wrapper { <br>
+											flex-direction: row; <br>
+										} <br>
+										.price-wrapper div { <br>
+											margin-left: 1em; <br>
+										} <br>
+										.grid-products-item a .price-wrapper div p, <br>
+										.grid-boxes-container a .price-wrapper div p { <br>
+											max-width: 100%; <br>
+										} <br>
+									} <br>
+									<br>
+									.grid-boxes-top { <br>
+										display: flex; <br>
+										justify-content: space-between; <br>
+									} <br>
+									<br>
+									.grid-boxes-top button { <br>
+										position: relative; <br>
+										right: 0; <br>
+										top: 0; <br>
+									} <br>
+									<br>
+									.grid-boxes-item { <br>
+										flex: 0 0 20%; <br>
+									} <br>
+									<br>
+									.grid-boxes-item-wrapper, <br>
+									.shop-by-category-item-container { <br>
+										min-width: 150px; <br>
+										padding-left: 0; <br>
+										padding-right: 1.5em; <br>
+									} <br>
+									<br>
+									.grid-boxes-item img { <br>
+										margin: 0 auto; <br>
+										max-width: 100%; <br>
+									} <br>
+									<br>
+									.shop-by-category-container { <br>
+										overflow-x: auto; <br>
+										display: -ms-flex; <br>
+										display: -webkit-flex; <br>
+										display: flex; <br>
+										flex-direction: row; <br>
+										justify-content: flex-start; <br>
+									} <br>
+									 <br>
+									.shop-by-category-item { <br>
+										padding-right: 3em; <br>
+									}
+								</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Current Sale</h2>
+                        <div class="example">
+                            <div class="grid-boxes">
+                                <div class="grid-boxes-container">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/produce2_400.jpg" alt="Bananas">
+                                                <p>Bananas</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$0.79/lb</p>
+                                                    <div>
+                                                        <p>SAVE $1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/meat1_400.jpg" alt="Prime Rib">
+                                                <p>Waygu Prime Rib</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$10.99/lb</p>
+                                                    <div>
+                                                        <p>SAVE $9</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/bev4_400.jpg" alt="Almond Milk">
+                                                <p>Unsweetened Vanilla Almond Milk</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$4.99</p>
+                                                    <div>
+                                                        <p>SAVE $2</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy1_400.jpg" alt="Eggs">
+                                                <p>Brown Free Range Omega-3 Eggs </p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$3.99</p>
+                                                    <div>
+                                                        <p>SAVE $5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy6_400.jpg" alt="Dairy">
+                                                <p>Oatly Oat Milk 2L</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$8.99</p>
+                                                    <div>
+                                                        <p>SAVE $4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv class="grid-boxes"&gt
+										&ltdiv class="grid-boxes-top"&gt <br>
+											&lth2&gtCurrent Sale&lt/h2&gt <br>
+											&ltdiv class="button-wrapper"&gt <br>
+												&lta class="link_button" href="products.html"&gtView More&lt/a&gt <br>
+											&lt/div&gt <br>
+										&lt/div&gt <br>
+										&ltdiv class="grid-boxes-container"&gt <br>
+											&lta href="productdetail.html"&gt <br>
+												&ltdiv class="grid-boxes-item"&gt <br>
+													&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+														&ltimg src="img/produce2_400.jpg" alt="Bananas"&gt <br>
+														&ltp&gtBananas&lt/p&gt <br>
+														&ltdiv class="price-wrapper"&gt <br>
+															&ltp class="price"&gt$0.79/lb&lt/p&gt <br>
+															&ltdiv&gt <br>
+																&ltp&gtSAVE $1&lt/p&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/a&gt <br>
+											&lta href="productdetail.html"&gt <br>
+												&ltdiv class="grid-boxes-item"&gt <br>
+													&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+														&ltimg src="img/meat1_400.jpg" alt="Prime Rib"&gt <br>
+														&ltp&gtWaygu Prime Rib&lt/p&gt <br>
+														&ltdiv class="price-wrapper"&gt <br>
+															&ltp class="price"&gt$10.99/lb&lt/p&gt <br>
+															&ltdiv&gt <br>
+																&ltp&gtSAVE $9&lt/p&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/a&gt <br>
+											&lta href="productdetail.html"&gt <br>
+												&ltdiv class="grid-boxes-item"&gt <br>
+													&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+														&ltimg src="img/bev4_400.jpg" alt="Almond Milk"&gt <br>
+														&ltp&gtUnsweetened Vanilla Almond Milk&lt/p&gt <br>
+														&ltdiv class="price-wrapper"&gt <br>
+															&ltp class="price"&gt$4.99&lt/p&gt <br>
+															&ltdiv&gt <br>
+																&ltp&gtSAVE $2&lt/p&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/a&gt <br>
+											&lta href="productdetail.html"&gt <br>
+												&ltdiv class="grid-boxes-item"&gt <br>
+													&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+														&ltimg src="img/dairy1_400.jpg" alt="Eggs"&gt <br>
+														&ltp&gtBrown Free Range Omega-3 Eggs &lt/p&gt <br>
+														&ltdiv class="price-wrapper"&gt <br>
+															&ltp class="price"&gt$3.99&lt/p&gt <br>
+															&ltdiv&gt <br>
+																&ltp&gtSAVE $5&lt/p&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/a&gt <br>
+											&lta href="productdetail.html"&gt <br>
+												&ltdiv class="grid-boxes-item"&gt <br>
+													&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+														&ltimg src="img/dairy6_400.jpg" alt="Dairy"&gt <br>
+														&ltp&gtOatly Oat Milk 2L&lt/p&gt <br>
+														&ltdiv class="price-wrapper"&gt <br>
+															&ltp class="price"&gt$8.99&lt/p&gt <br>
+															&ltdiv&gt <br>
+																&ltp&gtSAVE $4&lt/p&gt <br>
+															&lt/div&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/a&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt
+								</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.grid-boxes-top, <br>
+									.shop-by-category h2 { <br>
+										margin-bottom: 1em; <br>
+									} <br>
+									 <br>
+									.grid-boxes-top button { <br>
+										margin-right: 1.5em; <br>
+									} <br>
+									<br>
+									.grid-boxes-container { <br>
+										display: -ms-flex; <br>
+										display: -webkit-flex; <br>
+										display: flex; <br>
+										flex-direction: row; <br>
+										justify-content: space-between; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a { <br>
+										text-decoration: none; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p { <br>
+										color: black; <br>
+										font-weight: 400; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p:nth-child(3) { <br>
+										color: #BF3B3B; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a p:nth-child(2):hover { <br>
+										text-decoration: underline; <br>
+									} <br>
+									<br>
+									.price-wrapper { <br>
+										display: flex; <br>
+										justify-content: flex-start; <br>
+									} <br>
+									<br>
+									.grid-products-item a .price, <br>
+									.grid-boxes-container a .price { <br>
+										font-weight: 700; <br>
+										font-size: 1.2em; <br>
+										padding-top: 0.25em; <br>
+									} <br>
+									<br>
+									.grid-boxes-container a .price-wrapper p { <br>
+										color: #BF3B3B; <br>
+									} <br>
+									<br>
+									.grid-products-item a .price-wrapper div p, <br>
+									.grid-boxes-container a .price-wrapper div p { <br>
+										color: white; <br>
+										font-size: 0.9em; <br>
+										padding: 0.1em 0.3em; <br>
+										background-color: #BF3B3B; <br>
+										letter-spacing: -0.05em; <br>
+									} <br>
+									<br>
+									.price-wrapper div { <br>
+										margin-left: 1em; <br>
+										padding-top: 0.25em; <br>
+									} <br>
+									<br>
+									@media screen and (max-width: 1140px) { <br>
+										.price-wrapper { <br>
+											flex-direction: column; <br>
+										} <br>
+										.price-wrapper div { <br>
+											margin-left: 0; <br>
+										} <br>
+										.grid-products-item a .price-wrapper div p, <br>
+										.grid-boxes-container a .price-wrapper div p { <br>
+											max-width: 55%; <br>
+											text-align: center; <br>
+										} <br>
+									} <br>
+									<br>
+									@media screen and (max-width: 425px) { <br>
+										.price-wrapper { <br>
+											flex-direction: row; <br>
+										} <br>
+										.price-wrapper div { <br>
+											margin-left: 1em; <br>
+										} <br>
+										.grid-products-item a .price-wrapper div p, <br>
+										.grid-boxes-container a .price-wrapper div p { <br>
+											max-width: 100%; <br>
+										} <br>
+									} <br>
+									<br>
+									.grid-boxes-top { <br>
+										display: flex; <br>
+										justify-content: space-between; <br>
+									} <br>
+									<br>
+									.grid-boxes-top button { <br>
+										position: relative; <br>
+										right: 0; <br>
+										top: 0; <br>
+									} <br>
+									<br>
+									.grid-boxes-item { <br>
+										flex: 0 0 20%; <br>
+									} <br>
+									<br>
+									.grid-boxes-item-wrapper, <br>
+									.shop-by-category-item-container { <br>
+										min-width: 150px; <br>
+										padding-left: 0; <br>
+										padding-right: 1.5em; <br>
+									} <br>
+									<br>
+									.grid-boxes-item img { <br>
+										margin: 0 auto; <br>
+										max-width: 100%; <br>
+									} <br>
+									<br>
+									.shop-by-category-container { <br>
+										overflow-x: auto; <br>
+										display: -ms-flex; <br>
+										display: -webkit-flex; <br>
+										display: flex; <br>
+										flex-direction: row; <br>
+										justify-content: flex-start; <br>
+									} <br>
+									 <br>
+									.shop-by-category-item { <br>
+										padding-right: 3em; <br>
+									}
+								</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Product Grid</h2>
+                        <div class="example">
+                            <div class="grid-products-container">
+                                <div class="grid-products-item">
+                                    <a href="productdetail_2.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy6_400.jpg" alt="Oat Milk">
+                                                <p>Oatly Oat Milk 2L</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$8.99</p>
+                                                    <div>
+                                                        <p>SAVE $4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy1_400.jpg" alt="Eggs">
+                                                <p>Brown Free Range Omega-3 Eggs </p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$3.99</p>
+                                                    <div>
+                                                        <p>SAVE $5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/meat1_400.jpg" alt="Meat">
+                                                <p>Wagyu Prime Rib</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$10.99/lb</p>
+                                                    <div>
+                                                        <p>SAVE $9</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/produce1_400.jpg" alt="Produce">
+                                                <p>Organic Broccoli Crowns</p>
+                                                <p class="price">$3.99</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv class="grid-products-container"&gt <br>
+									&ltdiv class="grid-products-item"&gt <br>
+										&lta href="productdetail_2.html"&gt <br>
+											&ltdiv class="grid-boxes-item"&gt <br>
+												&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+													&ltimg src="img/dairy6_400.jpg" alt="Oat Milk"&gt <br>
+													&ltp&gtOatly Oat Milk 2L&lt/p&gt <br>
+													&ltdiv class="price-wrapper"&gt <br>
+														&ltp class="price"&gt$8.99&lt/p&gt <br>
+														&ltdiv&gt <br>
+															&ltp&gtSAVE $4&lt/p&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+										&lt/a&gt <br>
+									&lt/div&gt <br>
+				 <br>
+									&ltdiv class="grid-products-item"&gt <br>
+										&lta href="productdetail.html"&gt <br>
+											&ltdiv class="grid-boxes-item"&gt <br>
+												&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+													&ltimg src="img/dairy1_400.jpg" alt="Eggs"&gt <br>
+													&ltp&gtBrown Free Range Omega-3 Eggs &lt/p&gt <br>
+													&ltdiv class="price-wrapper"&gt <br>
+														&ltp class="price"&gt$3.99&lt/p&gt <br>
+														&ltdiv&gt <br>
+															&ltp&gtSAVE $5&lt/p&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+										&lt/a&gt <br>
+									&lt/div&gt <br>
+				 <br>
+									&ltdiv class="grid-products-item"&gt <br>
+										&lta href="productdetail.html"&gt <br>
+											&ltdiv class="grid-boxes-item"&gt <br>
+												&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+													&ltimg src="img/meat1_400.jpg" alt="Meat"&gt <br>
+													&ltp&gtWagyu Prime Rib&lt/p&gt <br>
+													&ltdiv class="price-wrapper"&gt <br>
+														&ltp class="price"&gt$10.99/lb&lt/p&gt <br>
+														&ltdiv&gt <br>
+															&ltp&gtSAVE $9&lt/p&gt <br>
+														&lt/div&gt <br>
+													&lt/div&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+										&lt/a&gt <br>
+									&lt/div&gt <br>
+				 <br>
+									&ltdiv class="grid-products-item"&gt <br>
+										&lta href="productdetail.html"&gt <br>
+											&ltdiv class="grid-boxes-item"&gt <br>
+												&ltdiv class="grid-boxes-item-wrapper"&gt <br>
+													&ltimg src="img/produce1_400.jpg" alt="Produce"&gt <br>
+													&ltp&gtOrganic Broccoli Crowns&lt/p&gt <br>
+													&ltp class="price"&gt$3.99&lt/p&gt <br>
+												&lt/div&gt <br>
+											&lt/div&gt <br>
+										&lt/a&gt <br>
+									&lt/div&gt <br>
+								&lt/div&gt
+								</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.grid-item_product-grid { <br>
+										flex: 0 0 80%; <br>
+										padding-left: 3em; <br>
+										padding-bottom: 2em; <br>
+									} <br>
+									 <br>
+									.grid-products-container { <br>
+										display: flex; <br>
+										flex-wrap: wrap; <br>
+										padding-bottom: 2.5em; <br>
+									} <br>
+									 <br>
+									.grid-container-test { <br>
+										display: flex; <br>
+										flex-wrap: wrap; <br>
+									} <br>
+									 <br>
+									.grid-item-product-wrapper { <br>
+										position: relative; <br>
+										padding: 1em; <br>
+										padding-top: 0; <br>
+										padding-right: 0; <br>
+									} <br>
+									 <br>
+									.grid-products-item { <br>
+										flex: 0 0 25%; <br>
+										padding-bottom: 3em; <br>
+									} <br>
+									 <br>
+									.grid-products-item a { <br>
+										text-decoration: none; <br>
+									} <br>
+									 <br>
+									.grid-products-item a p { <br>
+										color: black; <br>
+									} <br>
+									 <br>
+									.grid-products-item a p:nth-child(3), <br>
+									.grid-products-item a .price-wrapper p { <br>
+										color: #BF3B3B; <br>
+									} <br>
+									 <br>
+									.grid-products-item a p:nth-child(2):hover { <br>
+										text-decoration: underline; <br>
+									} <br>
+									 <br>
+									.grid-products-item a p:nth-child(3) { <br>
+										font-weight: 700; <br>
+										padding-top: 0.25em; <br>
+									} <br>
+				 <br>
+									@media screen and (max-width: 768px) { <br>
+										.grid-item-product-wrapper { <br>
+											padding-left: 0; <br>
+											padding-right: 1em; <br>
+										} <br>
+										.grid-products-item { <br>
+											flex: 0 0 33.3%; <br>
+										} <br>
+										.grid-item_product-grid { <br>
+											padding-left: 0; <br>
+										} <br>
+									} <br>
+									 <br>
+									@media screen and (max-width: 425px) { <br>
+										.grid-products-container { <br>
+											justify-content: center; <br>
+										} <br>
+										.grid-boxes-item-wrapper { <br>
+											min-width: 250px; <br>
+											padding-right: 0; <br>
+										} <br>
+									}
+								</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">About Text</h2>
+                        <div class="example">
+                            <div class="grid-products-container">
+                                <div class="grid-products-item">
+                                    <a href="productdetail_2.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy6_400.jpg" alt="Oat Milk">
+                                                <p>Oatly Oat Milk 2L</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$8.99</p>
+                                                    <div>
+                                                        <p>SAVE $4</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/dairy1_400.jpg" alt="Eggs">
+                                                <p>Brown Free Range Omega-3 Eggs </p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$3.99</p>
+                                                    <div>
+                                                        <p>SAVE $5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/meat1_400.jpg" alt="Meat">
+                                                <p>Wagyu Prime Rib</p>
+                                                <div class="price-wrapper">
+                                                    <p class="price">$10.99/lb</p>
+                                                    <div>
+                                                        <p>SAVE $9</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="grid-products-item">
+                                    <a href="productdetail.html">
+                                        <div class="grid-boxes-item">
+                                            <div class="grid-boxes-item-wrapper">
+                                                <img src="img/produce1_400.jpg" alt="Produce">
+                                                <p>Organic Broccoli Crowns</p>
+                                                <p class="price">$3.99</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+							  &lt;div class=&quot;input_container&quot;&gt; &lt;label class=&quot;input_label&quot; for=&quot;label&quot;&gt;Label&lt;/label&gt; &lt;input class=&quot;input_field&quot; id=&quot;label&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt;
+						</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+							  .input_label {
+								color: #333;
+								font-weight: 500;
+								font-size: 0.875em;
+								font-family: 'Roboto Condensed', sans-serif;
+							}
+	
+							.input_field{
+								display: block;
+								padding: 0.75em 1em;
+								border: 0.0625em solid #ccc;
+								border-radius: 0.125em;
+								margin-top: 0.25em;
+								margin-bottom: 1.25em;
+								width: 25%;
+							}
+						</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="element_container">
+                        <h2 class="element_title">Quote Carousel</h2>
+                        <div class="example">
+                            <div class="quote-section" id="quote-section">
+                                <div class="quote-wrapper">
+                                    <p id="quote">
+                                        “They say their produce is fresh and damn right it is! I thought I was eating from my garden.”
+                                    </p>
+                                    <p id="quote-author">
+                                        - Karen Smith, Family of 5
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code_block">
+                            <div class="html_code">
+                                <h3>HTML</h3>
+                                <code>
+									&ltdiv class="quote-section" id="quote-section"&gt <br>
+										&ltdiv class="quote-wrapper"&gt <br>
+											&ltp id="quote"&gt <br>
+												“They say their produce is fresh and damn right it is! I thought I was eating from my garden.” <br>
+											&lt/p&gt <br>
+											&ltp id="quote-author"&gt <br>
+												- Karen Smith, Family of 5 <br>
+											&lt/p&gt <br>
+										&lt/div&gt <br>
+									&lt/div&gt
+								</code>
+                            </div>
+                            <div class="css_code">
+                                <h3>CSS</h3>
+                                <code>
+									.quote-section { <br>
+										padding: 4em 2em; <br>
+										background: #F0F0F2; <br>
+									} <br>
+									 <br>
+									.quote-wrapper { <br>
+										display: -webkit-flex; <br>
+										display: -ms-flex; <br>
+										display: flex; <br>
+										flex-wrap: -webkit-flex; <br>
+										flex-wrap: -ms-flex; <br>
+										justify-content: space-around; <br>
+										flex-direction: column; <br>
+									} <br>
+									 <br>
+									#quote, <br>
+									#quote-author { <br>
+										text-align: center; <br>
+									} <br>
+									 <br>
+									#quote { <br>
+										font-style: italic; <br>
+										font-size: 1.2em; <br>
+									} <br>
+									 <br>
+									#quote-author { <br>
+										margin-top: 1.5em; <br>
+										font-weight: 300; <br>
+									}
+								</code>
+                            </div>
+                        </div>
+
+                        <div class="js_code">
+                            <h3>JS</h3>
+                            <code>
+								function quoteCarousel() { <br>
+									var quote = document.getElementById("quote"); <br>
+									var author = document.getElementById("quote-author"); <br>
+								 <br>
+									var quotes = ['“They say their produce is fresh and damn right it is! I thought I was eating from my garden.”', '“Delivery times are quick and efficient, usually ahead of the predicted wait time.”', '“Ordered some groceries at 2 in the morning and received my order at noon that day. Yay! For same day express delivery.”']; <br>
+									var authors = ["- Karen Smith; Family of 5", "- Kevin Nyugen; University Roommate ", "- Morn Livaes; Single Bachelor"]; <br>
+								 <br>
+									var quoteIndex = 1; <br>
+								 <br>
+									setInterval(function() { <br>
+										switch (quoteIndex) { <br>
+											case 0: <br>
+												quote.innerHTML = quotes[quoteIndex]; <br>
+												author.innerHTML = authors[quoteIndex]; <br>
+												quoteIndex = 1; <br>
+												break; <br>
+								 <br>
+											case 1: <br>
+												quote.innerHTML = quotes[quoteIndex]; <br>
+												author.innerHTML = authors[quoteIndex]; <br>
+												quoteIndex = 2; <br>
+												break; <br>
+								 <br>
+											case 2: <br>
+												quote.innerHTML = quotes[quoteIndex]; <br>
+												author.innerHTML = authors[quoteIndex]; <br>
+												quoteIndex = 0; <br>
+												break; <br>
+										} <br>
+									}, 5000) <br>
+								}
+							</code>
+                        </div>
+                    </div>
+
+
                 </div>
-      			
-      		</div>
-      		<div class="code_block">
-      			<div class="html_code">
-      				<h3>HTML</h3>
-      				<code>
-      					&lt;div class=&quot;input_container&quot;&gt;<br>&lt;label class=&quot;input_label&quot; for=&quot;select&quot;&gt;<br>Select an item&lt;/label&gt;<br>&lt;select class=&quot;province&quot; id=&quot;select&quot; name=&quot;select&quot;&gt; &lt;option&gt;Select&lt;/option&gt;<br>&lt;option&gt;Item 2&lt;/option&gt;<br>&lt;option&gt;Item 3&lt;/option&gt;<br>&lt;/select&gt;<br>&lt;/div&gt;
-					</code>
-      			</div>
-      			<div class="css_code">
-      				<h3>CSS</h3>
-      				<code>
-      					select{<br>
-					    display: block;<br>
-					    padding: 0.75em 1em;<br>
-					    border: 0.0625em solid #ccc;<br>
-					    border-radius: 0.125em;<br>
-					    margin-top: 0.25em;<br>
-					    margin-bottom: 1.25em;<br>
-					    width: 25%;<br>
-					}
-					</code>
-      			</div>
-      		</div>
-      	</div>
 
-      </div>
-
-
-	</div>
-
-	</div>
+            </div>
+    </section>
 
 </body>
+
 </html>
