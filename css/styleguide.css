@@ -6,18 +6,34 @@
     box-sizing: border-box;
 }
 
-body #styleguide {
+body {
     font-family: 'Roboto', sans-serif;
     padding: 1.5em;
     background-color: #fff;
     color: black;
 }
 
-#styleguide h1 {
+#styleguide h1,
+#citations h1 {
     font-weight: 500;
     margin-top: 0.25em;
     color: black;
     font-size: 1.5em;
+}
+
+#citations h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+#citations a {
+    text-decoration: none;
+    color: black;
+}
+
+#citations a:hover {
+    text-decoration-line: underline;
+    color: #BF3B3B;
 }
 
 .main_nav>a {
