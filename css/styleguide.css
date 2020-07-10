@@ -298,7 +298,7 @@ margin:0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.input_field{
+.input_field, select{
     display: block;
     padding: 0.75em 1em;
     border: 0.0625em solid #ccc;

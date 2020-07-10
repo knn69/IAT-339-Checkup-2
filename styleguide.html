@@ -288,28 +288,66 @@
       			<div class="html_code">
       				<h3>HTML</h3>
       				<code>
-      					&lt;div class=&quot;input_container&quot;&gt; &lt;label class=&quot;input_label&quot; for=&quot;label&quot;&gt;Label&lt;/label&gt; &lt;input class=&quot;input_field&quot; id=&quot;label&quot; name=&quot;input_field&quot;&gt; &lt;/div&gt;
+      					&lt;div class=&quot;input_container&quot;&gt;<br>&lt;label class=&quot;input_label&quot; for=&quot;label&quot;&gt;Label&lt;/label&gt;<br>&lt;input class=&quot;input_field&quot; id=&quot;label&quot; name=&quot;input_field&quot;&gt;<br>&lt;/div&gt;
 					</code>
       			</div>
       			<div class="css_code">
       				<h3>CSS</h3>
       				<code>
-      					.input_label {
-						    color: #333;
-						    font-weight: 500;
-						    font-size: 0.875em;
-						    font-family: 'Roboto Condensed', sans-serif;
-						}
+      					.input_label {<br>
+						    color: #333;<br>
+						    font-weight: 500;<br>
+						    font-size: 0.875em;<br>
+						    font-family: 'Roboto Condensed', sans-serif;<br>
+						}<br>
 
-						.input_field{
-						    display: block;
-						    padding: 0.75em 1em;
-						    border: 0.0625em solid #ccc;
-						    border-radius: 0.125em;
-						    margin-top: 0.25em;
-						    margin-bottom: 1.25em;
-						    width: 25%;
+						.input_field{<br>
+						    display: block;<br>
+						    padding: 0.75em 1em;<br>
+						    border: 0.0625em solid #ccc;<br>
+						    border-radius: 0.125em;<br>
+						    margin-top: 0.25em;<br>
+						    margin-bottom: 1.25em;<br>
+						    width: 25%;<br>
 						}
+					</code>
+      			</div>
+      		</div>
+      	</div>
+
+      	<div class="element_container">
+      		<h2 class="element_title">Select</h2>
+      		<div class="example">
+
+      			<div class="input_container">
+                        <label class="input_label" for="select">Select an item</label>
+                        <select class="select_item" id="select" name="select">
+          				  <option>Select</option>
+                  		  <option>Item 2</option>
+		                  <option>Item 3</option>
+          			</select>
+                </div>
+      			
+      		</div>
+      		<div class="code_block">
+      			<div class="html_code">
+      				<h3>HTML</h3>
+      				<code>
+      					&lt;div class=&quot;input_container&quot;&gt;<br>&lt;label class=&quot;input_label&quot; for=&quot;select&quot;&gt;<br>Select an item&lt;/label&gt;<br>&lt;select class=&quot;province&quot; id=&quot;select&quot; name=&quot;select&quot;&gt; &lt;option&gt;Select&lt;/option&gt;<br>&lt;option&gt;Item 2&lt;/option&gt;<br>&lt;option&gt;Item 3&lt;/option&gt;<br>&lt;/select&gt;<br>&lt;/div&gt;
+					</code>
+      			</div>
+      			<div class="css_code">
+      				<h3>CSS</h3>
+      				<code>
+      					select{<br>
+					    display: block;<br>
+					    padding: 0.75em 1em;<br>
+					    border: 0.0625em solid #ccc;<br>
+					    border-radius: 0.125em;<br>
+					    margin-top: 0.25em;<br>
+					    margin-bottom: 1.25em;<br>
+					    width: 25%;<br>
+					}
 					</code>
       			</div>
       		</div>
