@@ -329,6 +329,10 @@ body {
     width: 25%;
 }
 
+.delivery_method_item{
+	width:50%;
+}
+
 .submenu-container {
     width: 25%;
 }
