@@ -319,12 +319,7 @@ body {
 }
 
 .input_field {
-    display: block;
-    padding: 0.75em 1em;
-    border: 0.0625em solid #ccc;
-    border-radius: 0.125em;
-    margin-top: 0.25em;
-    margin-bottom: 1.25em;
+    
     width: 25%;
 }
 
