@@ -24,6 +24,7 @@ body {
 #citations h2 {
     font-size: 1.25em;
     font-weight: 500;
+    margin-bottom: 0.5em;
 }
 
 #citations a {
@@ -34,6 +35,11 @@ body {
 #citations a:hover {
     text-decoration-line: underline;
     color: #BF3B3B;
+}
+
+.citation p {
+    margin-top: 0;
+    font-weight: 300;
 }
 
 .main_nav>a {
